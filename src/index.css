@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --primary: 0 72.2% 50.6%;
+    --primary-foreground: 0 85.7% 97.3%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 72.2% 50.6%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 72.2% 50.6%;
+    --primary-foreground: 0 85.7% 97.3%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 72.2% 50.6%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@font-face {
+  font-family: 'Knockout';
+  src: url('/fonts/Knockout-HTF49-Liteweight.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Knockout';
+  src: url('/fonts/Knockout-HTF52-Cruiserweight.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Knockout';
+  src: url('/fonts/Knockout-HTF67-FullBantamwt.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer components {
+  .h1 {
+    @apply font-knockout text-5xl md:text-6xl font-bold tracking-tighter;
+  }
+  .h2 {
+    @apply font-knockout text-4xl md:text-5xl font-bold;
+  }
+  .h3 {
+    @apply font-knockout text-3xl md:text-4xl font-semibold;
+  }
+  .h4 {
+    @apply font-knockout text-2xl md:text-3xl font-semibold;
+  }
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6;
+  }
+  .btn-primary {
+    @apply bg-knox-red hover:bg-knox-darkred text-white rounded-lg px-6 py-3 font-bold transition-all shadow-lg hover:shadow-xl active:scale-95;
+  }
+  .btn-secondary {
+    @apply bg-knox-black hover:bg-knox-gray text-white rounded-lg px-6 py-3 font-bold transition-all shadow-lg hover:shadow-xl active:scale-95;
+  }
+  .btn-outline {
+    @apply border-2 border-knox-red hover:bg-knox-red text-knox-red hover:text-white rounded-lg px-6 py-3 font-bold transition-all active:scale-95;
+  }
+  .card-effect {
+    @apply transform transition duration-300 hover:scale-105 hover:shadow-xl;
+  }
+  .program-card {
+    @apply relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl;
+  }
+  .program-card-content {
+    @apply p-6;
+  }
+  .accent-border {
+    @apply border-l-4 border-knox-red pl-4;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-knox-red to-knox-darkred bg-clip-text text-transparent;
+  }
+  .form-input {
+    @apply w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-knox-red focus:outline-none focus:ring-2 focus:ring-knox-red/20;
+  }
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  .section {
+    @apply py-16 md:py-24;
+  }
+  .header-nav-link {
+    @apply hover:text-knox-red transition-colors font-medium;
+  }
+  .float-effect {
+    @apply animate-float;
+  }
+  .pulse-effect {
+    @apply animate-pulse-slow;
+  }
+  .pattern-dots {
+    background-image: radial-gradient(#e6e6e6 2px, transparent 2px);
+    background-size: 20px 20px;
+  }
+  .pattern-diagonal {
+    background: linear-gradient(135deg, #f5f5f5 25%, transparent 25%) -20px 0,
+      linear-gradient(225deg, #f5f5f5 25%, transparent 25%) -20px 0,
+      linear-gradient(315deg, #f5f5f5 25%, transparent 25%),
+      linear-gradient(45deg, #f5f5f5 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-color: white;
+  }
+  .card-3d {
+    @apply relative bg-white overflow-hidden rounded-xl shadow-lg;
+  }
+  .card-3d::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-knox-red/10 to-transparent z-10 rounded-xl transform transition-transform duration-300;
+  }
+  .card-3d:hover::before {
+    @apply scale-105;
+  }
+  .blob-shape {
+    border-radius: 71% 29% 31% 69% / 57% 34% 66% 43%;
+  }
+}
