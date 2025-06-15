@@ -36,6 +36,13 @@ export function Contact() {
               <div>
                 <h4 className="text-lg font-semibold">Phone</h4>
                 <p className="text-gray-600">+91 9148898988</p>
+
+                <h4 className="text-lg font-semibold mt-4">Email</h4>
+      <p className="text-gray-600">
+        <a href="mailto:info@kn0x-fit.com" className="hover:underline">
+          info@kn0x-fit.com
+        </a>
+      </p>
               </div>
             </div>
           </div>
