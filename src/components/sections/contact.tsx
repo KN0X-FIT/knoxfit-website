@@ -44,6 +44,7 @@ export function Contact() {
     </p>
   </div>
 </div>
+</div>
 
           <div className="space-y-4 pt-6 border-t border-gray-200">
             <h4 className="text-lg font-semibold">Follow Us</h4>
