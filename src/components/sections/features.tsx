@@ -1,4 +1,4 @@
-import type React from 'react';
+import React from 'react';
 import { Card, CardContent } from '../ui/card';
 
 interface Feature {
@@ -104,7 +104,7 @@ export function Features() {
           </div>
           <div className="bg-white p-8 rounded-xl shadow-lg text-center card-effect">
             <div className="text-5xl font-bold font-knockout text-knox-red mb-2">30+</div>
-            <div className="text-xl font-semibold mb-2">Expert Trainers & Nutritonist</div>
+            <div className="text-xl font-semibold mb-2">Expert Trainers & Nutritonists</div>
             <p className="text-gray-600">Result-driven professionals</p>
           </div>
         </div>
