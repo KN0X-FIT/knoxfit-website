@@ -55,7 +55,7 @@ const programs: Program[] = [
       'Assigned to your goals',
       'Weekly trainer sessions',
       'Daily follow-up support',
-      'Royalty program eligible',
+      'Elite program eligible',
       'Get 1 month FREE with daily updates'
     ],
     popular: true,
@@ -182,7 +182,7 @@ export function Programs() {
                 <span className="text-knox-red text-5xl font-bold font-knockout">1 MONTH</span>
                 <div className="text-2xl mt-2 font-bold">FREE</div>
                 <p className="mt-4 text-gray-300">Complete daily check-ins for 30 days</p>
-                <Button onClick={()=>{window.location.href = "#programs"}} className="mt-6 btn-primary">Join Royalty Program</Button>
+                <Button onClick={()=>{window.location.href = "#programs"}} className="mt-6 btn-primary">Join Elite Program</Button>
               </div>
             </div>
           </div>
