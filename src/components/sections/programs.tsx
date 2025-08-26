@@ -7,6 +7,7 @@ interface Program {
   title: string;
   description: string;
   price: string;
+  originalPrice?: string;
   features: string[];
   popular?: boolean;
   image: string;
