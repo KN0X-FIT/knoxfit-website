@@ -1,0 +1,166 @@
+import { SEOHead } from '../components/SEOHead';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+
+interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  author: string;
+  date: string;
+  readTime: string;
+  category: string;
+  image: string;
+  slug: string;
+}
+
+const blogPosts: BlogPost[] = [
+  {
+    id: '1',
+    title: 'Complete Beginner\'s Guide to Home Workouts: Start Your Fitness Journey Today',
+    excerpt: 'Learn how to start exercising at home with no equipment. Perfect workout routine for absolute beginners with step-by-step instructions.',
+    author: 'KN0X-FIT Team',
+    date: '2024-01-15',
+    readTime: '8 min read',
+    category: 'Beginner Fitness',
+    image: '/blog-home-workout.jpg',
+    slug: 'beginners-guide-home-workouts'
+  },
+  {
+    id: '2', 
+    title: 'Weight Loss Without Supplements: Science-Based Approach That Actually Works',
+    excerpt: 'Discover how to lose weight sustainably using whole foods and proven strategies. No expensive supplements required.',
+    author: 'Dr. Nutrition Expert',
+    date: '2024-01-10',
+    readTime: '12 min read',
+    category: 'Weight Loss',
+    image: '/blog-weight-loss.jpg',
+    slug: 'weight-loss-without-supplements'
+  },
+  {
+    id: '3',
+    title: 'Building Muscle on a Budget: Affordable Nutrition and Training Tips',
+    excerpt: 'Build lean muscle without breaking the bank. Complete guide to budget-friendly muscle building nutrition and workouts.',
+    author: 'Fitness Coach',
+    date: '2024-01-08',
+    readTime: '15 min read',
+    category: 'Muscle Building',
+    image: '/blog-muscle-building.jpg',
+    slug: 'building-muscle-on-budget'
+  },
+  {
+    id: '4',
+    title: 'Sustainable Diet Plans: How to Eat Healthy Long-Term Without Feeling Deprived',
+    excerpt: 'Learn the secrets to creating diet plans you can stick to for life. No more yo-yo dieting or feeling deprived.',
+    author: 'Nutrition Specialist',
+    date: '2024-01-05',
+    readTime: '10 min read',
+    category: 'Nutrition',
+    image: '/blog-sustainable-diet.jpg',
+    slug: 'sustainable-diet-plans'
+  },
+  {
+    id: '5',
+    title: 'Fitness Transformation Success: Real Client Stories and What We Can Learn',
+    excerpt: 'Inspiring real transformation stories from KN0X-FIT clients. Learn the mindset and strategies that led to lasting change.',
+    author: 'KN0X-FIT Success Team',
+    date: '2024-01-01',
+    readTime: '18 min read',
+    category: 'Success Stories',
+    image: '/blog-transformation.jpg',
+    slug: 'fitness-transformation-success-stories'
+  }
+];
+
+export function Blog() {
+  return (
+    <>
+      <SEOHead
+        title="Fitness Blog | Expert Tips for Workout Plans & Diet Guide - KN0X-FIT"
+        description="Expert fitness blog with workout plans for beginners, sustainable diet tips, muscle building guides, and real transformation stories. Free fitness advice from Expert Trainers."
+        keywords="fitness blog, workout plans for beginners, sustainable diet tips, muscle building guide, transformation stories, expert fitness advice"
+        canonical="https://knoxfit.com/blog"
+      />
+      <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <section className="bg-knox-black text-white py-24">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl md:text-6xl font-bold font-knockout mb-6">
+              Fitness <span className="text-knox-red">Knowledge Hub</span>
+            </h1>
+            <p className="text-xl text-gray-300 mb-8">
+              Expert insights, proven strategies, and practical tips to help you achieve your fitness goals. 
+              No fluff, just actionable advice from Expert Trainers and nutritionists.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Posts Grid */}
+      <section className="py-24">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {blogPosts.map((post) => (
+                <Card key={post.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={`${post.title} - Expert fitness advice and tips for sustainable health and wellness`}
+                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    />
+                    <div className="absolute top-4 left-4 bg-knox-red text-white px-3 py-1 rounded-full text-sm font-bold">
+                      {post.category}
+                    </div>
+                  </div>
+                  <CardHeader>
+                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-2">
+                      <span>{post.author}</span>
+                      <span>•</span>
+                      <span>{new Date(post.date).toLocaleDateString()}</span>
+                      <span>•</span>
+                      <span>{post.readTime}</span>
+                    </div>
+                    <CardTitle className="text-xl font-bold line-clamp-2 hover:text-knox-red transition-colors">
+                      {post.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                    <Button 
+                      onClick={() => window.location.href = `/blog/${post.slug}`}
+                      variant="outline" 
+                      className="w-full"
+                    >
+                      Read Full Article
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Signup */}
+      <section className="bg-knox-black text-white py-16">
+        <div className="container">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-4">Stay Updated with Fitness Tips</h2>
+            <p className="text-gray-300 mb-8">
+              Get weekly fitness tips, workout plans, and nutrition advice delivered to your inbox.
+            </p>
+            <Button 
+              onClick={() => window.location.href = "https://wa.me/919148898988?text=I%20want%20to%20subscribe%20to%20fitness%20tips"}
+              className="btn-primary"
+            >
+              Subscribe for Free Tips
+            </Button>
+          </div>
+        </div>
+      </section>
+      </div>
+    </>
+  );
+}

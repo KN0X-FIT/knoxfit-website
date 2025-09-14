@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://knoxfit.com/sitemap.xml
+
+# Disallow admin and development files
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow important pages
+Allow: /elite-program
+Allow: /general-fitness
+Allow: /custom-workout-plan
+Allow: /diet-guide
+Allow: /testimonials
+Allow: /contact
+Allow: /blog
+Allow: /privacy-policy
+Allow: /terms-of-service
+
+# Crawl-delay (optional)
+Crawl-delay: 1
