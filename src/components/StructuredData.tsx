@@ -16,7 +16,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "description": "Affordable custom workout plans and sustainable diet guides for beginners. Expert fitness coaching without supplements.",
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+919148898988",
+            "telephone": "+919380422603",
             "contactType": "customer service",
             "areaServed": "IN",
             "availableLanguage": "en"

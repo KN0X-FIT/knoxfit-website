@@ -8,7 +8,7 @@ export function CustomWorkoutPlan() {
     <>
       <SEOHead
         title="Custom Workout Plan for Beginners | Personalized Fitness Routine - KN0X-FIT"
-        description="Get a personalized workout plan designed for beginners. Science-backed exercise routines that maximize results in minimal time, tailored to your fitness level. Starting at ₹499."
+        description="Get a personalized workout plan designed for beginners. Science-backed exercise routines that maximize results in minimal time, tailored to your fitness level. Starting at ₹799."
         keywords="custom workout plan for beginners, personalized fitness routine, home workout plan, beginner exercise program, strength training for beginners"
         canonical="https://knoxfit.com/custom-workout-plan"
       />
@@ -25,11 +25,11 @@ export function CustomWorkoutPlan() {
               No generic routines - just science-backed exercises that deliver real results.
             </p>
             <Button 
-              onClick={() => window.location.href = "https://wa.me/919148898988?text=I'm%20interested%20in%20the%20custom%20workout%20plan"}
+              onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20getting%20a%20custom%20workout%20plan%20for%20₹799.%20Could%20you%20tell%20me%20more%20about%20what's%20included,%20how%20the%20consultation%20works,%20and%20how%20to%20get%20started?"}
               className="btn-primary text-lg py-6 px-8"
               size="lg"
             >
-              Get Your Custom Plan - ₹499
+              Get Your Custom Plan - ₹799
             </Button>
           </div>
         </div>
@@ -148,11 +148,11 @@ export function CustomWorkoutPlan() {
                 Our Expert Trainers will create a plan that's perfect for your fitness level and goals.
               </p>
               <Button 
-                onClick={() => window.location.href = "https://wa.me/919148898988?text=I%20want%20to%20get%20started%20with%20a%20custom%20workout%20plan"}
+                onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20want%20to%20get%20started%20with%20a%20custom%20workout%20plan%20for%20₹799.%20I'm%20ready%20to%20begin%20my%20fitness%20journey%20and%20would%20like%20to%20book%20my%20consultation.%20What%20are%20the%20next%20steps?"}
                 className="btn-primary text-lg py-6 px-8"
                 size="lg"
               >
-                Get Started Now - ₹499
+                Get Started Now - ₹799
               </Button>
             </div>
           </div>

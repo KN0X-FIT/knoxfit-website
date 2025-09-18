@@ -17,8 +17,8 @@ export function PrivacyPolicy() {
           title: "Privacy Policy - KN0X-FIT",
           description: "Learn how KN0X-FIT keeps your data private and secure while delivering personalized fitness coaching.",
           url: "https://knoxfit.com/privacy-policy",
-          datePublished: "2024-01-15",
-          dateModified: "2024-01-15"
+          datePublished: "2025-01-15",
+          dateModified: "2025-01-15"
         }}
       />
       
@@ -41,7 +41,7 @@ export function PrivacyPolicy() {
             <Card className="mb-8 bg-knox-red/10 border-knox-red/20">
               <CardContent className="p-6">
                 <p className="text-knox-red font-semibold">
-                  <strong>Effective Date:</strong> January 15, 2024 | <strong>Last Updated:</strong> January 15, 2024
+                  <strong>Effective Date:</strong> January 15, 2025 | <strong>Last Updated:</strong> January 15, 2025
                 </p>
               </CardContent>
             </Card>
@@ -134,9 +134,9 @@ export function PrivacyPolicy() {
                   We retain your personal data only for as long as necessary to provide our services and comply with legal obligations:
                 </p>
                 <ul className="mb-6 text-gray-700 space-y-2">
-                  <li>• <strong>Active Clients:</strong> Data retained during program duration plus 90 days</li>
+                  <li>• <strong>Active Clients:</strong> Data retained during program duration plus 2 weeks</li>
                   <li>• <strong>Transformation Photos:</strong> Kept only with explicit written consent</li>
-                  <li>• <strong>Communication Records:</strong> Retained for 1 year for quality and support purposes</li>
+                  <li>• <strong>Communication Records:</strong> Retained for 5 months for quality and support purposes</li>
                   <li>• <strong>Financial Records:</strong> Kept for 3 years as required by law</li>
                 </ul>
               </CardContent>
@@ -237,7 +237,9 @@ export function PrivacyPolicy() {
                       </p>
                       <p className="flex items-center">
                         <span className="font-semibold mr-2">💬 WhatsApp:</span>
-                        <span className="text-gray-300">Direct message for immediate assistance</span>
+                        <a href="https://wa.me/919380422603" className="text-knox-red hover:underline">
+                          +91 9380422603
+                        </a>
                       </p>
                       <p className="flex items-center">
                         <span className="font-semibold mr-2">⏰ Response Time:</span>

@@ -15,15 +15,20 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-5rem)]">
           <div className="space-y-8 max-w-2xl">
             <div className="space-y-4">
+              {/* Brand Slogan */}
+              <div className="text-knox-red font-knockout text-lg tracking-widest uppercase mb-4 animate-pulse">
+                BUILT FOR CHANGE - DESIGNED FOR YOU
+              </div>
+              
               <h1 className="text-7xl md:text-7xl lg:text-8xl font-bold font-knockout tracking-tight animate-float">
                 <span className="block">TRANSFORM</span>
                 <span className="block text-knox-red">YOUR BODY</span>
                 <span className="block">WITH KN0X-FIT</span>
               </h1>
-              <p className="text-xl text-gray-300 mt-6 max-w-lg">
+              <h2 className="text-xl text-gray-300 mt-6 max-w-lg font-normal">
                 Most affordable custom workout plan for beginners and sustainable diet without supplements that deliver guaranteed results.
                 No supplements, just sustainable fitness.
-              </p>
+              </h2>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -43,7 +48,7 @@ export function Hero() {
               </div>
               <div className="h-10 w-px bg-gray-700" />
               <div className="flex flex-col">
-                <span className="text-4xl font-bold font-knockout">499₹</span>
+                <span className="text-4xl font-bold font-knockout">799₹</span>
                 <span className="text-gray-400 text-sm">Starting Price</span>
               </div>
             </div>
@@ -62,9 +67,13 @@ export function Hero() {
               {/* Main image */}
               <img
                 src="/hero-image.webp"
-                alt="Professional fitness trainer demonstrating custom workout plan for beginners in modern gym environment"
+                alt="Professional fitness trainer demonstrating custom workout plan for beginners in modern gym environment - KN0X-FIT sustainable fitness programs"
                 className="w-full h-auto object-cover rounded-2xl animate-float shadow-2xl"
                 style={{ animationDelay: "0.5s" }}
+                loading="eager"
+                fetchPriority="high"
+                width="600"
+                height="400"
               />
             </div>
 

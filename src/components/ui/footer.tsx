@@ -9,6 +9,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2 space-y-4">
             <img src="/final_logo-removebg-preview.png" alt="KN0X-FIT" className="h-12 w-auto brightness-0 invert" />
+            
+            {/* Brand Slogan */}
+            <div className="text-knox-red font-knockout text-lg tracking-wide uppercase">
+              BUILT FOR CHANGE - DESIGNED FOR YOU
+            </div>
+            
             <p className="text-gray-300 mt-4">
               KN0X-FIT is dedicated to helping you achieve your fitness goals with custom workout
               and diet plans that are result-oriented and sustainable.
@@ -48,6 +54,12 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <div className="space-y-3">
+              <p className="flex items-start text-gray-300">
+                <svg className="h-6 w-6 mr-2 text-knox-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <a href="tel:+919380422603" className="hover:underline">+91 9380422603</a>
+              </p>
               <p className="flex items-start text-gray-300">
                 <svg className="h-6 w-6 mr-2 text-knox-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12H8m-6 8V4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2z" />
@@ -92,7 +104,7 @@ export function Footer() {
               © {currentYear} KN0X-FIT. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm mt-4 md:mt-0">
-              <span className="text-knox-red">BUILT FOR CHANGE</span> . DESIGNED FOR YOU
+              <span className="text-knox-red font-knockout tracking-wider">BUILT FOR CHANGE - DESIGNED FOR YOU</span>
             </p>
           </div>
         </div>

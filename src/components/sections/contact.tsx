@@ -12,6 +12,11 @@ export function Contact() {
 
       <div className="container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
+          {/* Brand Slogan */}
+          <div className="text-knox-red font-knockout text-sm tracking-widest uppercase mb-4">
+            BUILT FOR CHANGE - DESIGNED FOR YOU
+          </div>
+          
           <h2 className="h2 mb-4">Start Your Fitness Transformation Today</h2>
           <p className="text-gray-600 text-lg">
             Have questions about our custom workout plans for beginners or sustainable diet guides?
@@ -29,6 +34,21 @@ export function Contact() {
           </div>
 
           <div className="space-y-4">
+            <div className="flex items-start">
+              <div className="bg-knox-red text-white p-3 rounded-lg mr-4">
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold">Phone</h4>
+                <p className="text-gray-600">
+                  <a href="tel:+919380422603" className="hover:underline">
+                    +91 9380422603
+                  </a>
+                </p>
+              </div>
+            </div>
             <div className="flex items-start">
   <div className="bg-knox-red text-white p-3 rounded-lg mr-4">
     <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

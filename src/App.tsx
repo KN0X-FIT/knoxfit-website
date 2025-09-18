@@ -11,7 +11,8 @@ import { BlogPost } from './pages/BlogPost';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
 import { Contact } from './pages/Contact';
-import { Testimonials } from './pages/Testimonials';
+import Testimonials from './pages/Testimonials';
+import { FreePlan } from './pages/FreePlan';
 // import { GoogleAnalytics } from './components/GoogleAnalytics';
 
 // Replace with your actual Google Analytics Measurement ID
@@ -35,6 +36,7 @@ function App() {
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/free-plan" element={<FreePlan />} />
         </Routes>
         <Footer />
       </div>

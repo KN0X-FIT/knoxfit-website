@@ -17,8 +17,8 @@ export function TermsOfService() {
           title: "Terms of Service - KN0X-FIT",
           description: "Read KN0X-FIT's terms of service including program details, refund policy, and client responsibilities for our personalized fitness coaching.",
           url: "https://knoxfit.com/terms-of-service",
-          datePublished: "2024-01-15",
-          dateModified: "2024-01-15"
+          datePublished: "2025-01-15",
+          dateModified: "2025-01-15"
         }}
       />
       
@@ -42,7 +42,7 @@ export function TermsOfService() {
             <Card className="mb-8 bg-knox-red/10 border-knox-red/20">
               <CardContent className="p-6">
                 <p className="text-knox-red font-semibold">
-                  <strong>Effective Date:</strong> January 15, 2024 | <strong>Last Updated:</strong> January 15, 2024
+                  <strong>Effective Date:</strong> January 15, 2025 | <strong>Last Updated:</strong> January 15, 2025
                 </p>
                 <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
                   <p className="text-green-800 font-semibold">
@@ -328,6 +328,19 @@ export function TermsOfService() {
                   <li>• <strong>Photo Protection:</strong> Progress photos will not be shared publicly without written consent</li>
                   <li>• <strong>Communication Security:</strong> All interactions through encrypted channels</li>
                 </ul>
+                
+                <div className="mt-6">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Data Retention Policy</h3>
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                    <h4 className="text-lg font-bold text-blue-800 mb-3">📅 How Long We Keep Your Data:</h4>
+                    <ul className="text-blue-700 space-y-2">
+                      <li>• <strong>Active Clients:</strong> Data retained during program duration plus 2 weeks</li>
+                      <li>• <strong>Communication Records:</strong> Retained for 5 months for quality and support purposes</li>
+                      <li>• <strong>Transformation Photos:</strong> Kept only with explicit written consent</li>
+                      <li>• <strong>Financial Records:</strong> Kept for 3 years as required by law</li>
+                    </ul>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
@@ -417,7 +430,9 @@ export function TermsOfService() {
                     <div className="space-y-4">
                       <p className="flex items-center">
                         <span className="font-semibold mr-3">💬 WhatsApp:</span>
-                        <span className="text-gray-300">Direct message for immediate assistance</span>
+                        <a href="https://wa.me/919380422603" className="text-knox-red hover:underline">
+                          +91 9380422603
+                        </a>
                       </p>
                       <p className="flex items-center">
                         <span className="font-semibold mr-3">📧 Email:</span>

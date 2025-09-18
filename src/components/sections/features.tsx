@@ -71,6 +71,11 @@ export function Features() {
     <section className="py-24 bg-gray-50" id="features">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
+          {/* Brand Slogan */}
+          <div className="text-knox-red font-knockout text-sm tracking-widest uppercase mb-4">
+            BUILT FOR CHANGE - DESIGNED FOR YOU
+          </div>
+          
           <h2 className="h2 mb-4">Why Choose KN0X-FIT for Your Fitness Journey?</h2>
           <p className="text-gray-600 text-lg">
             We combine expert knowledge, personalized programs, and proven methods

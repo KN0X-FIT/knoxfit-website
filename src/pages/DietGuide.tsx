@@ -8,7 +8,7 @@ export function DietGuide() {
     <>
       <SEOHead
         title="Sustainable Diet Guide Without Supplements | Weight Loss Diet Plan - KN0X-FIT"
-        description="Get a sustainable diet plan for weight loss without supplements. Personalized nutrition guide with FFMI and BMI analysis. Affordable diet coaching starting at ₹499."
+        description="Get a sustainable diet plan for weight loss without supplements. Personalized nutrition guide with FFMI and BMI analysis. Affordable diet coaching starting at ₹799."
         keywords="sustainable diet without supplements, weight loss diet plan, personalized nutrition guide, FFMI BMI analysis, affordable diet coaching"
         canonical="https://knoxfit.com/diet-guide"
       />
@@ -25,11 +25,11 @@ export function DietGuide() {
               no crash diets - just sustainable nutrition that fits your lifestyle and delivers real results.
             </p>
             <Button 
-              onClick={() => window.location.href = "https://wa.me/919148898988?text=I'm%20interested%20in%20the%20sustainable%20diet%20plan"}
+              onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20your%20sustainable%20diet%20plan%20for%20₹799.%20Could%20you%20provide%20more%20details%20about%20the%20nutrition%20plan,%20meal%20guidance,%20and%20how%20it%20works%20without%20supplements?"}
               className="btn-primary text-lg py-6 px-8"
               size="lg"
             >
-              Get Your Diet Plan - ₹499
+              Get Your Diet Plan - ₹799
             </Button>
           </div>
         </div>
@@ -173,11 +173,11 @@ export function DietGuide() {
                 No supplements, no crash diets - just sustainable nutrition that works.
               </p>
               <Button 
-                onClick={() => window.location.href = "https://wa.me/919148898988?text=I%20want%20to%20get%20started%20with%20a%20sustainable%20diet%20plan"}
+                onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20want%20to%20get%20started%20with%20your%20sustainable%20diet%20plan%20for%20₹799.%20I'm%20ready%20to%20transform%20my%20eating%20habits%20and%20achieve%20my%20health%20goals.%20How%20can%20I%20begin?"}
                 className="btn-primary text-lg py-6 px-8"
                 size="lg"
               >
-                Get Your Diet Plan - ₹499
+                Get Your Diet Plan - ₹799
               </Button>
             </div>
           </div>

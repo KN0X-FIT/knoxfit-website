@@ -17,6 +17,7 @@ Allow: /general-fitness
 Allow: /custom-workout-plan
 Allow: /diet-guide
 Allow: /testimonials
+Allow: /free-plan
 Allow: /contact
 Allow: /blog
 Allow: /privacy-policy

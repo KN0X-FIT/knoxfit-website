@@ -97,8 +97,9 @@ export function Navbar() {
             </div>
           </div>
           
-          <a href="/blog" className="header-nav-link">Blog</a>
           <a href="/testimonials" className="header-nav-link">Testimonials</a>
+          <a href="/free-plan" className="header-nav-link text-knox-red font-semibold hover:text-red-600 transition-colors duration-200">Free Plan</a>
+          <a href="/blog" className="header-nav-link">Blog</a>
           <a href="/contact" className="header-nav-link">Contact</a>
         </nav>
 
@@ -191,8 +192,9 @@ export function Navbar() {
               )}
             </div>
             
-            <a href="/blog" className="block py-3 header-nav-link">Blog</a>
             <a href="/testimonials" className="block py-3 header-nav-link">Testimonials</a>
+            <a href="/free-plan" className="block py-3 header-nav-link text-knox-red font-semibold">🎁 Free Plan</a>
+            <a href="/blog" className="block py-3 header-nav-link">Blog</a>
             <a href="/contact" className="block py-3 header-nav-link">Contact</a>
           </div>
         </div>

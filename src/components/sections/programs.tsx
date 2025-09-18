@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card';
+import { LazyImage } from '../LazyImage';
 
 interface Program {
   id: string;
@@ -18,8 +19,8 @@ const programs: Program[] = [
     id: 'diet-plan',
     title: 'Diet Plan',
     description: 'Effective diet plan focused on sustainable weight loss. Includes FFMI and BMI report.',
-    price: '499',
-    originalPrice: '1000',
+    price: '799',
+    originalPrice: '2000',
     features: [
       'Customized diet plan',
       'No supplements required',
@@ -33,8 +34,8 @@ const programs: Program[] = [
     id: 'workout-plan',
     title: 'Workout Plan',
     description: 'Comprehensive workout plan designed for building muscle with professional guidance.',
-    price: '499',
-    originalPrice: '1000',
+    price: '799',
+    originalPrice: '2000',
     features: [
       'Specialized workout routine',
       'Progressive training plan',
@@ -48,8 +49,8 @@ const programs: Program[] = [
     id: 'total-recomposition',
     title: 'Total Transformation',
     description: 'Complete diet and workout plan with weekly trainer consultation and daily follow-ups.',
-    price: '2999',
-    originalPrice: '4999', 
+    price: '3499',
+    originalPrice: '5000', 
     features: [
       'Personalised diet & workout combined plan',
       'Assigned to your goals',
@@ -83,7 +84,12 @@ export function Programs() {
     <section className="bg-white py-24" id="programs">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="h2 mb-4">Our Result-Oriented Fitness Programs</h2>
+          {/* Brand Slogan */}
+          <div className="text-knox-red font-knockout text-sm tracking-widest uppercase mb-4">
+            BUILT FOR CHANGE - DESIGNED FOR YOU
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl font-bold text-knox-black mb-6">Our Result-Oriented Fitness Programs</h2>
           <p className="text-gray-600 text-lg">
             Choose from our range of affordable fitness programs designed to help you achieve
             your specific goals with guaranteed results. Custom workout plans for beginners and sustainable diet guides.
@@ -103,10 +109,13 @@ export function Programs() {
                   </div>
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
-                <img
+                <LazyImage
                   src={program.image}
-                  alt={`${program.title} - Custom ${program.title.toLowerCase()} designed for sustainable fitness results without supplements`}
+                  alt={`${program.title} - Custom ${program.title.toLowerCase()} designed for sustainable fitness results without supplements - KN0X-FIT affordable fitness programs`}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  width={300}
+                  height={200}
+                  priority={program.popular}
                 />
                 <div className="absolute bottom-4 left-4 z-10">
                   <h3 className="text-white font-bold text-xl">{program.title}</h3>
@@ -140,7 +149,7 @@ export function Programs() {
       </div>
     )}
   </div>
-                <Button onClick={()=>{window.location.href = " https://wa.me/919148898988?text=I'm%20interested%20to%20join%20the%20program"}} className={`w-full ${program.popular ? 'btn-primary' : 'btn-secondary'}`}>
+                <Button onClick={()=>{window.location.href = " https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20joining%20one%20of%20your%20programs.%20Could%20you%20help%20me%20choose%20the%20best%20program%20based%20on%20my%20fitness%20goals%20and%20current%20fitness%20level?"}} className={`w-full ${program.popular ? 'btn-primary' : 'btn-secondary'}`}>
                   Choose Plan
                 </Button>
               </CardFooter>
@@ -151,6 +160,9 @@ export function Programs() {
         <div className="mt-16 bg-knox-black text-white p-8 rounded-2xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
+              <div className="text-knox-red font-knockout text-xs tracking-widest uppercase mb-3">
+                BUILT FOR CHANGE - DESIGNED FOR YOU
+              </div>
               <h3 className="h3 mb-4">KN0X-ELITE PROGRAM</h3>
               <p className="mb-4">
                 Get an extra month FREE when you consistently follow your plan and share daily updates.

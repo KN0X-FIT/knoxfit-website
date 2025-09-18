@@ -55,7 +55,7 @@ export function GeneralFitness() {
                   <span className="text-lg ml-2">/ month</span>
                 </div>
                 <Button 
-                  onClick={() => window.location.href = "https://wa.me/919148898988?text=I'm%20interested%20in%20the%20General%20Fitness%20Plan%20at%20%E2%82%B9999/month"}
+                  onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20the%20General%20Fitness%20Plan%20at%20₹999/month.%20Could%20you%20provide%20more%20details%20about%20the%20balanced%20diet%20plan,%20beginner%20workout%20routine,%20and%20the%20one%20trainer%20consultation%20included?"}
                   size="lg" 
                   className="bg-white text-knox-red hover:bg-gray-100 font-bold text-lg px-8 py-4"
                 >
@@ -83,7 +83,7 @@ export function GeneralFitness() {
               <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
                 <div>
                   <img 
-                    src="/general-fitness-overview.jpg" 
+                    src="/gen-fitness.webp" 
                     alt="General fitness program overview showing balanced diet and workout plan for beginners" 
                     className="rounded-lg shadow-xl w-full"
                   />
@@ -308,7 +308,7 @@ export function GeneralFitness() {
                 </div>
                 
                 <Button 
-                  onClick={() => window.location.href = "https://wa.me/919148898988?text=I'm%20interested%20in%20the%20General%20Fitness%20Plan%20at%20%E2%82%B9999/month"}
+                  onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20the%20General%20Fitness%20Plan%20at%20₹999/month.%20Could%20you%20provide%20more%20details%20about%20the%20balanced%20diet%20plan,%20beginner%20workout%20routine,%20and%20the%20one%20trainer%20consultation%20included?"}
                   size="lg" 
                   className="w-full bg-knox-red hover:bg-knox-darkred text-white font-bold text-xl py-4"
                 >
@@ -394,7 +394,7 @@ export function GeneralFitness() {
               </p>
               <div className="flex justify-center">
                 <Button 
-                  onClick={() => window.location.href = "https://wa.me/919148898988?text=I'm%20interested%20in%20the%20General%20Fitness%20Plan%20at%20%E2%82%B9999/month"}
+                  onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20the%20General%20Fitness%20Plan%20at%20₹999/month.%20Could%20you%20provide%20more%20details%20about%20the%20balanced%20diet%20plan,%20beginner%20workout%20routine,%20and%20the%20one%20trainer%20consultation%20included?"}
                   size="lg" 
                   className="bg-knox-red hover:bg-knox-darkred text-white font-bold text-lg px-8 py-4"
                 >

@@ -61,14 +61,14 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: '5',
-    title: 'Fitness Transformation Success: Real Client Stories and What We Can Learn',
-    excerpt: 'Inspiring real transformation stories from KN0X-FIT clients. Learn the mindset and strategies that led to lasting change.',
-    author: 'KN0X-FIT Success Team',
-    date: '2024-01-01',
-    readTime: '18 min read',
-    category: 'Success Stories',
-    image: '/blog-transformation.jpg',
-    slug: 'fitness-transformation-success-stories'
+    title: 'Physical Strength: The Foundation of Health, Confidence, and Life Quality',
+    excerpt: 'Discover why physical strength is the cornerstone of optimal health, enhanced confidence, and improved quality of life. Learn science-backed strategies to build strength effectively.',
+    author: 'KN0X-FIT Team',
+    date: '2024-01-15',
+    readTime: '12 min read',
+    category: 'Fitness Science',
+    image: '/blog-physical-strength.jpg',
+    slug: 'physical-strength-foundation-health-confidence'
   }
 ];
 
@@ -86,6 +86,11 @@ export function Blog() {
       <section className="bg-knox-black text-white py-24">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
+            {/* Brand Slogan */}
+            <div className="text-knox-red font-knockout text-lg tracking-widest uppercase mb-4 animate-pulse">
+              BUILT FOR CHANGE - DESIGNED FOR YOU
+            </div>
+            
             <h1 className="text-5xl md:text-6xl font-bold font-knockout mb-6">
               Fitness <span className="text-knox-red">Knowledge Hub</span>
             </h1>
@@ -152,7 +157,7 @@ export function Blog() {
               Get weekly fitness tips, workout plans, and nutrition advice delivered to your inbox.
             </p>
             <Button 
-              onClick={() => window.location.href = "https://wa.me/919148898988?text=I%20want%20to%20subscribe%20to%20fitness%20tips"}
+              onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20would%20like%20to%20subscribe%20to%20your%20fitness%20tips%20and%20receive%20regular%20updates%20about%20nutrition,%20workouts,%20and%20healthy%20lifestyle%20tips.%20Please%20add%20me%20to%20your%20updates%20list."}
               className="btn-primary"
             >
               Subscribe for Free Tips

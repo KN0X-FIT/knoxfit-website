@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Learn how to start exercising at home with no equipment. Perfect workout routine for absolute beginners with step-by-step instructions and progressive training plans.',
     content: `
       <div class="prose prose-lg max-w-none">
-        <img src="/blog-home-workout-hero.jpg" alt="Woman doing home workout exercises in living room with natural lighting" class="w-full h-64 object-cover rounded-lg mb-8" />
+        <img src="/blog-home-workout-hero.jpg" alt="Woman doing home workout exercises in living room with natural lighting" class="w-full h-64 object-cover rounded-lg mb-8 mx-auto" />
         
         <p class="text-xl text-gray-600 mb-8">Starting your fitness journey can feel overwhelming, especially if you're a complete beginner. The good news? You don't need expensive equipment or a gym membership to get started. This comprehensive guide will show you exactly how to begin working out at home.</p>
 
@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
           <li><strong>Build confidence:</strong> Master the basics before moving to a gym</li>
         </ul>
 
-        <img src="/blog-bodyweight-exercises.jpg" alt="Demonstration of basic bodyweight exercises including push-ups, squats, and planks" class="w-full h-48 object-cover rounded-lg my-8" />
+        <img src="/blog-bodyweight-exercises.jpg" alt="Demonstration of basic bodyweight exercises including push-ups, squats, and planks" class="w-full h-48 object-cover rounded-lg my-8 mx-auto shadow-md" />
 
         <h2 class="text-3xl font-bold mt-8 mb-4">Your First Week: Building the Foundation</h2>
 
@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
           <li><strong>Modified Planks</strong> (on knees): Hold for 15-30 seconds</li>
         </ul>
 
-        <img src="/blog-workout-space.jpg" alt="Clean minimal home workout space with yoga mat and water bottle" class="w-full h-48 object-cover rounded-lg my-8" />
+        <img src="/blog-workout-space.jpg" alt="Clean minimal home workout space with yoga mat and water bottle" class="w-full h-48 object-cover rounded-lg my-8 mx-auto shadow-md" />
 
         <h2 class="text-3xl font-bold mt-8 mb-4">Common Beginner Mistakes to Avoid</h2>
         <ol class="mb-6">
@@ -418,161 +418,198 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '5',
-    title: 'Fitness Transformation Success: Real Client Stories and What We Can Learn',
-    excerpt: 'Inspiring real transformation stories from KN0X-FIT clients. Learn the mindset shifts, strategies, and practical tips that led to lasting change.',
+    title: 'Physical Strength: The Foundation of Health, Confidence, and Life Quality',
+    excerpt: 'Discover why physical strength is the cornerstone of optimal health, enhanced confidence, and improved quality of life. Learn science-backed strategies to build strength effectively.',
     content: `
       <div class="prose prose-lg max-w-none">
-        <img src="/blog-transformation-hero.jpg" alt="Before and after transformation photos showing real client results" class="w-full h-64 object-cover rounded-lg mb-8" />
+        <img src="/blog-physical-strength-hero.jpg" alt="Person demonstrating functional strength through compound movements" class="w-full h-64 object-cover rounded-lg mb-8" />
         
-        <p class="text-xl text-gray-600 mb-8">Real transformations happen when the right mindset meets consistent action. Here are inspiring stories from KN0X-FIT clients who achieved lasting change and the key lessons we can all apply.</p>
+        <p class="text-xl text-gray-600 mb-8">Physical strength isn't just about lifting heavy weights or showing off in the gym. It's the foundation upon which a vibrant, confident, and healthy life is built. In our modern world, understanding and developing strength has become more crucial than ever.</p>
 
-        <h2 class="text-3xl font-bold mt-8 mb-4">Priya's Journey: From Desk Job to Marathon Runner</h2>
+        <h2 class="text-3xl font-bold mt-8 mb-4">Why Physical Strength Matters More Than Ever</h2>
         
-        <div class="bg-gray-50 border-l-4 border-knox-red p-6 my-8">
-          <p class="italic text-gray-700 mb-4">"I went from struggling to climb stairs to running my first marathon in 18 months. The key wasn't just the workouts - it was changing how I thought about fitness."</p>
-          <p class="text-sm text-gray-600">- Priya, 32, Software Engineer</p>
+        <h3 class="text-2xl font-semibold mt-6 mb-3">The Modern Strength Crisis</h3>
+        <p>Today's lifestyle has created an epidemic of physical weakness leading to increased injury rates, poor posture, reduced metabolic health, lower confidence, and decreased functional capacity as we age.</p>
+        
+        <h3 class="text-2xl font-semibold mt-6 mb-3">The Science of Strength Benefits</h3>
+        <p>Research consistently shows that physical strength provides benefits far beyond muscle size:</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h4 class="text-lg font-bold text-blue-800 mb-3">🫀 Metabolic Health</h4>
+            <ul class="text-blue-700 text-sm space-y-1">
+              <li>• Increases insulin sensitivity by up to 25%</li>
+              <li>• Boosts metabolism for up to 48 hours</li>
+              <li>• Improves cardiovascular health markers</li>
+              <li>• Enhances glucose utilization</li>
+            </ul>
+          </div>
+          <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+            <h4 class="text-lg font-bold text-green-800 mb-3">🦴 Bone Health</h4>
+            <ul class="text-green-700 text-sm space-y-1">
+              <li>• Increases bone density by 2-8% annually</li>
+              <li>• Reduces fracture risk by up to 40%</li>
+              <li>• Improves joint stability and mobility</li>
+              <li>• Delays age-related bone loss</li>
+            </ul>
+          </div>
+          <div class="bg-purple-50 border border-purple-200 rounded-lg p-6">
+            <h4 class="text-lg font-bold text-purple-800 mb-3">🧠 Mental Health</h4>
+            <ul class="text-purple-700 text-sm space-y-1">
+              <li>• Reduces depression and anxiety symptoms</li>
+              <li>• Improves cognitive function and memory</li>
+              <li>• Enhances sleep quality</li>
+              <li>• Boosts self-confidence and body image</li>
+            </ul>
+          </div>
+          <div class="bg-orange-50 border border-orange-200 rounded-lg p-6">
+            <h4 class="text-lg font-bold text-orange-800 mb-3">⏳ Longevity</h4>
+            <ul class="text-orange-700 text-sm space-y-1">
+              <li>• Reduces mortality risk by 20-30%</li>
+              <li>• Improves functional independence</li>
+              <li>• Enhances quality of life scores</li>
+              <li>• Delays muscle loss (sarcopenia)</li>
+            </ul>
+          </div>
         </div>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-3">The Challenge</h3>
-        <p>Priya, a software engineer working 60+ hours per week, gained 25kg over 5 years. She experienced:</p>
-        <ul class="mb-4">
-          <li>Chronic fatigue and back pain</li>
-          <li>Multiple failed diet attempts</li>
-          <li>Zero exercise experience</li>
-          <li>High stress and poor sleep</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-3">The Transformation Strategy</h3>
-        <ul class="mb-6">
-          <li><strong>Started small:</strong> 10-minute walks during lunch breaks</li>
-          <li><strong>Meal prep Sundays:</strong> Prepared healthy meals for the week</li>
-          <li><strong>Sleep optimization:</strong> Consistent 7-hour sleep schedule</li>
-          <li><strong>Stress management:</strong> 5-minute meditation before work</li>
-        </ul>
-
-        <img src="/blog-client-workout.jpg" alt="Client doing strength training in gym with proper form" class="w-full h-48 object-cover rounded-lg my-8" />
-
-        <h2 class="text-3xl font-bold mt-8 mb-4">Raj's Muscle Building Success at Age 45</h2>
-        
-        <div class="bg-gray-50 border-l-4 border-knox-red p-6 my-8">
-          <p class="italic text-gray-700 mb-4">"Everyone said I was too old to build muscle. In 12 months, I gained 8kg of lean muscle and feel stronger than I did in my 20s."</p>
-          <p class="text-sm text-gray-600">- Raj, 45, Business Owner</p>
-        </div>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-3">The Challenge</h3>
-        <p>Raj faced age-related muscle loss and believed he was "too old" to start:</p>
-        <ul class="mb-4">
-          <li>Lost 12kg of muscle over 10 years</li>
-          <li>Previous gym intimidation</li>
-          <li>Busy business schedule</li>
-          <li>Low confidence about starting fitness</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-3">The Breakthrough Approach</h3>
-        <ul class="mb-6">
-          <li><strong>Home gym setup:</strong> Invested in basic equipment</li>
-          <li><strong>Progressive overload:</strong> Tracked every workout metric</li>
-          <li><strong>Protein priority:</strong> 150g protein daily without supplements</li>
-          <li><strong>Recovery focus:</strong> Adequate rest between sessions</li>
-        </ul>
-
-        <h2 class="text-3xl font-bold mt-8 mb-4">Sunita's Sustainable Weight Loss Journey</h2>
-        
-        <div class="bg-gray-50 border-l-4 border-knox-red p-6 my-8">
-          <p class="italic text-gray-700 mb-4">"I lost 22kg and kept it off for 2 years. The secret was learning to love the process, not just focus on the outcome."</p>
-          <p class="text-sm text-gray-600">- Sunita, 38, Mother of Two</p>
-        </div>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-3">The Challenge</h3>
-        <p>Sunita struggled with post-pregnancy weight and yo-yo dieting:</p>
-        <ul class="mb-4">
-          <li>History of extreme dieting and regain</li>
-          <li>Emotional eating patterns</li>
-          <li>Limited time with young children</li>
-          <li>Body image and confidence issues</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-3">The Sustainable Solution</h3>
-        <ul class="mb-6">
-          <li><strong>Flexible nutrition:</strong> 80/20 approach allowed treats</li>
-          <li><strong>Family workouts:</strong> Involved kids in active play</li>
-          <li><strong>Mindful eating:</strong> Addressed emotional triggers</li>
-          <li><strong>Community support:</strong> Joined online accountability groups</li>
-        </ul>
-
-        <img src="/blog-client-nutrition.jpg" alt="Healthy meal prep containers and nutrition planning" class="w-full h-48 object-cover rounded-lg my-8" />
-
-        <h2 class="text-3xl font-bold mt-8 mb-4">Common Success Patterns</h2>
-        
-        <p>Analyzing hundreds of transformation stories, we identified key patterns in successful clients:</p>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-3">Mindset Shifts That Matter</h3>
-        <ul class="mb-4">
-          <li><strong>Process over outcome:</strong> Focus on daily habits, not just scale weight</li>
-          <li><strong>Progress over perfection:</strong> Consistency beats intensity</li>
-          <li><strong>Growth mindset:</strong> Setbacks are learning opportunities</li>
-          <li><strong>Self-compassion:</strong> Treat yourself as you would a good friend</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-3">Strategic Implementation</h3>
-        <ul class="mb-6">
-          <li><strong>Start ridiculously small:</strong> Success builds momentum</li>
-          <li><strong>Track leading indicators:</strong> Habits matter more than outcomes</li>
-          <li><strong>Plan for obstacles:</strong> Prepare for challenges in advance</li>
-          <li><strong>Celebrate wins:</strong> Acknowledge progress along the way</li>
-        </ul>
 
         <div class="bg-knox-red/10 border border-knox-red/20 rounded-lg p-6 my-8">
-          <h3 class="text-xl font-bold text-knox-red mb-3">🏆 Key Insight</h3>
-          <p>Every successful transformation started with someone who believed change was possible and took the first small step. Your transformation story starts today.</p>
+          <h3 class="text-xl font-bold text-knox-red mb-3">🔬 The Science is Clear</h3>
+          <p>Studies show that people with higher levels of muscular strength have a 20-35% lower risk of premature death from all causes. Strength training isn't optional - it's essential for optimal health and longevity.</p>
         </div>
 
-        <h2 class="text-3xl font-bold mt-8 mb-4">The Science Behind Lasting Change</h2>
+        <h2 class="text-3xl font-bold mt-8 mb-4">Understanding Different Types of Strength</h2>
         
-        <h3 class="text-2xl font-semibold mt-6 mb-3">Habit Formation Research</h3>
-        <p>Studies show that successful transformations follow predictable patterns:</p>
-        <ul class="mb-4">
-          <li><strong>21-66 days:</strong> Time needed to form new habits</li>
-          <li><strong>80% relapse rate:</strong> For people who try to change too much too fast</li>
-          <li><strong>2x success rate:</strong> When people have accountability partners</li>
-          <li><strong>5x more likely:</strong> To succeed with written goals</li>
-        </ul>
+        <div class="space-y-6 mb-8">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-3">1. Maximal Strength</h3>
+            <p class="mb-2"><strong>Definition:</strong> Maximum force your muscles can generate in a single effort.</p>
+            <p class="mb-2"><strong>Benefits:</strong> Foundation for other strength qualities, improves power and endurance, enhances bone density</p>
+            <p><strong>How to Develop:</strong> Low reps (1-5), high intensity (85-100%), longer rest (3-5 min), compound movements</p>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-3">2. Strength Endurance</h3>
+            <p class="mb-2"><strong>Definition:</strong> Ability to maintain force output over extended periods.</p>
+            <p class="mb-2"><strong>Benefits:</strong> Improves daily function, enhances work capacity, supports fat loss, reduces fatigue</p>
+            <p><strong>How to Develop:</strong> Higher reps (12-25), moderate intensity (60-75%), shorter rest (30-90 sec)</p>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-3">3. Power</h3>
+            <p class="mb-2"><strong>Definition:</strong> Ability to generate force quickly (strength + speed).</p>
+            <p class="mb-2"><strong>Benefits:</strong> Improves athletic performance, enhances reaction time, reduces fall risk</p>
+            <p><strong>How to Develop:</strong> Moderate reps (3-8), explosive patterns, adequate rest (2-3 min), plyometrics</p>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-3">4. Functional Strength</h3>
+            <p class="mb-2"><strong>Definition:</strong> Strength that translates to real-world movement patterns.</p>
+            <p class="mb-2"><strong>Benefits:</strong> Improves daily activities, reduces injury risk, enhances movement quality</p>
+            <p><strong>How to Develop:</strong> Multi-joint exercises, varied movement planes, progressive overload</p>
+          </div>
+        </div>
 
-        <h2 class="text-3xl font-bold mt-8 mb-4">Your Transformation Roadmap</h2>
+        <h2 class="text-3xl font-bold mt-8 mb-4">Essential Movement Patterns</h2>
         
-        <h3 class="text-2xl font-semibold mt-6 mb-3">Phase 1: Foundation (Weeks 1-4)</h3>
-        <ul class="mb-4">
-          <li>Establish consistent sleep schedule</li>
-          <li>Start with 10 minutes of daily movement</li>
-          <li>Add one vegetable to each meal</li>
-          <li>Track habits, not outcomes</li>
-        </ul>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h4 class="text-lg font-bold text-blue-800 mb-3">🏋️ Squat Pattern</h4>
+            <p class="text-blue-700 text-sm mb-2"><strong>Muscles:</strong> Quadriceps, glutes, core</p>
+            <p class="text-blue-700 text-sm mb-2"><strong>Variations:</strong> Bodyweight, goblet, back squat</p>
+            <p class="text-blue-700 text-sm"><strong>Benefits:</strong> Lower body power, functional movement</p>
+          </div>
+          <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+            <h4 class="text-lg font-bold text-green-800 mb-3">🎯 Hinge Pattern</h4>
+            <p class="text-green-700 text-sm mb-2"><strong>Muscles:</strong> Hamstrings, glutes, lower back</p>
+            <p class="text-green-700 text-sm mb-2"><strong>Variations:</strong> Hip hinge, deadlift, kettlebell swing</p>
+            <p class="text-green-700 text-sm"><strong>Benefits:</strong> Posterior chain strength, hip mobility</p>
+          </div>
+          <div class="bg-purple-50 border border-purple-200 rounded-lg p-6">
+            <h4 class="text-lg font-bold text-purple-800 mb-3">💪 Push/Pull Pattern</h4>
+            <p class="text-purple-700 text-sm mb-2"><strong>Muscles:</strong> Chest, shoulders, back, arms</p>
+            <p class="text-purple-700 text-sm mb-2"><strong>Variations:</strong> Push-ups, pull-ups, rows</p>
+            <p class="text-purple-700 text-sm"><strong>Benefits:</strong> Upper body strength, postural balance</p>
+          </div>
+        </div>
 
-        <h3 class="text-2xl font-semibold mt-6 mb-3">Phase 2: Building (Weeks 5-12)</h3>
-        <ul class="mb-4">
-          <li>Increase workout duration and intensity</li>
-          <li>Introduce strength training</li>
-          <li>Optimize nutrition for your goals</li>
-          <li>Build stress management skills</li>
-        </ul>
+        <h2 class="text-3xl font-bold mt-8 mb-4">The Pillars of Effective Strength Building</h2>
+        
+        <div class="space-y-4 mb-8">
+          <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-yellow-800 mb-3">Progressive Overload</h3>
+            <p class="text-yellow-700">Gradually increase demands on muscles through weight, volume, frequency, range of motion, or time under tension.</p>
+          </div>
+          
+          <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-green-800 mb-3">Movement Quality</h3>
+            <p class="text-green-700">Perfect form with full range of motion, controlled tempo, proper alignment, and mind-muscle connection.</p>
+          </div>
+          
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-blue-800 mb-3">Recovery and Adaptation</h3>
+            <p class="text-blue-700">Strength gains occur during recovery: 7-9 hours sleep, adequate protein (1.6-2.2g/kg), hydration, stress management.</p>
+          </div>
+        </div>
 
-        <h3 class="text-2xl font-semibold mt-6 mb-3">Phase 3: Mastery (Week 13+)</h3>
-        <ul class="mb-6">
-          <li>Fine-tune based on results</li>
-          <li>Challenge yourself with new goals</li>
-          <li>Help others on their journey</li>
-          <li>Maintain long-term perspective</li>
-        </ul>
+        <h2 class="text-3xl font-bold mt-8 mb-4">Common Mistakes and Solutions</h2>
+        
+        <div class="space-y-4 mb-8">
+          <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+            <h4 class="font-bold text-red-800">❌ Ego Lifting</h4>
+            <p class="text-red-700 text-sm">Solution: Start light, master form first, progress gradually</p>
+          </div>
+          <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+            <h4 class="font-bold text-red-800">❌ Inconsistent Training</h4>
+            <p class="text-red-700 text-sm">Solution: Set realistic schedule, prioritize consistency over perfection</p>
+          </div>
+          <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+            <h4 class="font-bold text-red-800">❌ Neglecting Recovery</h4>
+            <p class="text-red-700 text-sm">Solution: Schedule rest days, prioritize sleep, manage stress</p>
+          </div>
+          <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+            <h4 class="font-bold text-red-800">❌ Poor Exercise Selection</h4>
+            <p class="text-red-700 text-sm">Solution: Focus on compound movements, master basics first</p>
+          </div>
+        </div>
 
-        <p>Ready to write your own transformation story? Start with our <a href="/custom-workout-plan" class="text-knox-red hover:underline">Personalized Fitness Assessment</a> to create a plan that fits your unique situation and goals.</p>
+        <div class="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
+          <h3 class="text-xl font-bold text-green-800 mb-3">✅ Key Success Principles</h3>
+          <ul class="text-green-700">
+            <li><strong>Consistency trumps perfection</strong> - small, regular efforts compound over time</li>
+            <li><strong>Quality over quantity</strong> - perfect form beats heavy weight with poor form</li>
+            <li><strong>Progressive overload</strong> - gradual increases drive adaptation</li>
+            <li><strong>Recovery is part of training</strong> - growth happens during rest</li>
+            <li><strong>Individual variation matters</strong> - customize your approach</li>
+          </ul>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">Your Strength Journey Starts Now</h2>
+        
+        <p>Physical strength is one of the greatest investments you can make in your health, confidence, and quality of life. It's never too late to start building the foundation for a strong, capable, and vibrant future.</p>
+        
+        <p><strong>Start where you are, use what you have, do what you can.</strong> Your future self will thank you for the strength you build today.</p>
+
+        <p>Ready to begin your strength journey? Our <a href="/custom-workout-plan" class="text-knox-red hover:underline">Custom Workout Plans</a> provide personalized training programs designed to build functional strength safely and effectively.</p>
+
+        <div class="bg-knox-red/10 border border-knox-red/20 rounded-lg p-6 my-8">
+          <h3 class="text-xl font-bold text-knox-red mb-3">🎯 Ready to Transform Your Strength?</h3>
+          <p>Join thousands who've discovered the life-changing benefits of proper strength training. Every day you wait is another day you could be getting stronger, healthier, and more confident.</p>
+        </div>
+
+        <img src="/blog-strength-training-fundamentals.jpg" alt="Fundamental strength training exercises demonstration" class="w-full h-48 object-cover rounded-lg my-8" />
+
+        <p class="text-sm text-gray-600 mt-8"><em>Strength training should be approached with proper guidance, especially for beginners or those with health conditions. Consider consulting with qualified fitness professionals to ensure safe and effective program design.</em></p>
+
       </div>
     `,
-    author: 'KN0X-FIT Success Team',
-    date: '2024-01-01',
-    readTime: '18 min read',
-    category: 'Success Stories',
-    image: '/blog-transformation.jpg',
-    slug: 'fitness-transformation-success-stories',
-    tags: ['transformation', 'success stories', 'motivation', 'client results']
+    author: 'KN0X-FIT Team',
+    date: '2024-01-15',
+    readTime: '12 min read',
+    category: 'Fitness Science',
+    image: '/blog-physical-strength.jpg',
+    slug: 'physical-strength-foundation-health-confidence',
+    tags: ['Strength Training', 'Health', 'Fitness Science', 'Workout Programming', 'Nutrition'],
+    featured: true
   }
 ];

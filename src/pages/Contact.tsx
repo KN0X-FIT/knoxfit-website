@@ -29,6 +29,11 @@ export function Contact() {
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="container relative z-10">
             <div className="max-w-4xl mx-auto text-center">
+              {/* Brand Slogan */}
+              <div className="text-knox-red font-knockout text-lg tracking-widest uppercase mb-4 animate-pulse">
+                BUILT FOR CHANGE - DESIGNED FOR YOU
+              </div>
+              
               <h1 className="text-5xl md:text-6xl font-bold font-knockout mb-6">
                 Contact <span className="text-white">Us</span>
               </h1>
@@ -61,9 +66,10 @@ export function Contact() {
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-knox-black mb-4">WhatsApp</h3>
-                      <p className="text-gray-600 mb-6">Quick responses and instant support</p>
+                      <p className="text-gray-600 mb-4">Quick responses and instant support</p>
+                      <p className="text-knox-red font-bold text-lg mb-6">+91 9380422603</p>
                       <Button
-                        onClick={() => window.location.href = "https://wa.me/919148898988?text=Hi%20KN0X-FIT,%20I'm%20interested%20in%20learning%20more%20about%20your%20fitness%20programs."}
+                        onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20found%20your%20website%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20fitness%20programs.%20Could%20you%20provide%20me%20with%20details%20about%20your%20services,%20pricing,%20and%20how%20to%20get%20started?"}
                         className="bg-green-500 hover:bg-green-600 text-white font-bold text-lg px-8 py-3 w-full"
                       >
                         Chat on WhatsApp
@@ -208,7 +214,7 @@ export function Contact() {
                       
                       <h4 className="text-xl font-semibold text-knox-red mb-4">💰 Affordable Programs</h4>
                       <p className="text-gray-600">
-                        Quality fitness coaching shouldn't break the bank. Our programs start from just ₹499 with proven results.
+                        Quality fitness coaching shouldn't break the bank. Our programs start from just ₹799 with proven results.
                       </p>
                     </div>
                     <div>
