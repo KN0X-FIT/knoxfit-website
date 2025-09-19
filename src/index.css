@@ -82,6 +82,7 @@
   src: url('/fonts/Knockout-HTF49-Liteweight.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -89,6 +90,7 @@
   src: url('/fonts/Knockout-HTF52-Cruiserweight.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -96,6 +98,7 @@
   src: url('/fonts/Knockout-HTF67-FullBantamwt.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Responsive typography */
@@ -381,6 +384,11 @@ html {
   
   .animate-blink {
     animation: blink 2s infinite;
+  }
+  
+  /* Custom float animation for hero image - reverted to original speed */
+  .animate-float-slow {
+    animation: float 6s ease-in-out infinite;
   }
 }
 

@@ -64,16 +64,16 @@ export function Hero() {
               <div className="absolute -right-6 -top-6 w-24 h-24 bg-knox-red/20 rounded-full blur-md" />
               <div className="absolute -left-6 -bottom-6 w-32 h-32 bg-knox-red/20 rounded-full blur-md" />
 
-              {/* Main image */}
+              {/* Main image with same animation as text */}
               <img
                 src="/hero-image.webp"
                 alt="Professional fitness trainer demonstrating custom workout plan for beginners in modern gym environment - KN0X-FIT sustainable fitness programs"
                 className="w-full h-auto object-cover rounded-2xl animate-float shadow-2xl"
-                style={{ animationDelay: "0.5s" }}
                 loading="eager"
                 fetchPriority="high"
                 width="600"
                 height="400"
+                style={{ animationDelay: "0.5s" }}
               />
             </div>
 

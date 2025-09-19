@@ -41,14 +41,35 @@
     <meta name="theme-color" content="#dc2626" />
     <meta name="msapplication-TileColor" content="#dc2626" />
     <link rel="canonical" href="https://knoxfit.com/" />
-    <!-- Preload the fallback font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet" />
     
-    <!-- Preload critical images -->
-    <link rel="preload" href="/hero-image.webp" as="image" type="image/webp" />
-    <link rel="preload" href="/final_logo-removebg-preview.png" as="image" type="image/png" />
+    <!-- Optimized preconnect to important origins for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    
+    <!-- DNS prefetch for additional domains -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Load Google Fonts with better performance - non-blocking -->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/hero-image.webp" as="image" type="image/webp">
+    <link rel="preload" href="/final_logo-removebg-preview.png" as="image" type="image/png">
+    <link rel="preload" href="/workout-plan.avif" as="image" type="image/avif">
+    <link rel="preload" href="/gen-fitness.webp" as="image" type="image/webp">
+    <link rel="preload" href="/total-transformation.webp" as="image" type="image/webp">
+    <link rel="preload" href="/diet-plan.jpeg" as="image" type="image/jpeg">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="/fonts/Knockout-HTF49-Liteweight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Knockout-HTF52-Cruiserweight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Knockout-HTF67-FullBantamwt.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="/src/index.css" as="style">
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -98,18 +119,35 @@
     }
     </script>
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JGC1PXM1MC"></script>
+    <!-- Optimized Google Analytics (gtag.js) - deferred loading -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-JGC1PXM1MC');
+      // Defer loading of Google Analytics until after page load
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-JGC1PXM1MC';
+        script.async = true;
+        document.head.appendChild(script);
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JGC1PXM1MC');
+      });
     </script>
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="9zVr7PAfNdpdnAMEeUdjnQPCGGkJHj9fWN7zDlg2Okw" />
+    
+    <!-- Font loading optimization -->
+    <script>
+      // Fallback for font loading
+      (function() {
+        var fontLink = document.querySelector('link[href*="fonts.googleapis.com"]');
+        if (fontLink) {
+          fontLink.media = 'all';
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

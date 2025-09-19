@@ -97,7 +97,7 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "float": "float 3s ease-in-out infinite",
+        "float": "float 6s ease-in-out infinite", // Reverted to original speed
         "pulse-slow": "pulse-slow 4s ease-in-out infinite",
         "scroll-left": "scroll-left 30s linear infinite",
       },

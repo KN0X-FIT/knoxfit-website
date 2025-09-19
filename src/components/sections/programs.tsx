@@ -13,6 +13,8 @@ interface Program {
   features: string[];
   popular?: boolean;
   image: string;
+  imageWebp?: string;
+  imageAvif?: string;
 }
 
 const programs: Program[] = [
@@ -29,7 +31,8 @@ const programs: Program[] = [
       'Sustainable eating patterns',
       'One session with Expert Nutritionist'
     ],
-    image: '/diet-plan.jpeg'
+    image: '/diet-plan.jpeg',
+    imageWebp: '/diet-plan.webp'
   },
   {
     id: 'workout-plan',
@@ -44,7 +47,9 @@ const programs: Program[] = [
       'Tailored to fitness level',
       'One session with Expert Trainer'
     ],
-    image: '/workout-plan.avif'
+    image: '/workout-plan.avif',
+    imageWebp: '/workout-plan.webp',
+    imageAvif: '/workout-plan.avif'
   },
   {
     id: 'total-recomposition',
@@ -61,7 +66,9 @@ const programs: Program[] = [
       'Get 1 month FREE with daily updates'
     ],
     popular: true,
-    image: '/total-transformation.webp'
+    image: '/total-transformation.webp',
+    imageWebp: '/total-transformation.webp',
+    imageAvif: '/total-transformation.avif'
   },
   {
     id: 'general-fitness',
@@ -76,7 +83,9 @@ const programs: Program[] = [
       'FFMI and BMI report included',
       'Sustainable approach'
     ],
-    image: '/gen-fitness.webp'
+    image: '/gen-fitness.webp',
+    imageWebp: '/gen-fitness.webp',
+    imageAvif: '/gen-fitness.avif'
   }
 ];
 
@@ -145,8 +154,8 @@ export function Programs() {
                   src={program.image}
                   alt={`${program.title} - Custom ${program.title.toLowerCase()} designed for sustainable fitness results without supplements - KN0X-FIT affordable fitness programs`}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                  width={300}
-                  height={200}
+                  width={382}
+                  height={255}
                   priority={program.popular}
                 />
                 <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 z-10">
