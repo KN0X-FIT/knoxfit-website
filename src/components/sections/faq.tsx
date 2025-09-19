@@ -82,13 +82,13 @@ export function FAQ() {
   }, []);
 
   return (
-    <section className="bg-gray-50 py-24" id="faq">
+    <section className="bg-gray-50 py-16 sm:py-24" id="faq">
       <div className="container">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-knox-black mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-knox-black mb-4 sm:mb-6">
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 text-base sm:text-lg">
             Get answers to common questions about our fitness programs, pricing, and approach to sustainable health and wellness.
           </p>
         </div>
@@ -100,11 +100,11 @@ export function FAQ() {
                 <CardContent className="p-0">
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-knox-red/20"
+                    className="w-full text-left p-5 sm:p-6 focus:outline-none focus:ring-2 focus:ring-knox-red/20"
                     aria-expanded={openIndex === index}
                   >
                     <div className="flex items-center justify-between">
-                      <h3 className="text-lg font-semibold text-knox-black pr-4">
+                      <h3 className="text-base sm:text-lg font-semibold text-knox-black pr-4">
                         {faq.question}
                       </h3>
                       <div className={`transform transition-transform duration-200 ${
@@ -122,8 +122,8 @@ export function FAQ() {
                       ? 'max-h-96 opacity-100' 
                       : 'max-h-0 opacity-0'
                   } overflow-hidden`}>
-                    <div className="px-6 pb-6">
-                      <p className="text-gray-600 leading-relaxed">
+                    <div className="px-5 sm:px-6 pb-5 sm:pb-6">
+                      <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                         {faq.answer}
                       </p>
                     </div>
@@ -135,22 +135,22 @@ export function FAQ() {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-16">
-          <div className="bg-knox-black text-white p-8 rounded-2xl max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Still Have Questions?</h3>
-            <p className="text-gray-300 mb-6">
+        <div className="text-center mt-12 sm:mt-16">
+          <div className="bg-knox-black text-white p-6 sm:p-8 rounded-2xl max-w-2xl mx-auto">
+            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Still Have Questions?</h3>
+            <p className="text-gray-300 text-sm sm:text-base mb-5 sm:mb-6">
               Get personalized answers from our Expert Trainers. Contact us directly for specific questions about your fitness goals.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a 
                 href="https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20have%20some%20questions%20about%20your%20fitness%20programs.%20Could%20you%20please%20help%20me%20understand%20more%20about%20the%20pricing,%20duration,%20and%20what's%20included%20in%20each%20program?"
-                className="bg-knox-red text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                className="bg-knox-red text-white px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors text-sm sm:text-base"
               >
                 WhatsApp Us
               </a>
               <a 
                 href="/contact"
-                className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-knox-black transition-colors"
+                className="bg-transparent border-2 border-white text-white px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg font-semibold hover:bg-white hover:text-knox-black transition-colors text-sm sm:text-base"
               >
                 Contact Form
               </a>

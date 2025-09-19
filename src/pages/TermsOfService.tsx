@@ -104,6 +104,19 @@ export function TermsOfService() {
               </CardContent>
             </Card>
 
+            {/* Focus on Experience & Results */}
+            <Card className="mb-8 bg-blue-50 border-blue-200">
+              <CardContent className="p-8">
+                <h2 className="text-3xl font-bold text-knox-black mb-6">Focus on Experience & Results</h2>
+                <p className="text-lg text-gray-700 mb-4">
+                  Backed by years of practical experience and real client transformations, we specialize in proven training methods that deliver results.
+                </p>
+                <p className="text-lg text-gray-700">
+                  Our expertise comes from hands-on coaching and helping clients achieve lasting change.
+                </p>
+              </CardContent>
+            </Card>
+
             {/* Duration */}
             <Card className="mb-8">
               <CardContent className="p-8">

@@ -16,39 +16,39 @@ export function Hero() {
           <div className="space-y-8 max-w-2xl">
             <div className="space-y-4">
               {/* Brand Slogan */}
-              <div className="text-knox-red font-knockout text-lg tracking-widest uppercase mb-4 animate-pulse">
+              <div className="text-knox-red font-knockout text-base md:text-lg tracking-widest uppercase mb-4 animate-pulse">
                 BUILT FOR CHANGE - DESIGNED FOR YOU
               </div>
               
-              <h1 className="text-7xl md:text-7xl lg:text-8xl font-bold font-knockout tracking-tight animate-float">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold font-knockout tracking-tight animate-float">
                 <span className="block">TRANSFORM</span>
                 <span className="block text-knox-red">YOUR BODY</span>
                 <span className="block">WITH KN0X-FIT</span>
               </h1>
-              <h2 className="text-xl text-gray-300 mt-6 max-w-lg font-normal">
+              <h2 className="text-lg sm:text-xl text-gray-300 mt-6 max-w-lg font-normal">
                 Most affordable custom workout plan for beginners and sustainable diet without supplements that deliver guaranteed results.
                 No supplements, just sustainable fitness.
               </h2>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <Button onClick={()=>{window.location.href = "#programs"}} className="btn-primary text-lg py-6 px-8" size="lg">Start Your Journey</Button>
-              <Button onClick={()=>{window.location.href = "#programs"}} variant="outline" className="btn-outline text-lg py-6 px-8" size="lg">View Programs</Button>
+              <Button onClick={()=>{window.location.href = "#programs"}} className="btn-primary text-base sm:text-lg py-5 px-6 sm:px-8" size="lg">Start Your Journey</Button>
+              <Button onClick={()=>{window.location.href = "#programs"}} variant="outline" className="btn-outline text-base sm:text-lg py-5 px-6 sm:px-8" size="lg">View Programs</Button>
             </div>
 
-            <div className="flex items-center gap-10 pt-6">
+            <div className="flex flex-wrap items-center gap-8 pt-6">
               <div className="flex flex-col">
-                <span className="text-4xl font-bold font-knockout">4+</span>
+                <span className="text-3xl sm:text-4xl font-bold font-knockout">4+</span>
                 <span className="text-gray-400 text-sm">Proven Programs</span>
               </div>
-              <div className="h-10 w-px bg-gray-700" />
+              <div className="h-10 w-px bg-gray-700 hidden sm:block" />
               <div className="flex flex-col">
-                <span className="text-4xl font-bold font-knockout">100%</span>
+                <span className="text-3xl sm:text-4xl font-bold font-knockout">100%</span>
                 <span className="text-gray-400 text-sm">Result Oriented</span>
               </div>
-              <div className="h-10 w-px bg-gray-700" />
+              <div className="h-10 w-px bg-gray-700 hidden sm:block" />
               <div className="flex flex-col">
-                <span className="text-4xl font-bold font-knockout">799₹</span>
+                <span className="text-3xl sm:text-4xl font-bold font-knockout">799₹</span>
                 <span className="text-gray-400 text-sm">Starting Price</span>
               </div>
             </div>

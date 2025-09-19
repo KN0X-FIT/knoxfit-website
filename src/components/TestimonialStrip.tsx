@@ -78,10 +78,10 @@ export function TestimonialStrip() {
   const itemWidth = isMobile ? 100 : 120;
 
   return (
-    <section className="py-8 sm:py-12 bg-gradient-to-r from-gray-50 to-white border-t border-gray-200">
+    <section className="py-4 sm:py-6 bg-gradient-to-r from-gray-50 to-white border-t border-gray-200">
       <div className="container mx-auto px-4">
         {/* Header - Mobile optimized */}
-        <div className="text-center mb-6 sm:mb-8 px-4">
+        <div className="text-center mb-4 sm:mb-6 px-4">
           <h3 className="text-lg sm:text-xl font-bold text-knox-black mb-2">
             Real Transformations from Our Clients
           </h3>
@@ -149,9 +149,9 @@ export function TestimonialStrip() {
         </div>
 
         {/* Bottom Text - Mobile optimized */}
-        <div className="text-center mt-4 sm:mt-6 px-4">
+        <div className="text-center mt-2 sm:mt-3 px-4">
           <p className="text-xs text-gray-500 leading-relaxed">
-            📷 Client photos coming soon • <span className="hidden sm:inline">Hover to pause • </span>These are real results from real people
+            <span className="hidden sm:inline">Hover to pause • </span>These are real results from real people
           </p>
         </div>
       </div>

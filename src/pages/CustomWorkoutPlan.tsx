@@ -14,14 +14,14 @@ export function CustomWorkoutPlan() {
       />
       <div className="min-h-screen bg-white">
       {/* Slogan Section */}
-      <div className="text-center py-2 bg-knox-black">
+      <div className="text-center py-1 bg-knox-black">
         <div className="text-knox-red font-knockout text-sm tracking-widest uppercase animate-blink">
           BUILT FOR CHANGE - DESIGNED FOR YOU
         </div>
       </div>
       
       {/* Hero Section */}
-      <section className="bg-knox-black text-white py-24">
+      <section className="bg-knox-black text-white py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold font-knockout mb-6">
@@ -148,15 +148,15 @@ export function CustomWorkoutPlan() {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-gray-50 p-8 rounded-2xl text-center">
-              <h3 className="text-3xl font-bold mb-4">Ready to Start Your Fitness Journey?</h3>
-              <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+            <div className="bg-gray-50 p-4 rounded-2xl text-center">
+              <h3 className="text-3xl font-bold mb-2">Ready to Start Your Fitness Journey?</h3>
+              <p className="text-gray-600 mb-4 max-w-2xl mx-auto">
                 Get your personalized workout plan today and start seeing results in just 2-3 weeks. 
                 Our Expert Trainers will create a plan that's perfect for your fitness level and goals.
               </p>
               <Button 
                 onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20want%20to%20get%20started%20with%20a%20custom%20workout%20plan%20for%20₹799.%20I'm%20ready%20to%20begin%20my%20fitness%20journey%20and%20would%20like%20to%20book%20my%20consultation.%20What%20are%20the%20next%20steps?"}
-                className="btn-primary text-lg py-6 px-8"
+                className="btn-primary text-lg py-4 px-6"
                 size="lg"
               >
                 Get Started Now - ₹799

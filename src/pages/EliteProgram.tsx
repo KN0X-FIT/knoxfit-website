@@ -32,14 +32,14 @@ export function EliteProgram() {
       />
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Slogan Section */}
-      <div className="text-center py-2 bg-knox-black">
+      <div className="text-center py-1 bg-knox-black">
         <div className="text-knox-red font-knockout text-sm tracking-widest uppercase animate-blink">
           BUILT FOR CHANGE - DESIGNED FOR YOU
         </div>
       </div>
       
       {/* Hero Section */}
-        <section className="bg-gradient-to-br from-knox-black via-knox-gray to-knox-black text-white py-24 relative overflow-hidden">
+        <section className="bg-gradient-to-br from-knox-black via-knox-gray to-knox-black text-white py-12 relative overflow-hidden">
           {/* Background Effects */}
           <div className="absolute inset-0 z-0">
             <div className="absolute right-[10%] top-[20%] w-40 h-40 bg-knox-red rounded-full blur-3xl opacity-20 animate-pulse-slow" />
@@ -130,7 +130,7 @@ export function EliteProgram() {
                   <CardHeader className="text-center pb-4">
                     <div className="w-16 h-16 bg-gradient-to-br from-knox-red to-knox-darkred rounded-full flex items-center justify-center mx-auto mb-4">
                       <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138z" />
                       </svg>
                     </div>
                     <CardTitle className="text-xl font-bold">Personalized Plan</CardTitle>
@@ -325,29 +325,29 @@ export function EliteProgram() {
         <TestimonialStrip />
 
         {/* Final CTA Section */}
-        <section className="py-24 bg-gradient-to-br from-knox-black to-knox-gray text-white">
+        <section className="py-16 bg-gradient-to-br from-knox-black to-knox-gray text-white">
           <div className="container">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-5xl md:text-6xl font-bold font-knockout mb-8">
+              <h2 className="text-5xl md:text-6xl font-bold font-knockout mb-6">
                 Ready to Start Your <span className="text-knox-red">Elite Transformation?</span>
               </h2>
               
-              <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                 Join thousands who have already transformed their lives with the KN0X Elite Program. 
                 Get personalized coaching, daily support, and proven results that last a lifetime.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
                 <Button 
                   onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20want%20to%20join%20the%20KN0X%20Elite%20Program%20today%20for%20₹3499.%20I'm%20committed%20to%20my%20total%20transformation%20and%20ready%20to%20start%20with%20the%20premium%20coaching.%20What's%20the%20enrollment%20process?"}
-                  className="btn-primary text-xl py-8 px-12 text-white bg-knox-red hover:bg-knox-darkred transform hover:scale-105 transition-all duration-300 shadow-2xl"
+                  className="btn-primary text-xl py-6 px-10 text-white bg-knox-red hover:bg-knox-darkred transform hover:scale-105 transition-all duration-300 shadow-2xl"
                   size="lg"
                 >
                   Join Elite Program Now - ₹3499
                 </Button>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-400">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-400">
                 <div className="flex flex-col items-center">
                   <svg className="w-8 h-8 text-knox-red mb-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -362,7 +362,7 @@ export function EliteProgram() {
                 </div>
                 <div className="flex flex-col items-center">
                   <svg className="w-8 h-8 text-knox-red mb-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd" />
+                    <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H7a1 1 0 01-.707-1.707l.804-.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd" />
                   </svg>
                   <span>Daily Progress Tracking</span>
                 </div>

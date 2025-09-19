@@ -83,34 +83,34 @@ export function Features() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feature) => (
             <Card key={`feature-${feature.title}`} className="card-3d">
-              <CardContent className="p-6 space-y-4">
-                <div className="mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-bold">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+              <CardContent className="p-5 sm:p-6 space-y-3 sm:space-y-4">
+                <div className="mb-3 sm:mb-4">{feature.icon}</div>
+                <h3 className="text-lg sm:text-xl font-bold">{feature.title}</h3>
+                <p className="text-gray-600 text-sm sm:text-base">{feature.description}</p>
               </CardContent>
             </Card>
           ))}
         </div>
 
         {/* Stats section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center card-effect">
-            <div className="text-5xl font-bold font-knockout text-knox-red mb-2">100%</div>
-            <div className="text-xl font-semibold mb-2">Result Oriented</div>
-            <p className="text-gray-600">Our clients love their results</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16">
+          <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg text-center card-effect">
+            <div className="text-4xl sm:text-5xl font-bold font-knockout text-knox-red mb-2">100%</div>
+            <div className="text-lg sm:text-xl font-semibold mb-2">Result Oriented</div>
+            <p className="text-gray-600 text-sm sm:text-base">Our clients love their results</p>
           </div>
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center card-effect">
-            <div className="text-5xl font-bold font-knockout text-knox-red mb-2">1000+</div>
-            <div className="text-xl font-semibold mb-2">First step taken</div>
-            <p className="text-gray-600">The transformation starts today</p>
+          <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg text-center card-effect">
+            <div className="text-4xl sm:text-5xl font-bold font-knockout text-knox-red mb-2">100+</div>
+            <div className="text-lg sm:text-xl font-semibold mb-2">First step taken</div>
+            <p className="text-gray-600 text-sm sm:text-base">The transformation starts today</p>
           </div>
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center card-effect">
-            <div className="text-5xl font-bold font-knockout text-knox-red mb-2">30+</div>
-            <div className="text-xl font-semibold mb-2">Expert Trainers & Nutritonists</div>
-            <p className="text-gray-600">Result-driven professionals</p>
+          <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg text-center card-effect">
+            <div className="text-4xl sm:text-5xl font-bold font-knockout text-knox-red mb-2">30+</div>
+            <div className="text-lg sm:text-xl font-semibold mb-2">Expert Trainers & Nutritonists</div>
+            <p className="text-gray-600 text-sm sm:text-base">Result-driven professionals</p>
           </div>
         </div>
       </div>

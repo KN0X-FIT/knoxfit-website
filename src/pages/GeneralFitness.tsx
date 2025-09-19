@@ -39,14 +39,14 @@ export function GeneralFitness() {
 
       <div className="min-h-screen bg-gray-50">
       {/* Slogan Section */}
-      <div className="text-center py-2 bg-knox-black">
+      <div className="text-center py-1 bg-knox-black">
         <div className="text-knox-red font-knockout text-sm tracking-widest uppercase animate-blink">
           BUILT FOR CHANGE - DESIGNED FOR YOU
         </div>
       </div>
       
       {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-knox-red via-knox-darkred to-knox-black text-white py-20 md:py-32">
+        <section className="relative bg-gradient-to-br from-knox-red via-knox-darkred to-knox-black text-white py-12">
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="container relative z-10">
             <div className="max-w-4xl mx-auto text-center">
@@ -74,11 +74,11 @@ export function GeneralFitness() {
         </section>
 
         {/* Program Overview */}
-        <section className="section bg-white">
+        <section className="py-16 bg-white">
           <div className="container">
             <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="h2 mb-6 text-knox-black">
+              <div className="text-center mb-8">
+                <h2 className="h2 mb-4 text-knox-black">
                   Your Complete Beginner Fitness Solution
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
@@ -87,7 +87,7 @@ export function GeneralFitness() {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
                 <div>
                   <img 
                     src="/gen-fitness.webp" 
@@ -96,8 +96,8 @@ export function GeneralFitness() {
                   />
                 </div>
                 <div>
-                  <h3 className="h3 mb-6 text-knox-red">Why Choose General Fitness?</h3>
-                  <ul className="space-y-4 text-gray-700">
+                  <h3 className="h3 mb-4 text-knox-red">Why Choose General Fitness?</h3>
+                  <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start gap-3">
                       <svg className="w-6 h-6 text-knox-red mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -130,15 +130,15 @@ export function GeneralFitness() {
         </section>
 
         {/* Features Section */}
-        <section className="section bg-gray-50">
+        <section className="py-16 bg-gray-50">
           <div className="container">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="h2 mb-6 text-knox-black">What's Included in Your Plan</h2>
+              <div className="text-center mb-8">
+                <h2 className="h2 mb-4 text-knox-black">What's Included in Your Plan</h2>
                 <p className="text-lg text-gray-600">Everything you need to start your sustainable fitness journey</p>
               </div>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Balanced Diet Plan */}
                 <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
                   <div className="w-16 h-16 bg-knox-red/10 rounded-lg flex items-center justify-center mb-6">
@@ -294,11 +294,11 @@ export function GeneralFitness() {
         </section>
 
         {/* Pricing Section */}
-        <section className="section bg-white">
+        <section className="py-16 bg-white">
           <div className="container">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="h2 mb-6 text-knox-black">Simple, Affordable Pricing</h2>
-              <p className="text-lg text-gray-600 mb-12">
+              <p className="text-lg text-gray-600 mb-8">
                 Get started with professional fitness guidance at an unbeatable price
               </p>
               
@@ -331,17 +331,17 @@ export function GeneralFitness() {
         </section>
 
         {/* Related Programs */}
-        <section className="section bg-gray-50">
+        <section className="py-16 bg-gray-50">
           <div className="container">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="h2 mb-6 text-knox-black">Explore Other Programs</h2>
+              <div className="text-center mb-8">
+                <h2 className="h2 mb-4 text-knox-black">Explore Other Programs</h2>
                 <p className="text-lg text-gray-600">
                   Take your fitness journey to the next level with our specialized programs
                 </p>
               </div>
               
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
                   <div className="h-40 rounded-lg mb-6 overflow-hidden">
                     <img 
@@ -392,18 +392,18 @@ export function GeneralFitness() {
         </section>
 
         {/* CTA Section */}
-        <section className="section bg-knox-black text-white">
+        <section className="py-12 bg-knox-black text-white">
           <div className="container">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="h2 mb-6">Ready to Start Your Fitness Journey?</h2>
-              <p className="text-xl mb-8 text-gray-300">
+              <h2 className="h2 mb-4">Ready to Start Your Fitness Journey?</h2>
+              <p className="text-xl mb-6 text-gray-300">
                 Join thousands of satisfied members who've transformed their lives with our General Fitness program
               </p>
               <div className="flex justify-center">
                 <Button 
                   onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20the%20General%20Fitness%20Plan%20at%20₹999/month.%20Could%20you%20provide%20more%20details%20about%20the%20balanced%20diet%20plan,%20beginner%20workout%20routine,%20and%20the%20one%20trainer%20consultation%20included?"}
                   size="lg" 
-                  className="bg-knox-red hover:bg-knox-darkred text-white font-bold text-lg px-8 py-4"
+                  className="bg-knox-red hover:bg-knox-darkred text-white font-bold text-lg px-6 py-3"
                 >
                   Join General Fitness Plan
                 </Button>

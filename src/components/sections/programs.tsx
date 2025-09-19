@@ -128,15 +128,15 @@ export function Programs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {programs.map((program) => (
             <Card
               key={program.id}
               className={`program-card card-effect ${program.popular ? 'ring-2 ring-knox-red' : ''}`}
             >
-              <div className="relative h-48 overflow-hidden rounded-t-lg">
+              <div className="relative h-40 sm:h-48 overflow-hidden rounded-t-lg">
                 {program.popular && (
-                  <div className="absolute top-4 right-4 bg-knox-red text-white px-3 py-1 rounded-full text-sm font-bold z-10">
+                  <div className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-knox-red text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold z-10">
                     Most Popular
                   </div>
                 )}
@@ -149,31 +149,31 @@ export function Programs() {
                   height={200}
                   priority={program.popular}
                 />
-                <div className="absolute bottom-4 left-4 z-10">
-                  <h3 className="text-white font-bold text-xl">{program.title}</h3>
+                <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 z-10">
+                  <h3 className="text-white font-bold text-lg sm:text-xl">{program.title}</h3>
                 </div>
               </div>
-              <CardContent className="pt-6">
-                <p className="text-gray-700 mb-4">{program.description}</p>
-                <ul className="space-y-2 mb-6">
+              <CardContent className="pt-4 sm:pt-6">
+                <p className="text-gray-700 text-sm sm:text-base mb-3 sm:mb-4">{program.description}</p>
+                <ul className="space-y-1 sm:space-y-2 mb-4 sm:mb-6">
                   {program.features.map((feature) => (
                     <li key={`${program.id}-${feature.substring(0, 10)}`} className="flex items-start">
-                      <svg className="h-5 w-5 text-knox-red mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="h-4 w-4 sm:h-5 sm:w-5 text-knox-red mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      <span className="text-gray-600">{feature}</span>
+                      <span className="text-gray-600 text-sm sm:text-base">{feature}</span>
                     </li>
                   ))}
                 </ul>
               </CardContent>
-<CardFooter className="flex flex-col gap-4 pt-0">
-  <div className="w-full flex justify-between items-center">
-    <div className="flex items-baseline space-x-2">
+<CardFooter className="flex flex-col gap-3 sm:gap-4 pt-0">
+  <div className="w-full flex flex-wrap justify-between items-center gap-2">
+    <div className="flex items-baseline space-x-1 sm:space-x-2">
       {program.originalPrice && (
-        <span className="text-xl text-gray-400 line-through">₹{program.originalPrice}</span>
+        <span className="text-lg sm:text-xl text-gray-400 line-through">₹{program.originalPrice}</span>
       )}
-      <span className="text-3xl font-bold text-knox-black">₹{program.price}</span>
-      <span className="text-gray-500 ml-1">/month</span>
+      <span className="text-2xl sm:text-3xl font-bold text-knox-black">₹{program.price}</span>
+      <span className="text-gray-500 text-xs sm:text-sm ml-1">/month</span>
     </div>
     {program.id === 'body-recomposition' && (
       <div className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
@@ -181,7 +181,7 @@ export function Programs() {
       </div>
     )}
   </div>
-                <Button onClick={() => handleChoosePlan(program.id)} className={`w-full ${program.popular ? 'btn-primary' : 'btn-secondary'}`}>
+                <Button onClick={() => handleChoosePlan(program.id)} className={`w-full ${program.popular ? 'btn-primary' : 'btn-secondary'} text-sm sm:text-base py-2 sm:py-3`}>
                   Choose Plan
                 </Button>
               </CardFooter>
@@ -189,44 +189,44 @@ export function Programs() {
           ))}
         </div>
 
-        <div className="mt-16 bg-knox-black text-white p-8 rounded-2xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="mt-12 sm:mt-16 bg-knox-black text-white p-6 sm:p-8 rounded-2xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div>
-              <div className="text-knox-red font-knockout text-xs tracking-widest uppercase mb-3">
+              <div className="text-knox-red font-knockout text-xs tracking-widest uppercase mb-2 sm:mb-3">
                 BUILT FOR CHANGE - DESIGNED FOR YOU
               </div>
-              <h3 className="h3 mb-4">KN0X-ELITE PROGRAM</h3>
-              <p className="mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">KN0X-ELITE PROGRAM</h3>
+              <p className="text-sm sm:text-base mb-3 sm:mb-4">
                 Get an extra month FREE when you consistently follow your plan and share daily updates.
                 Only available with our Body Recomposition program.
               </p>
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-2 mb-4 sm:mb-6">
                 <li className="flex items-start">
-                  <svg className="h-5 w-5 text-knox-red mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-4 w-4 sm:h-5 sm:w-5 text-knox-red mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Send daily updates without missing any day</span>
+                  <span className="text-sm sm:text-base">Send daily updates without missing any day</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-5 w-5 text-knox-red mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-4 w-4 sm:h-5 sm:w-5 text-knox-red mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Stick to your plan consistently</span>
+                  <span className="text-sm sm:text-base">Stick to your plan consistently</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-5 w-5 text-knox-red mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-4 w-4 sm:h-5 sm:w-5 text-knox-red mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Get rewarded with an additional month free</span>
+                  <span className="text-sm sm:text-base">Get rewarded with an additional month free</span>
                 </li>
               </ul>
             </div>
-            <div className="bg-knox-red/10 p-6 rounded-xl border border-knox-red/20 transform rotate-1 hover:rotate-0 transition-transform duration-300">
+            <div className="bg-knox-red/10 p-4 sm:p-6 rounded-xl border border-knox-red/20 transform rotate-1 hover:rotate-0 transition-transform duration-300">
               <div className="text-center">
-                <span className="text-knox-red text-5xl font-bold font-knockout">1 MONTH</span>
-                <div className="text-2xl mt-2 font-bold">FREE</div>
-                <p className="mt-4 text-gray-300">Complete daily check-ins for 30 days</p>
-                <Button onClick={()=> {navigate('/elite-program', { replace: true }); window.scrollTo(0, 0);}} className="mt-6 btn-primary">Learn More About Elite Program</Button>
+                <span className="text-knox-red text-3xl sm:text-5xl font-bold font-knockout">1 MONTH</span>
+                <div className="text-xl sm:text-2xl mt-1 sm:mt-2 font-bold">FREE</div>
+                <p className="mt-3 sm:mt-4 text-gray-300 text-sm sm:text-base">Complete daily check-ins for 30 days</p>
+                <Button onClick={()=> {navigate('/elite-program', { replace: true }); window.scrollTo(0, 0);}} className="mt-4 sm:mt-6 btn-primary text-sm sm:text-base py-2 sm:py-3">Learn More About Elite Program</Button>
               </div>
             </div>
           </div>

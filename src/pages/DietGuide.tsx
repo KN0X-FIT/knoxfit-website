@@ -14,14 +14,14 @@ export function DietGuide() {
       />
       <div className="min-h-screen bg-white">
       {/* Slogan Section */}
-      <div className="text-center py-2 bg-knox-black">
+      <div className="text-center py-1 bg-knox-black">
         <div className="text-knox-red font-knockout text-sm tracking-widest uppercase animate-blink">
           BUILT FOR CHANGE - DESIGNED FOR YOU
         </div>
       </div>
       
       {/* Hero Section */}
-      <section className="bg-knox-black text-white py-24">
+      <section className="bg-knox-black text-white py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold font-knockout mb-6">
@@ -173,15 +173,15 @@ export function DietGuide() {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-gray-50 p-8 rounded-2xl text-center">
-              <h3 className="text-3xl font-bold mb-4">Start Your Transformation Today</h3>
-              <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+            <div className="bg-gray-50 p-4 rounded-2xl text-center">
+              <h3 className="text-3xl font-bold mb-2">Start Your Transformation Today</h3>
+              <p className="text-gray-600 mb-4 max-w-2xl mx-auto">
                 Get your personalized diet plan and start seeing results in just 2-3 weeks. 
                 No supplements, no crash diets - just sustainable nutrition that works.
               </p>
               <Button 
                 onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20want%20to%20get%20started%20with%20your%20sustainable%20diet%20plan%20for%20₹799.%20I'm%20ready%20to%20transform%20my%20eating%20habits%20and%20achieve%20my%20health%20goals.%20How%20can%20I%20begin?"}
-                className="btn-primary text-lg py-6 px-8"
+                className="btn-primary text-lg py-4 px-6"
                 size="lg"
               >
                 Get Your Diet Plan - ₹799
