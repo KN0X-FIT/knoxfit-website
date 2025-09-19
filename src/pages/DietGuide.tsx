@@ -14,7 +14,7 @@ export function DietGuide() {
       />
       <div className="min-h-screen bg-white">
       {/* Slogan Section */}
-      <div className="text-center py-4 bg-knox-black">
+      <div className="text-center py-2 bg-knox-black">
         <div className="text-knox-red font-knockout text-sm tracking-widest uppercase animate-blink">
           BUILT FOR CHANGE - DESIGNED FOR YOU
         </div>
