@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card';
@@ -83,19 +83,28 @@ const programs: Program[] = [
 export function Programs() {
   const navigate = useNavigate();
   
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const handleChoosePlan = (programId: string) => {
     switch(programId) {
       case 'diet-plan':
-        navigate('/diet-guide');
+        navigate('/diet-guide', { replace: true });
+        window.scrollTo(0, 0);
         break;
       case 'workout-plan':
-        navigate('/custom-workout-plan');
+        navigate('/custom-workout-plan', { replace: true });
+        window.scrollTo(0, 0);
         break;
       case 'total-recomposition':
-        navigate('/elite-program');
+        navigate('/elite-program', { replace: true });
+        window.scrollTo(0, 0);
         break;
       case 'general-fitness':
-        navigate('/general-fitness');
+        navigate('/general-fitness', { replace: true });
+        window.scrollTo(0, 0);
         break;
       default:
         // Default to WhatsApp for any other program
@@ -217,7 +226,7 @@ export function Programs() {
                 <span className="text-knox-red text-5xl font-bold font-knockout">1 MONTH</span>
                 <div className="text-2xl mt-2 font-bold">FREE</div>
                 <p className="mt-4 text-gray-300">Complete daily check-ins for 30 days</p>
-                <Button onClick={()=> navigate('/elite-program')} className="mt-6 btn-primary">Learn More About Elite Program</Button>
+                <Button onClick={()=> {navigate('/elite-program', { replace: true }); window.scrollTo(0, 0);}} className="mt-6 btn-primary">Learn More About Elite Program</Button>
               </div>
             </div>
           </div>
