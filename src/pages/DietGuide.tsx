@@ -31,13 +31,14 @@ export function DietGuide() {
               Transform your eating habits with our personalized diet plans. No expensive supplements, 
               no crash diets - just sustainable nutrition that fits your lifestyle and delivers real results.
             </p>
-            <Button 
-              onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20your%20sustainable%20diet%20plan%20for%20₹799.%20Could%20you%20provide%20more%20details%20about%20the%20nutrition%20plan,%20meal%20guidance,%20and%20how%20it%20works%20without%20supplements?"}
-              className="btn-primary text-lg py-6 px-8"
-              size="lg"
+            <a 
+              href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20%E2%82%B9799%20sustainable%20diet%20plan.%20How%20does%20it%20work%20without%20supplements%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-lg py-6 px-8 block text-center"
             >
               Get Your Diet Plan - ₹799
-            </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -179,13 +180,14 @@ export function DietGuide() {
                 Get your personalized diet plan and start seeing results in just 2-3 weeks. 
                 No supplements, no crash diets - just sustainable nutrition that works.
               </p>
-              <Button 
-                onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20want%20to%20get%20started%20with%20your%20sustainable%20diet%20plan%20for%20₹799.%20I'm%20ready%20to%20transform%20my%20eating%20habits%20and%20achieve%20my%20health%20goals.%20How%20can%20I%20begin?"}
-                className="btn-primary text-lg py-4 px-6"
-                size="lg"
+              <a 
+                href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20get%20started%20with%20the%20%E2%82%B9799%20diet%20plan.%20I%27m%20ready%20to%20transform%20my%20eating%20habits%21"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-lg py-4 px-6 block text-center"
               >
                 Get Your Diet Plan - ₹799
-              </Button>
+              </a>
             </div>
           </div>
         </div>

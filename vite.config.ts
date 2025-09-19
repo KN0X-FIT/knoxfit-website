@@ -13,6 +13,17 @@ export default defineConfig({
   build: {
     outDir: "dist",
     minify: "terser",
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+        pure_funcs: ['console.log', 'console.info', 'console.debug']
+      },
+      mangle: true,
+      format: {
+        comments: false,
+      }
+    },
     cssMinify: true,
     rollupOptions: {
       output: {
@@ -31,7 +42,11 @@ export default defineConfig({
           testimonials: ['./src/pages/Testimonials.tsx'],
           freeplan: ['./src/pages/FreePlan.tsx'],
           // UI components that are used across multiple pages
-          ui: ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
+          ui: [
+            '@radix-ui/react-dialog', 
+            '@radix-ui/react-dropdown-menu',
+            // Removed unused Radix UI components to reduce bundle size
+          ],
         },
         assetFileNames: (assetInfo) => {
           const info = assetInfo.name?.split('.') ?? [];
@@ -49,7 +64,7 @@ export default defineConfig({
         entryFileNames: 'assets/js/[name]-[hash].js',
       },
     },
-    target: 'esnext',
+    target: 'es2018', // Reduced target for smaller bundles
     reportCompressedSize: false,
     chunkSizeWarningLimit: 1000,
     // Enable CSS code splitting
@@ -57,6 +72,10 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom'],
+    // Enable esbuild optimization
+    esbuildOptions: {
+      target: 'es2018',
+    }
   },
   server: {
     open: true,

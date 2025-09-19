@@ -31,13 +31,14 @@ export function CustomWorkoutPlan() {
               Get a personalized workout plan designed specifically for your fitness level, goals, and lifestyle. 
               No generic routines - just science-backed exercises that deliver real results.
             </p>
-            <Button 
-              onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20getting%20a%20custom%20workout%20plan%20for%20₹799.%20Could%20you%20tell%20me%20more%20about%20what's%20included,%20how%20the%20consultation%20works,%20and%20how%20to%20get%20started?"}
-              className="btn-primary text-lg py-6 px-8"
-              size="lg"
+            <a 
+              href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20%E2%82%B9799%20custom%20workout%20plan.%20What%27s%20included%20and%20how%20does%20it%20work%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-lg py-6 px-8 block text-center"
             >
               Get Your Custom Plan - ₹799
-            </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -154,13 +155,14 @@ export function CustomWorkoutPlan() {
                 Get your personalized workout plan today and start seeing results in just 2-3 weeks. 
                 Our Expert Trainers will create a plan that's perfect for your fitness level and goals.
               </p>
-              <Button 
-                onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20want%20to%20get%20started%20with%20a%20custom%20workout%20plan%20for%20₹799.%20I'm%20ready%20to%20begin%20my%20fitness%20journey%20and%20would%20like%20to%20book%20my%20consultation.%20What%20are%20the%20next%20steps?"}
-                className="btn-primary text-lg py-4 px-6"
-                size="lg"
+              <a 
+                href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20get%20started%20with%20the%20%E2%82%B9799%20custom%20workout%20plan.%20I%27m%20ready%20to%20begin%20my%20fitness%20journey%21"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-lg py-4 px-6 block text-center"
               >
                 Get Started Now - ₹799
-              </Button>
+              </a>
             </div>
           </div>
         </div>

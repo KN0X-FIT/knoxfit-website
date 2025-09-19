@@ -156,12 +156,14 @@ export function Blog() {
             <p className="text-gray-300 mb-8">
               Get weekly fitness tips, workout plans, and nutrition advice delivered to your inbox.
             </p>
-            <Button 
-              onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20would%20like%20to%20subscribe%20to%20your%20fitness%20tips%20and%20receive%20regular%20updates%20about%20nutrition,%20workouts,%20and%20healthy%20lifestyle%20tips.%20Please%20add%20me%20to%20your%20updates%20list."}
-              className="btn-primary"
+            <a 
+              href="https://wa.me/919380422603?text=Hi%21%20I%27d%20like%20to%20subscribe%20to%20your%20fitness%20tips%20and%20updates."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary block text-center"
             >
               Subscribe for Free Tips
-            </Button>
+            </a>
           </div>
         </div>
       </section>

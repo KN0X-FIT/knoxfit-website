@@ -143,7 +143,9 @@ export function FAQ() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a 
-                href="https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20have%20some%20questions%20about%20your%20fitness%20programs.%20Could%20you%20please%20help%20me%20understand%20more%20about%20the%20pricing,%20duration,%20and%20what's%20included%20in%20each%20program?"
+                href="https://wa.me/919380422603?text=Hi%21%20I%20have%20questions%20about%20your%20fitness%20programs.%20Can%20you%20help%20me%20understand%20pricing%20and%20what%27s%20included%3F"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-knox-red text-white px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors text-sm sm:text-base"
               >
                 WhatsApp Us

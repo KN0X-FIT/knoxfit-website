@@ -61,13 +61,14 @@ export function GeneralFitness() {
                   <span className="text-3xl font-bold">₹999</span>
                   <span className="text-lg ml-2">/ month</span>
                 </div>
-                <Button 
-                  onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20the%20General%20Fitness%20Plan%20at%20₹999/month.%20Could%20you%20provide%20more%20details%20about%20the%20balanced%20diet%20plan,%20beginner%20workout%20routine,%20and%20the%20one%20trainer%20consultation%20included?"}
-                  size="lg" 
-                  className="bg-white text-knox-red hover:bg-gray-100 font-bold text-lg px-8 py-4"
+                <a 
+                  href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20General%20Fitness%20Plan%20at%20%E2%82%B9999%2Fmonth.%20What%27s%20included%20in%20the%20plan%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-knox-red hover:bg-gray-100 font-bold text-lg px-8 py-4 rounded-lg block text-center"
                 >
                   Join General Fitness Plan
-                </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -314,13 +315,14 @@ export function GeneralFitness() {
                   <div className="text-xl text-gray-600">per month</div>
                 </div>
                 
-                <Button 
-                  onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20the%20General%20Fitness%20Plan%20at%20₹999/month.%20Could%20you%20provide%20more%20details%20about%20the%20balanced%20diet%20plan,%20beginner%20workout%20routine,%20and%20the%20one%20trainer%20consultation%20included?"}
-                  size="lg" 
-                  className="w-full bg-knox-red hover:bg-knox-darkred text-white font-bold text-xl py-4"
+                <a 
+                  href="https://wa.me/919380422603?text=Hi%21%20Interested%20in%20the%20General%20Fitness%20Plan.%20What%27s%20included%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-knox-red hover:bg-knox-darkred text-white font-bold text-xl py-4 rounded-lg block text-center"
                 >
                   Join General Fitness Plan
-                </Button>
+                </a>
                 
                 <p className="text-sm text-gray-600 mt-4">
                   Start your transformation today • Cancel anytime • No hidden fees
@@ -400,13 +402,14 @@ export function GeneralFitness() {
                 Join thousands of satisfied members who've transformed their lives with our General Fitness program
               </p>
               <div className="flex justify-center">
-                <Button 
-                  onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20the%20General%20Fitness%20Plan%20at%20₹999/month.%20Could%20you%20provide%20more%20details%20about%20the%20balanced%20diet%20plan,%20beginner%20workout%20routine,%20and%20the%20one%20trainer%20consultation%20included?"}
-                  size="lg" 
-                  className="bg-knox-red hover:bg-knox-darkred text-white font-bold text-lg px-6 py-3"
+                <a 
+                  href="https://wa.me/919380422603?text=Hi%21%20Interested%20in%20the%20General%20Fitness%20Plan.%20What%27s%20included%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-knox-red hover:bg-knox-darkred text-white font-bold text-lg px-6 py-3 rounded-lg block"
                 >
                   Join General Fitness Plan
-                </Button>
+                </a>
               </div>
             </div>
           </div>

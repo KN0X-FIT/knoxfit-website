@@ -103,102 +103,94 @@ export function Navbar() {
           <a href="/contact" className="header-nav-link text-sm lg:text-base">Contact</a>
         </nav>
 
-        {/* Mobile menu button */}
+        {/* Creative Mobile menu button */}
         <button
           onClick={toggleMenu}
-          className="flex md:hidden items-center p-2 text-knox-black"
+          className={`flex md:hidden items-center justify-center p-2 rounded-lg transition-all duration-300 ${isMenuOpen ? 'bg-knox-red' : 'bg-knox-red/10 hover:bg-knox-red/20'}`}
           aria-expanded={isMenuOpen}
         >
-          <svg
-            className="h-5 w-5 sm:h-6 sm:w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            {isMenuOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
+          <div className="relative w-6 h-6 flex flex-col justify-center items-center">
+            <span className={`block absolute h-0.5 w-5 bg-knox-red rounded-sm transition-all duration-300 ${isMenuOpen ? 'rotate-45' : '-translate-y-1.5'}`}></span>
+            <span className={`block absolute h-0.5 w-5 bg-knox-red rounded-sm transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+            <span className={`block absolute h-0.5 w-5 bg-knox-red rounded-sm transition-all duration-300 ${isMenuOpen ? '-rotate-45' : 'translate-y-1.5'}`}></span>
+          </div>
         </button>
       </div>
 
-      {/* Mobile menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
-          <div className="container py-3 sm:py-4 space-y-1.5 sm:space-y-2">
-            <a href="/" className="block py-2.5 sm:py-3 header-nav-link text-sm sm:text-base">Home</a>
-            
-            {/* Mobile Programs Menu */}
-            <div className="border-b border-gray-100 pb-1.5 sm:pb-2">
-              <button 
-                onClick={togglePrograms}
-                className="flex items-center justify-between w-full py-2.5 sm:py-3 header-nav-link header-nav-link-programs-mobile text-left text-sm sm:text-base"
+      {/* Creative Mobile menu with animation */}
+      <div className={`md:hidden bg-white border-t border-gray-200 overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className="container py-4 space-y-2 animate-fadeIn">
+          <a href="/" className="block py-3 header-nav-link text-base font-medium rounded-lg px-4 transition-all duration-300 hover:bg-knox-red/10 active:scale-95">🏠 Home</a>
+          
+          {/* Mobile Programs Menu with creative styling */}
+          <div className="border-b border-gray-100 pb-2">
+            <button 
+              onClick={togglePrograms}
+              className={`flex items-center justify-between w-full py-3 header-nav-link header-nav-link-programs-mobile text-left text-base font-medium rounded-lg px-4 transition-all duration-300 ${isProgramsOpen ? 'bg-knox-red/10' : 'hover:bg-knox-red/10'}`}
+            >
+              <span>💪 Programs</span>
+              <svg 
+                className={`w-4 h-4 transition-transform duration-300 ${isProgramsOpen ? 'rotate-180 text-knox-red' : 'text-gray-500'}`} 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
               >
-                <span>Programs</span>
-                <svg 
-                  className={`w-3 h-3 sm:w-4 sm:h-4 transition-transform ${
-                    isProgramsOpen ? 'rotate-180' : ''
-                  }`} 
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              
-              {/* Mobile Programs Submenu */}
-              {isProgramsOpen && (
-                <div className="pl-3 sm:pl-4 pt-1.5 sm:pt-2 space-y-1.5 sm:space-y-2 bg-gray-50 rounded-lg mt-2">
-                  {/* Diet Plans */}
-                  <a href="/diet-guide" className="block py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg hover:bg-white transition-colors text-sm">
-                    <div className="font-medium text-gray-900">Diet Plans</div>
-                    <p className="text-xs text-gray-600 mt-1">Personalized nutrition guides</p>
-                  </a>
-                  
-                  {/* Elite Program - Highlighted */}
-                  <a href="/elite-program" className="block py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg bg-gradient-to-r from-knox-red/10 to-knox-red/5 border border-knox-red/20">
-                    <div className="flex items-center gap-1.5 sm:gap-2 mb-1">
-                      <span className="font-semibold text-knox-red text-sm">Elite Program</span>
-                      <span className="bg-knox-red text-white text-xs px-1.5 py-0.5 rounded-full font-bold">NEW</span>
-                    </div>
-                    <p className="text-xs text-gray-600">Premium 1-on-1 coaching</p>
-                  </a>
-                  
-                  {/* Workout Plans */}
-                  <a href="/custom-workout-plan" className="block py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg hover:bg-white transition-colors text-sm">
-                    <div className="font-medium text-gray-900">Workout Plans</div>
-                    <p className="text-xs text-gray-600 mt-1">Custom exercise routines</p>
-                  </a>
-                  
-                  {/* General Fitness */}
-                  <a href="/general-fitness" className="block py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg hover:bg-white transition-colors text-sm mb-1.5 sm:mb-2">
-                    <div className="font-medium text-gray-900">General Fitness</div>
-                    <p className="text-xs text-gray-600 mt-1">Balanced diet & workout plan</p>
-                  </a>
-                </div>
-              )}
-            </div>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
             
-            <a href="/testimonials" className="block py-2.5 sm:py-3 header-nav-link text-sm sm:text-base">Testimonials</a>
-            <a href="/free-plan" className="block py-2.5 sm:py-3 header-nav-link text-knox-red font-semibold text-sm sm:text-base">🎁 Free Plan</a>
-            <a href="/blog" className="block py-2.5 sm:py-3 header-nav-link text-sm sm:text-base">Blog</a>
-            <a href="/contact" className="block py-2.5 sm:py-3 header-nav-link text-sm sm:text-base">Contact</a>
+            {/* Mobile Programs Submenu with slide animation */}
+            <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isProgramsOpen ? 'max-h-96 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
+              <div className="pl-4 space-y-2 bg-gray-50 rounded-xl p-3 mx-2">
+                {/* Diet Plans */}
+                <a href="/diet-guide" className="block py-3 px-4 rounded-lg hover:bg-white transition-all duration-300 text-sm active:scale-95 border-l-4 border-transparent hover:border-knox-red">
+                  <div className="font-medium text-gray-900">🥗 Diet Plans</div>
+                  <p className="text-xs text-gray-600 mt-1">Personalized nutrition guides</p>
+                </a>
+                
+                {/* Elite Program - Highlighted */}
+                <a href="/elite-program" className="block py-3 px-4 rounded-lg bg-gradient-to-r from-knox-red/15 to-knox-red/5 border border-knox-red/30 transition-all duration-300 active:scale-95">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="font-semibold text-knox-red text-sm">⭐ Elite Program</span>
+                    <span className="bg-knox-red text-white text-xs px-2 py-0.5 rounded-full font-bold animate-pulse">HOT</span>
+                  </div>
+                  <p className="text-xs text-gray-600">Premium 1-on-1 coaching</p>
+                </a>
+                
+                {/* Workout Plans */}
+                <a href="/custom-workout-plan" className="block py-3 px-4 rounded-lg hover:bg-white transition-all duration-300 text-sm active:scale-95 border-l-4 border-transparent hover:border-knox-red">
+                  <div className="font-medium text-gray-900">🏋️ Workout Plans</div>
+                  <p className="text-xs text-gray-600 mt-1">Custom exercise routines</p>
+                </a>
+                
+                {/* General Fitness */}
+                <a href="/general-fitness" className="block py-3 px-4 rounded-lg hover:bg-white transition-all duration-300 text-sm active:scale-95 border-l-4 border-transparent hover:border-knox-red mb-2">
+                  <div className="font-medium text-gray-900">🎯 General Fitness</div>
+                  <p className="text-xs text-gray-600 mt-1">Balanced diet & workout plan</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <a href="/testimonials" className="block py-3 header-nav-link text-base font-medium rounded-lg px-4 transition-all duration-300 hover:bg-knox-red/10 active:scale-95">💬 Testimonials</a>
+          <a href="/free-plan" className="block py-3 header-nav-link text-knox-red font-semibold text-base rounded-lg px-4 transition-all duration-300 hover:bg-knox-red/10 active:scale-95">🎁 Free Plan</a>
+          <a href="/blog" className="block py-3 header-nav-link text-base font-medium rounded-lg px-4 transition-all duration-300 hover:bg-knox-red/10 active:scale-95">📰 Blog</a>
+          <a href="/contact" className="block py-3 header-nav-link text-base font-medium rounded-lg px-4 transition-all duration-300 hover:bg-knox-red/10 active:scale-95">📞 Contact</a>
+          
+          {/* Creative CTA button for mobile menu */}
+          <div className="pt-2 px-4">
+            <a 
+              href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20learn%20more%20about%20your%20fitness%20programs."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-knox-red hover:bg-knox-darkred text-white font-bold py-3 rounded-xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg block text-center"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              💬 Chat on WhatsApp
+            </a>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }

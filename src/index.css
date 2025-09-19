@@ -356,6 +356,11 @@ html {
   50% { opacity: 0.5; }
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @layer components {
   .header-nav-link-programs {
     animation: programs-glow 3s ease-in-out infinite;
@@ -390,6 +395,31 @@ html {
   .animate-float-slow {
     animation: float 6s ease-in-out infinite;
   }
+  
+  /* Mobile menu fade in animation */
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+  }
+}
+
+/* Focus styles for accessibility */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #e63946;
+  outline-offset: 2px;
+}
+
+/* Remove focus outline from buttons to prevent red box on click */
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid #e63946;
+  outline-offset: 2px;
 }
 
 /* Scrollbar styling for better mobile experience */
@@ -409,12 +439,6 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #7a0019;
-}
-
-/* Focus styles for accessibility */
-:focus {
-  outline: 2px solid #e63946;
-  outline-offset: 2px;
 }
 
 /* Prevent text size adjustment on iOS */

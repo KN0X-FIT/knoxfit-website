@@ -42,34 +42,30 @@
     <meta name="msapplication-TileColor" content="#dc2626" />
     <link rel="canonical" href="https://knoxfit.com/" />
     
-    <!-- Optimized preconnect to important origins for faster loading -->
+    <!-- Critical preconnect hints to reduce network latency -->
+    <link rel="preconnect" href="https://kn0x-fit.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
     
     <!-- DNS prefetch for additional domains -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
     
     <!-- Load Google Fonts with better performance - non-blocking -->
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" fetchpriority="low">
     
-    <!-- Preload critical resources -->
-    <link rel="preload" href="/hero-image.webp" as="image" type="image/webp">
-    <link rel="preload" href="/final_logo-removebg-preview.png" as="image" type="image/png">
-    <link rel="preload" href="/workout-plan.avif" as="image" type="image/avif">
-    <link rel="preload" href="/gen-fitness.webp" as="image" type="image/webp">
-    <link rel="preload" href="/total-transformation.webp" as="image" type="image/webp">
-    <link rel="preload" href="/diet-plan.jpeg" as="image" type="image/jpeg">
+    <!-- Preload critical resources to reduce dependency chain -->
+    <link rel="preload" href="/assets/css/index-Dpv_XlJN.css" as="style" fetchpriority="high">
+    <link rel="preload" href="/assets/js/index-CV9HejKM.js" as="script" fetchpriority="high">
+    <link rel="preload" href="/hero-image.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preload" href="/final_logo-removebg-preview.png" as="image" type="image/png" fetchpriority="high">
     
     <!-- Preload critical fonts -->
-    <link rel="preload" href="/fonts/Knockout-HTF49-Liteweight.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Knockout-HTF52-Cruiserweight.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Knockout-HTF67-FullBantamwt.woff2" as="font" type="font/woff2" crossorigin>
-    
-    <!-- Preload critical CSS -->
-    <link rel="preload" href="/src/index.css" as="style">
+    <link rel="preload" href="/fonts/Knockout-HTF49-Liteweight.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+    <link rel="preload" href="/fonts/Knockout-HTF52-Cruiserweight.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+    <link rel="preload" href="/fonts/Knockout-HTF67-FullBantamwt.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -119,15 +115,19 @@
     }
     </script>
     
-    <!-- Optimized Google Analytics (gtag.js) - deferred loading -->
+    <!-- Lightweight Google Analytics 4 implementation - deferred loading -->
     <script>
-      // Defer loading of Google Analytics until after page load
+      // Defer loading of Google Analytics until after page load to avoid blocking
       window.addEventListener('load', function() {
+        // Create the script element
         var script = document.createElement('script');
         script.src = 'https://www.googletagmanager.com/gtag/js?id=G-JGC1PXM1MC';
         script.async = true;
+        // Add fetchpriority low to ensure it doesn't compete with critical resources
+        script.fetchPriority = 'low';
         document.head.appendChild(script);
         
+        // Initialize gtag
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
@@ -151,6 +151,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="./src/main.tsx"></script>
+    <script type="module" src="./src/main.tsx" fetchpriority="high"></script>
   </body>
 </html>

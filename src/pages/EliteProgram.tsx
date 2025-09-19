@@ -67,17 +67,14 @@ export function EliteProgram() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-                <Button 
-                  onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20the%20KN0X%20Elite%20Program%20for%20₹3499.%20Could%20you%20explain%20more%20about%20the%20complete%20transformation%20program,%20weekly%20consultations,%20and%20what%20makes%20it%20different%20from%20other%20programs?"}
-                  className="btn-primary text-xl py-8 px-12 text-white bg-knox-red hover:bg-knox-darkred transform hover:scale-105 transition-all duration-300 shadow-2xl"
-                  size="lg"
+                <a 
+                  href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20join%20the%20KN0X%20Elite%20Program%20for%20%E2%82%B93499.%20I%27m%20committed%20to%20my%20transformation%21"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary text-xl py-6 px-10 text-white bg-knox-red hover:bg-knox-darkred transform hover:scale-105 transition-all duration-300 shadow-2xl block text-center"
                 >
-                  Join Elite Program Now
-                </Button>
-                <div className="text-center">
-                  <div className="text-4xl font-bold font-knockout text-white">₹3499</div>
-                  <div className="text-gray-400">Complete Program</div>
-                </div>
+                  Join Elite Program Now - ₹3499
+                </a>
               </div>
               
               {/* Trust Indicators */}
@@ -339,7 +336,7 @@ export function EliteProgram() {
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
                 <Button 
-                  onClick={() => window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I%20want%20to%20join%20the%20KN0X%20Elite%20Program%20today%20for%20₹3499.%20I'm%20committed%20to%20my%20total%20transformation%20and%20ready%20to%20start%20with%20the%20premium%20coaching.%20What's%20the%20enrollment%20process?"}
+                  onClick={() => window.open("https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20join%20the%20KN0X%20Elite%20Program%20for%20%E2%82%B93499.%20I%27m%20committed%20to%20my%20transformation%21", "_blank")}
                   className="btn-primary text-xl py-6 px-10 text-white bg-knox-red hover:bg-knox-darkred transform hover:scale-105 transition-all duration-300 shadow-2xl"
                   size="lg"
                 >

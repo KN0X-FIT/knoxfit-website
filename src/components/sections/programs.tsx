@@ -117,7 +117,7 @@ export function Programs() {
         break;
       default:
         // Default to WhatsApp for any other program
-        window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20joining%20one%20of%20your%20programs.%20Could%20you%20help%20me%20choose%20the%20best%20program%20based%20on%20my%20fitness%20goals%20and%20current%20fitness%20level?";
+        window.open("https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20your%20fitness%20programs.%20Can%20you%20help%20me%20choose%20the%20best%20one%20for%20my%20goals%3F", "_blank");
     }
   };
   
