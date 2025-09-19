@@ -300,6 +300,11 @@
   100% { stroke-dasharray: 100 0; }
 }
 
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
 @layer components {
   .header-nav-link-programs {
     animation: programs-glow 3s ease-in-out infinite;
@@ -324,5 +329,9 @@
   .animate-check-mark {
     stroke-dasharray: 100;
     animation: check-mark 0.8s ease-out 0.3s forwards;
+  }
+  
+  .animate-blink {
+    animation: blink 2s infinite;
   }
 }

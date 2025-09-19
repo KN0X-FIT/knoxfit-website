@@ -31,7 +31,14 @@ export function EliteProgram() {
         }}
       />
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
-        {/* Hero Section */}
+      {/* Slogan Section */}
+      <div className="text-center py-4 bg-knox-black">
+        <div className="text-knox-red font-knockout text-sm tracking-widest uppercase animate-blink">
+          BUILT FOR CHANGE - DESIGNED FOR YOU
+        </div>
+      </div>
+      
+      {/* Hero Section */}
         <section className="bg-gradient-to-br from-knox-black via-knox-gray to-knox-black text-white py-24 relative overflow-hidden">
           {/* Background Effects */}
           <div className="absolute inset-0 z-0">

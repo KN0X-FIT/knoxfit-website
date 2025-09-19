@@ -13,6 +13,13 @@ export function DietGuide() {
         canonical="https://knoxfit.com/diet-guide"
       />
       <div className="min-h-screen bg-white">
+      {/* Slogan Section */}
+      <div className="text-center py-4 bg-knox-black">
+        <div className="text-knox-red font-knockout text-sm tracking-widest uppercase animate-blink">
+          BUILT FOR CHANGE - DESIGNED FOR YOU
+        </div>
+      </div>
+      
       {/* Hero Section */}
       <section className="bg-knox-black text-white py-24">
         <div className="container">

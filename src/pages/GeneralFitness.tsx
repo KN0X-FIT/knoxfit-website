@@ -38,7 +38,14 @@ export function GeneralFitness() {
       />
 
       <div className="min-h-screen bg-gray-50">
-        {/* Hero Section */}
+      {/* Slogan Section */}
+      <div className="text-center py-4 bg-knox-black">
+        <div className="text-knox-red font-knockout text-sm tracking-widest uppercase animate-blink">
+          BUILT FOR CHANGE - DESIGNED FOR YOU
+        </div>
+      </div>
+      
+      {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-knox-red via-knox-darkred to-knox-black text-white py-20 md:py-32">
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="container relative z-10">
