@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card';
 import { LazyImage } from '../LazyImage';
@@ -80,6 +81,28 @@ const programs: Program[] = [
 ];
 
 export function Programs() {
+  const navigate = useNavigate();
+  
+  const handleChoosePlan = (programId: string) => {
+    switch(programId) {
+      case 'diet-plan':
+        navigate('/diet-guide');
+        break;
+      case 'workout-plan':
+        navigate('/custom-workout-plan');
+        break;
+      case 'total-recomposition':
+        navigate('/elite-program');
+        break;
+      case 'general-fitness':
+        navigate('/general-fitness');
+        break;
+      default:
+        // Default to WhatsApp for any other program
+        window.location.href = "https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20joining%20one%20of%20your%20programs.%20Could%20you%20help%20me%20choose%20the%20best%20program%20based%20on%20my%20fitness%20goals%20and%20current%20fitness%20level?";
+    }
+  };
+  
   return (
     <section className="bg-white py-24" id="programs">
       <div className="container">
@@ -149,7 +172,7 @@ export function Programs() {
       </div>
     )}
   </div>
-                <Button onClick={()=>{window.location.href = " https://wa.me/919380422603?text=Hi%20KN0X-FIT!%20I'm%20interested%20in%20joining%20one%20of%20your%20programs.%20Could%20you%20help%20me%20choose%20the%20best%20program%20based%20on%20my%20fitness%20goals%20and%20current%20fitness%20level?"}} className={`w-full ${program.popular ? 'btn-primary' : 'btn-secondary'}`}>
+                <Button onClick={() => handleChoosePlan(program.id)} className={`w-full ${program.popular ? 'btn-primary' : 'btn-secondary'}`}>
                   Choose Plan
                 </Button>
               </CardFooter>
@@ -194,7 +217,7 @@ export function Programs() {
                 <span className="text-knox-red text-5xl font-bold font-knockout">1 MONTH</span>
                 <div className="text-2xl mt-2 font-bold">FREE</div>
                 <p className="mt-4 text-gray-300">Complete daily check-ins for 30 days</p>
-                <Button onClick={()=>{window.location.href = "/elite-program"}} className="mt-6 btn-primary">Learn More About Elite Program</Button>
+                <Button onClick={()=> navigate('/elite-program')} className="mt-6 btn-primary">Learn More About Elite Program</Button>
               </div>
             </div>
           </div>
