@@ -110,9 +110,9 @@ export function Navbar() {
           aria-expanded={isMenuOpen}
         >
           <div className="relative w-6 h-6 flex flex-col justify-center items-center">
-            <span className={`block absolute h-0.5 w-5 bg-knox-red rounded-sm transition-all duration-300 ${isMenuOpen ? 'rotate-45' : '-translate-y-1.5'}`}></span>
-            <span className={`block absolute h-0.5 w-5 bg-knox-red rounded-sm transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-            <span className={`block absolute h-0.5 w-5 bg-knox-red rounded-sm transition-all duration-300 ${isMenuOpen ? '-rotate-45' : 'translate-y-1.5'}`}></span>
+            <span className={`block absolute h-0.5 w-5 rounded-sm transition-all duration-300 ${isMenuOpen ? 'rotate-45 bg-black' : '-translate-y-1.5 bg-knox-red'}`}></span>
+            <span className={`block absolute h-0.5 w-5 rounded-sm transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100 bg-knox-red'}`}></span>
+            <span className={`block absolute h-0.5 w-5 rounded-sm transition-all duration-300 ${isMenuOpen ? '-rotate-45 bg-black' : 'translate-y-1.5 bg-knox-red'}`}></span>
           </div>
         </button>
       </div>
@@ -186,7 +186,7 @@ export function Navbar() {
               className="w-full bg-knox-red hover:bg-knox-darkred text-white font-bold py-3 rounded-xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg block text-center"
               onClick={() => setIsMenuOpen(false)}
             >
-              💬 Chat on WhatsApp
+              👊 Build the change you deserve
             </a>
           </div>
         </div>
