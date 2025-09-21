@@ -16,7 +16,8 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
-      <div className="container flex h-16 sm:h-20 items-center justify-between">
+      {/* Desktop navbar */}
+      <div className="container hidden md:flex h-16 sm:h-20 items-center justify-between">
         <div className="flex items-center">
           <a href="/" className="flex items-center">
             <img src="/final_logo-removebg-preview.png" alt="KN0X-FIT Logo - Custom Workout Plans and Diet Guides for Sustainable Fitness" className="h-12 sm:h-16 w-auto" />
@@ -103,7 +104,7 @@ export function Navbar() {
           <a href="/contact" className="header-nav-link text-sm lg:text-base">Contact</a>
         </nav>
 
-        {/* Creative Mobile menu button */}
+        {/* Desktop menu button */}
         <button
           onClick={toggleMenu}
           className={`flex md:hidden items-center justify-center p-2 rounded-lg transition-all duration-300 ${isMenuOpen ? 'bg-knox-red' : 'bg-knox-red/10 hover:bg-knox-red/20'}`}
@@ -115,6 +116,31 @@ export function Navbar() {
             <span className={`block absolute h-0.5 w-5 rounded-sm transition-all duration-300 ${isMenuOpen ? '-rotate-45 bg-black' : 'translate-y-1.5 bg-knox-red'}`}></span>
           </div>
         </button>
+      </div>
+
+      {/* Mobile navbar with centered logo */}
+      <div className="md:hidden flex h-16 items-center justify-center relative">
+        {/* Centered logo for mobile - bigger image only */}
+        <div className="flex items-center justify-center absolute left-1/2 transform -translate-x-1/2">
+          <a href="/" className="flex items-center">
+            <img src="/final_logo-removebg-preview.png" alt="KN0X-FIT Logo - Custom Workout Plans and Diet Guides for Sustainable Fitness" className="h-14 w-auto" />
+          </a>
+        </div>
+
+        {/* Mobile menu button aligned to right */}
+        <div className="ml-auto pr-4">
+          <button
+            onClick={toggleMenu}
+            className={`flex items-center justify-center p-2 rounded-lg transition-all duration-300 ${isMenuOpen ? 'bg-knox-red' : 'bg-knox-red/10 hover:bg-knox-red/20'}`}
+            aria-expanded={isMenuOpen}
+          >
+            <div className="relative w-6 h-6 flex flex-col justify-center items-center">
+              <span className={`block absolute h-0.5 w-5 rounded-sm transition-all duration-300 ${isMenuOpen ? 'rotate-45 bg-black' : '-translate-y-1.5 bg-knox-red'}`}></span>
+              <span className={`block absolute h-0.5 w-5 rounded-sm transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100 bg-knox-red'}`}></span>
+              <span className={`block absolute h-0.5 w-5 rounded-sm transition-all duration-300 ${isMenuOpen ? '-rotate-45 bg-black' : 'translate-y-1.5 bg-knox-red'}`}></span>
+            </div>
+          </button>
+        </div>
       </div>
 
       {/* Creative Mobile menu with animation */}

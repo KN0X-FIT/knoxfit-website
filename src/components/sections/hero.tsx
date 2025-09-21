@@ -85,10 +85,15 @@ export function Hero() {
               </svg>
             </div>
 
-            {/* Floating stat card */}
-            <div className="absolute -right-4 -bottom-4 bg-white p-4 rounded-lg shadow-xl animate-float transform" style={{ animationDelay: "1.5s" }}>
-              <p className="text-knox-black font-bold">KN0X-ELITE PROGRAM</p>
-              <p className="text-sm text-gray-600">Get 1 month FREE!</p>
+            {/* Creative floating button for Free Plan - Entire element is clickable with same animation as hero image */}
+            <div className="absolute -right-4 -bottom-4 animate-float transform" style={{ animationDelay: "0.5s" }}>
+              <a 
+                href="/free-plan" 
+                className="block w-full h-full bg-white text-black font-bold py-3 px-4 rounded-lg shadow-xl hover:bg-gray-100 hover:scale-105 transition-all duration-300 text-center min-w-[160px]"
+              >
+                <p className="font-bold text-knox-red text-sm">KN0X-FREE-PLAN</p>
+                <p className="text-xs text-black mt-1">Get Free Plan Now!</p>
+              </a>
             </div>
           </div>
         </div>

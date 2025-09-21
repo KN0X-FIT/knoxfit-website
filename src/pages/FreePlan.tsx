@@ -172,7 +172,7 @@ export function FreePlan() {
                     {/* Phone */}
                     <div className="space-y-2">
                       <Label htmlFor="phone" className="text-gray-700 font-medium">
-                        Phone Number * (10-15 digits only)
+                        Phone Number *
                       </Label>
                       <Input
                         id="phone"

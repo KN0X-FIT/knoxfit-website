@@ -573,6 +573,13 @@ html {
   100% { transform: translateY(0px); }
 }
 
+/* Even slower float animation for the free plan button */
+@keyframes float-slow {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
 @layer components {
   .header-nav-link-programs {
     animation: programs-glow 3s ease-in-out infinite;
@@ -603,6 +610,11 @@ html {
     animation: blink 2s infinite;
   }
   
+  /* Main float animation for hero elements */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
   /* Custom float animation for hero image - reverted to original speed */
   .animate-float-slow {
     animation: float 6s ease-in-out infinite;
@@ -616,6 +628,11 @@ html {
   /* Elite Program specific animations */
   .elite-float {
     animation: float 4s ease-in-out infinite;
+  }
+  
+  /* Even slower float animation for free plan button - now deprecated */
+  .animate-float-button {
+    animation: float-slow 12s ease-in-out infinite;
   }
 }
 
