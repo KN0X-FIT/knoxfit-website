@@ -92,7 +92,7 @@ export function Home() {
         <HowItWorks />
         <Programs />
         <Features />
-        {/* <Gallery /> */}
+        <Gallery />
         <Testimonials />
         <FAQ />
         <Contact />

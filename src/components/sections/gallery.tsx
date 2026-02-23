@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Card, CardContent } from '../ui/card';
 import { LazyImage } from '../LazyImage';
-import { Dialog, DialogContent } from '../ui/dialog';
 
 const galleryImages = [
   {
@@ -42,23 +41,11 @@ const galleryImages = [
 ];
 
 export function Gallery() {
-  const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
-  const [isOpen, setIsOpen] = useState(false);
-
-  const openModal = (image: typeof galleryImages[0]) => {
-    setSelectedImage(image);
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
-    setSelectedImage(null);
-  };
-
+  // Simplified version without modal for now
   return (
     <section className="py-16 sm:py-24 bg-white" id="gallery">
       <div className="container">
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div className="text-center max-w-3xs mx-auto mb-12 sm:mb-16">
           <div className="text-knox-red font-knockout text-sm tracking-widest uppercase mb-4">
             INSIDE OUR PROGRAMS
           </div>
@@ -76,7 +63,6 @@ export function Gallery() {
             <Card 
               key={image.id} 
               className="card-effect overflow-hidden group cursor-pointer transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-              onClick={() => openModal(image)}
             >
               <CardContent className="p-0">
                 <div className="relative overflow-hidden rounded-t-lg">
@@ -93,62 +79,15 @@ export function Gallery() {
                       <p className="text-gray-200 text-sm">{image.description}</p>
                     </div>
                   </div>
-                  {/* Click indicator */}
-                  <div className="absolute top-4 right-4 bg-knox-red/80 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                  </div>
                 </div>
                 <div className="p-4">
                   <h3 className="font-bold text-lg mb-1">{image.title}</h3>
                   <p className="text-gray-600 text-sm">{image.description}</p>
-                  <div className="mt-3 text-knox-red text-sm font-medium flex items-center">
-                    <span>Click to view full size</span>
-                    <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                  </div>
                 </div>
               </CardContent>
             </Card>
           ))}
         </div>
-
-        {/* Modal for full-size image viewing */}
-        <Dialog open={isOpen} onOpenChange={setIsOpen}>
-          <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-hidden">
-            {selectedImage && (
-              <div className="relative">
-                <div className="relative h-[70vh]">
-                  <LazyImage
-                    src={selectedImage.src}
-                    alt={selectedImage.alt}
-                    className="w-full h-full object-contain bg-gray-100"
-                    width={800}
-                    height={600}
-                  />
-                </div>
-                <div className="p-6 bg-white">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <h3 className="text-2xl font-bold text-knox-black mb-2">{selectedImage.title}</h3>
-                      <p className="text-gray-600">{selectedImage.description}</p>
-                    </div>
-                    <button
-                      onClick={closeModal}
-                      className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-                    >
-                      <svg className="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            )}
-          </DialogContent>
-        </Dialog>
 
         {/* CTA */}
         <div className="text-center mt-12 sm:mt-16">
