@@ -41,7 +41,7 @@ export function Home() {
         description="KN0X-FIT delivers affordable custom workout and diet plans for beginners. No supplements. Just sustainable fitness. Start your transformation with our free 5-day plan."
         keywords="custom workout plan for beginners, sustainable diet without supplements, affordable fitness coaching, personal trainer online, home workout for beginners with no equipment, best workout plan for desk job people, diet plan weight loss, workout routine home, fitness transformation, body recomposition plan"
         canonical="https://knoxfit.com/"
-        ogImage="https://knoxfit.com/images/hero-cover.jpg"
+        ogImage="https://knoxfit.com/hero-image.webp"
         breadcrumb={[
           { name: "Home", url: "https://knoxfit.com/" }
         ]}
@@ -50,9 +50,9 @@ export function Home() {
         type="organization"
         data={{
           image: [
-            "https://knoxfit.com/images/hero-cover.jpg",
-            "https://knoxfit.com/diet-plan.webp",
-            "https://knoxfit.com/workout-plan.webp"
+            "https://knoxfit.com/hero-image.webp",
+            "https://knoxfit.com/diet-plan.jpeg",
+            "https://knoxfit.com/workout-plan.avif"
           ]
         }}
       />
