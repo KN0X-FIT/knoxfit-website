@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from './button';
 import { Dialog, DialogContent, DialogTrigger } from './dialog';
 
@@ -16,11 +16,11 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
-      {/* Desktop navbar */}
-      <div className="container hidden md:flex h-16 sm:h-20 items-center justify-between">
+      {/* Desktop navbar - kept small */}
+      <div className="container hidden md:flex h-14 sm:h-16 items-center justify-between">
         <div className="flex items-center">
           <a href="/" className="flex items-center">
-            <img src="/final_logo-removebg-preview.png" alt="KN0X-FIT Logo - Custom Workout Plans and Diet Guides for Sustainable Fitness" className="h-12 sm:h-16 w-auto" />
+            <img src="/final_logo-removebg-preview.png" alt="KN0X-FIT Logo - Custom Workout Plans and Diet Guides for Sustainable Fitness" className="h-16 sm:h-20 w-auto" />
           </a>
         </div>
 
@@ -118,12 +118,12 @@ export function Navbar() {
         </button>
       </div>
 
-      {/* Mobile navbar with centered logo */}
-      <div className="md:hidden flex h-16 items-center justify-center relative">
+      {/* Mobile navbar with centered logo - kept small but with bigger logo */}
+      <div className="md:hidden flex h-14 items-center justify-center relative bg-white">
         {/* Centered logo for mobile - bigger image only */}
         <div className="flex items-center justify-center absolute left-1/2 transform -translate-x-1/2">
           <a href="/" className="flex items-center">
-            <img src="/final_logo-removebg-preview.png" alt="KN0X-FIT Logo - Custom Workout Plans and Diet Guides for Sustainable Fitness" className="h-14 w-auto" />
+            <img src="/final_logo-removebg-preview.png" alt="KN0X-FIT Logo - Custom Workout Plans and Diet Guides for Sustainable Fitness" className="h-16 sm:h-20 w-auto" />
           </a>
         </div>
 

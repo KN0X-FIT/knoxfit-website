@@ -66,6 +66,63 @@ const features: Feature[] = [
   }
 ];
 
+const whatYouGet = [
+  {
+    title: 'Personalized Workout Plan',
+    description: 'Custom exercise routines designed for your fitness level and goals',
+    icon: (
+      <svg className="h-6 w-6 text-knox-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    )
+  },
+  {
+    title: 'Custom Diet Guide',
+    description: 'Nutrition plan tailored to your body type and dietary preferences',
+    icon: (
+      <svg className="h-6 w-6 text-knox-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+      </svg>
+    )
+  },
+  {
+    title: 'Weekly Trainer Sessions',
+    description: 'One-on-one consultations with Expert Trainers to track progress',
+    icon: (
+      <svg className="h-6 w-6 text-knox-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+      </svg>
+    )
+  },
+  {
+    title: '1 Month Free',
+    description: 'Get eligible to KN0X-ELITE PROGRAM upon choosing the Total Transformation Plan',
+    icon: (
+      <svg className="h-6 w-6 text-knox-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+    )
+  },
+  {
+    title: 'Progress Tracking',
+    description: 'Tools to monitor your weight, measurements, and fitness improvements',
+    icon: (
+      <svg className="h-6 w-6 text-knox-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+      </svg>
+    )
+  },
+  {
+    title: '24/7 Support',
+    description: 'Access to our support team for questions and motivation',
+    icon: (
+      <svg className="h-6 w-6 text-knox-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+      </svg>
+    )
+  }
+];
+
 export function Features() {
   return (
     <section className="py-24 bg-gray-50" id="features">
@@ -93,6 +150,36 @@ export function Features() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* What You Get Section */}
+        <div className="mt-16 sm:mt-24">
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-knox-black mb-4">
+              What You Get With Our Programs
+            </h2>
+            <p className="text-gray-600 text-base sm:text-lg">
+              Everything you need for a successful fitness transformation
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {whatYouGet.map((item, index) => (
+              <Card key={index} className="card-effect">
+                <CardContent className="p-5 sm:p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 mt-1">
+                      {item.icon}
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-lg mb-1">{item.title}</h3>
+                      <p className="text-gray-600 text-sm sm:text-base">{item.description}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         {/* Stats section */}

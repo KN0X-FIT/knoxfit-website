@@ -78,7 +78,7 @@ const testimonials: Testimonial[] = [
   {
     id: '7',
     name: 'Nikhil H S',
-    age: 22,
+    age: 24,
     program: 'KN0X-FIT Total Transformation Program',
     quote: 'KN0X-FIT completely changed my fitness game! In just over 6 months I went from 57 to 64 kg, building nearly 5 kg of lean muscle and getting visibly stronger. The coaches made every session count with personalized plans. I feel more confident, energetic, and motivated to push for even bigger milestones!',
     achievement: 'Gained 7 kg & 4.8 kg lean mass',

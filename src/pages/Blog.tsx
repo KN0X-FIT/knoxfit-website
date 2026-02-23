@@ -76,10 +76,11 @@ export function Blog() {
   return (
     <>
       <SEOHead
-        title="Fitness Blog | Expert Tips for Workout Plans & Diet Guide - KN0X-FIT"
-        description="Expert fitness blog with workout plans for beginners, sustainable diet tips, muscle building guides, and real transformation stories. Free fitness advice from Expert Trainers."
-        keywords="fitness blog, workout plans for beginners, sustainable diet tips, muscle building guide, transformation stories, expert fitness advice"
+        title="KN0X-FIT Blog: Workout Tips, Diet Advice & Fitness Motivation"
+        description="Get expert workout tips for beginners, sustainable diet advice without supplements, and fitness motivation. Transform your body with proven strategies from KN0X-FIT Expert Trainers."
+        keywords="workout tips for beginners, sustainable diet advice, fitness motivation, body transformation, home workouts, healthy eating, fitness blog, exercise routines"
         canonical="https://knoxfit.com/blog"
+        ogImage="https://knoxfit.com/images/blog-cover.jpg"
       />
       <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -110,11 +111,7 @@ export function Blog() {
               {blogPosts.map((post) => (
                 <Card key={post.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
                   <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={post.image}
-                      alt={`${post.title} - Expert fitness advice and tips for sustainable health and wellness`}
-                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                    />
+                    <div className="bg-gray-200 border-2 border-dashed rounded-t-lg w-full h-full" />
                     <div className="absolute top-4 left-4 bg-knox-red text-white px-3 py-1 rounded-full text-sm font-bold">
                       {post.category}
                     </div>

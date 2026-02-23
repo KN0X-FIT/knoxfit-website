@@ -20,20 +20,17 @@ export function Hero() {
                 BUILT FOR CHANGE - DESIGNED FOR YOU
               </div>
               
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold font-knockout tracking-tight animate-float">
-                <span className="block">TRANSFORM</span>
-                <span className="block text-knox-red">YOUR BODY</span>
-                <span className="block">WITH KN0X-FIT</span>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-knockout tracking-tight animate-float">
+                Personalised Transformation Programs – No Supplements. Sustainable Fitness.
               </h1>
               <h2 className="text-lg sm:text-xl text-gray-300 mt-6 max-w-lg font-normal">
-                Most affordable custom workout plan for beginners and sustainable diet without supplements that deliver guaranteed results.
-                No supplements, just sustainable fitness.
+                Affordable fitness coaching. Custom workouts + diet plans, starting ₹799. Get your free 5-day plan today
               </h2>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <Button onClick={()=>{window.location.href = "#programs"}} className="btn-primary text-base sm:text-lg py-5 px-6 sm:px-8" size="lg">Start Your Journey</Button>
-              <Button onClick={()=>{window.location.href = "#programs"}} variant="outline" className="btn-outline text-base sm:text-lg py-5 px-6 sm:px-8" size="lg">View Programs</Button>
+              <Button onClick={()=>{window.location.href = "/free-plan"}} className="btn-primary text-base sm:text-lg py-5 px-6 sm:px-8" size="lg">Get My Free 5-Day Starter Plan</Button>
+              <Button onClick={()=>{window.location.href = "#programs"}} variant="outline" className="btn-outline text-base sm:text-lg py-5 px-6 sm:px-8" size="lg">View Our Programs</Button>
             </div>
 
             <div className="flex flex-wrap items-center gap-8 pt-6">
@@ -67,7 +64,7 @@ export function Hero() {
               {/* Main image with same animation as text */}
               <img
                 src="/hero-image.webp"
-                alt="Professional fitness trainer demonstrating custom workout plan for beginners in modern gym environment - KN0X-FIT sustainable fitness programs"
+                alt="KN0X-FIT custom home workout plan for beginners with no equipment - sustainable fitness without supplements"
                 className="w-full h-auto object-cover rounded-2xl animate-float shadow-2xl"
                 loading="eager"
                 fetchPriority="high"
@@ -88,11 +85,11 @@ export function Hero() {
             {/* Creative floating button for Free Plan - Entire element is clickable with same animation as hero image */}
             <div className="absolute -right-4 -bottom-4 animate-float transform" style={{ animationDelay: "0.5s" }}>
               <a 
-                href="/free-plan" 
+                href="/elite-program" 
                 className="block w-full h-full bg-white text-black font-bold py-3 px-4 rounded-lg shadow-xl hover:bg-gray-100 hover:scale-105 transition-all duration-300 text-center min-w-[160px]"
               >
-                <p className="font-bold text-knox-red text-sm">KN0X-FREE-PLAN</p>
-                <p className="text-xs text-black mt-1">Get Free Plan Now!</p>
+                <p className="font-bold text-knox-red text-sm">KN0X-ELITE-Pragram</p>
+                <p className="text-xs text-black mt-1">Get 1 Month free!</p>
               </a>
             </div>
           </div>

@@ -2,67 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://knoxfit.com/</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://knoxfit.com/elite-program</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://knoxfit.com/general-fitness</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://knoxfit.com/custom-workout-plan</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://knoxfit.com/diet-guide</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://knoxfit.com/testimonials</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://knoxfit.com/free-plan</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://knoxfit.com/contact</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://knoxfit.com/blog</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Individual Blog Posts -->
+  <url>
+    <loc>https://knoxfit.com/blog/beginners-guide-home-workouts</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://knoxfit.com/blog/weight-loss-without-supplements</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://knoxfit.com/blog/building-muscle-on-budget</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://knoxfit.com/blog/sustainable-diet-plans</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://knoxfit.com/blog/physical-strength-foundation-health-confidence</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://knoxfit.com/privacy-policy</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://knoxfit.com/terms-of-service</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

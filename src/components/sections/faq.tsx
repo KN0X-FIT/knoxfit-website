@@ -33,11 +33,11 @@ const faqData: FAQItem[] = [
   },
   {
     question: "What is the KN0X-ELITE program and how do I qualify?",
-    answer: "The KN0X-ELITE program offers an additional month free for clients who consistently follow their Body Recomposition plan and provide daily updates. It's our way of rewarding commitment and ensuring maximum results from your fitness journey."
+    answer: "The KN0X-ELITE program offers an additional month free for clients who consistently follow their Transformation plan and provide daily updates. It's our way of rewarding commitment and ensuring maximum results from your fitness journey. This program gets eligible on choosing the Total Transformation Plan"
   },
   {
     question: "Do you provide ongoing support after purchasing a program?",
-    answer: "Yes! All programs include trainer consultations and follow-up support. For the Body Recomposition program, you get weekly trainer sessions and daily follow-up support to ensure you stay on track with your goals."
+    answer: "All programs include consultation and follow-up support. With Diet, Workout, or General Fitness plans, you'll get one consultation plus ongoing query support. Choose the Total Transformation Plan to unlock weekly trainer sessions, daily follow-ups, elite program access, and 1 month FREE with daily updates."
   }
 ];
 
@@ -47,39 +47,6 @@ export function FAQ() {
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-
-  // Generate structured data for FAQ
-  const faqStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqData.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
-
-  React.useEffect(() => {
-    // Add FAQ structured data to page
-    let faqScript = document.querySelector('script[data-faq="structured-data"]');
-    if (!faqScript) {
-      faqScript = document.createElement('script');
-      faqScript.setAttribute('type', 'application/ld+json');
-      faqScript.setAttribute('data-faq', 'structured-data');
-      document.head.appendChild(faqScript);
-    }
-    faqScript.textContent = JSON.stringify(faqStructuredData);
-    
-    return () => {
-      const script = document.querySelector('script[data-faq="structured-data"]');
-      if (script) {
-        script.remove();
-      }
-    };
-  }, []);
 
   return (
     <section className="bg-gray-50 py-16 sm:py-24" id="faq">

@@ -16,6 +16,9 @@ interface SEOHeadProps {
   articleAuthor?: string;
   articleSection?: string;
   robots?: string;
+  locale?: string;
+  alternateLanguages?: { hrefLang: string; href: string }[];
+  breadcrumb?: { name: string; url: string }[];
 }
 
 export function SEOHead({
@@ -33,7 +36,10 @@ export function SEOHead({
   ogUrl,
   articleAuthor,
   articleSection,
-  robots = "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  robots = "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+  locale = "en_US",
+  alternateLanguages = [],
+  breadcrumb = []
 }: SEOHeadProps) {
   useEffect(() => {
     // Update title
@@ -74,6 +80,18 @@ export function SEOHead({
       canonicalLink.setAttribute('href', canonical);
     }
 
+    // Add hreflang tags for internationalization
+    alternateLanguages.forEach(lang => {
+      let link = document.querySelector(`link[hreflang="${lang.hrefLang}"]`);
+      if (!link) {
+        link = document.createElement('link');
+        link.setAttribute('rel', 'alternate');
+        link.setAttribute('hreflang', lang.hrefLang);
+        document.head.appendChild(link);
+      }
+      link.setAttribute('href', lang.href);
+    });
+
     // Update Open Graph tags
     const ogTitleMeta = document.querySelector('meta[property="og:title"]');
     if (ogTitleMeta) {
@@ -99,6 +117,11 @@ export function SEOHead({
     const ogSiteNameMeta = document.querySelector('meta[property="og:site_name"]');
     if (ogSiteNameMeta) {
       ogSiteNameMeta.setAttribute('content', ogSiteName);
+    }
+
+    const ogLocaleMeta = document.querySelector('meta[property="og:locale"]');
+    if (ogLocaleMeta) {
+      ogLocaleMeta.setAttribute('content', locale);
     }
 
     if (ogUrl) {
@@ -186,7 +209,30 @@ export function SEOHead({
       }
       structuredDataScript.textContent = JSON.stringify(structuredData);
     }
-  }, [title, description, keywords, canonical, ogImage, ogType, structuredData, twitterCard, twitterSite, twitterCreator, ogSiteName, ogUrl, articleAuthor, articleSection, robots]);
+
+    // Add breadcrumb structured data
+    if (breadcrumb.length > 0) {
+      const breadcrumbData = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": breadcrumb.map((item, index) => ({
+          "@type": "ListItem",
+          "position": index + 1,
+          "name": item.name,
+          "item": item.url
+        }))
+      };
+
+      let breadcrumbScript = document.querySelector('script[data-breadcrumb="structured-data"]');
+      if (!breadcrumbScript) {
+        breadcrumbScript = document.createElement('script');
+        breadcrumbScript.setAttribute('type', 'application/ld+json');
+        breadcrumbScript.setAttribute('data-breadcrumb', 'structured-data');
+        document.head.appendChild(breadcrumbScript);
+      }
+      breadcrumbScript.textContent = JSON.stringify(breadcrumbData);
+    }
+  }, [title, description, keywords, canonical, ogImage, ogType, structuredData, twitterCard, twitterSite, twitterCreator, ogSiteName, ogUrl, articleAuthor, articleSection, robots, locale, alternateLanguages, breadcrumb]);
 
   return null; // This component doesn't render anything
 }

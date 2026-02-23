@@ -67,8 +67,8 @@ export function LazyImage({
 
   // Create a new props object without fetchPriority to avoid React warnings
   const safeProps = { ...props };
-  if ('fetchPriority' in safeProps) {
-    delete safeProps.fetchPriority;
+  if ('fetchpriority' in safeProps) {
+    delete safeProps.fetchpriority;
   }
 
   return (
@@ -83,7 +83,6 @@ export function LazyImage({
       onError={handleError}
       loading={priority ? 'eager' : 'lazy'}
       decoding="async"
-      fetchPriority={priority ? 'high' : 'low'}
       {...safeProps}
     />
   );
