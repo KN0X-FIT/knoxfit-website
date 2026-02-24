@@ -13,6 +13,7 @@ import { TermsOfService } from './pages/TermsOfService';
 import { Contact } from './pages/Contact';
 import Testimonials from './pages/Testimonials';
 import { FreePlan } from './pages/FreePlan';
+import { Programs } from './pages/Programs';
 // import { GoogleAnalytics } from './components/GoogleAnalytics';
 
 // Replace with your actual Google Analytics Measurement ID
@@ -26,6 +27,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/programs" element={<Programs />} />
           <Route path="/elite-program" element={<EliteProgram />} />
           <Route path="/general-fitness" element={<GeneralFitness />} />
           <Route path="/custom-workout-plan" element={<CustomWorkoutPlan />} />
