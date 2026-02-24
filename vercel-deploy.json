@@ -1,0 +1,14 @@
+{
+  "name": "knoxfit-website",
+  "version": "1.0.0",
+  "description": "KN0X-FIT Custom Workout & Diet Plans Website",
+  "main": "dist/index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["fitness", "workout", "diet", "react", "vite", "tailwind"],
+  "author": "KN0X-FIT",
+  "license": "MIT"
+}
