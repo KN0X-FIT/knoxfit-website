@@ -8,6 +8,7 @@ import { Testimonials } from '../components/sections/testimonials';
 import { Gallery } from '../components/sections/gallery';
 import { SEOHead } from '../components/SEOHead';
 import { StructuredData } from '../components/StructuredData';
+import { GlowingEffectDemo } from '../components/ui/glowing-effect-demo';
 
 export function Home() {
   // FAQ data for structured data
@@ -90,6 +91,7 @@ export function Home() {
       <main className="flex-grow">
         <Hero />
         <HowItWorks />
+        <GlowingEffectDemo />
         <Programs />
         <Features />
         <Gallery />

@@ -1,0 +1,973 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --primary: 0 72.2% 50.6%;
+    --primary-foreground: 0 85.7% 97.3%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 72.2% 50.6%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 72.2% 50.6%;
+    --primary-foreground: 0 85.7% 97.3%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 72.2% 50.6%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@font-face {
+  font-family: 'Knockout';
+  src: url('/fonts/Knockout-HTF49-Liteweight.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Knockout';
+  src: url('/fonts/Knockout-HTF52-Cruiserweight.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Knockout';
+  src: url('/fonts/Knockout-HTF67-FullBantamwt.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Responsive typography */
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Ensure proper viewport handling */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+
+@layer components {
+  .h1 {
+    @apply font-knockout text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter;
+  }
+  .h2 {
+    @apply font-knockout text-3xl sm:text-4xl md:text-5xl font-bold;
+  }
+  .h3 {
+    @apply font-knockout text-2xl sm:text-3xl md:text-4xl font-semibold;
+  }
+  .h4 {
+    @apply font-knockout text-xl sm:text-2xl md:text-3xl font-semibold;
+  }
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6;
+  }
+  .btn-primary {
+    @apply bg-knox-red hover:bg-knox-darkred text-white rounded-lg px-5 py-2.5 sm:px-6 sm:py-3 font-bold transition-all shadow-lg hover:shadow-xl active:scale-95 min-h-[44px] touch-manipulation;
+  }
+  .btn-secondary {
+    @apply bg-knox-black hover:bg-knox-gray text-white rounded-lg px-5 py-2.5 sm:px-6 sm:py-3 font-bold transition-all shadow-lg hover:shadow-xl active:scale-95 min-h-[44px] touch-manipulation;
+  }
+  .btn-outline {
+    @apply border-2 border-knox-red hover:bg-knox-red text-knox-red hover:text-white rounded-lg px-5 py-2.5 sm:px-6 sm:py-3 font-bold transition-all active:scale-95 min-h-[44px] touch-manipulation;
+  }
+  .card-effect {
+    @apply transform transition duration-300 hover:scale-[1.02] hover:shadow-xl touch-manipulation;
+  }
+  .blob-shape {
+    @apply rounded-[40%_60%_70%_30%/40%_50%_60%_50%];
+  }
+  .program-card {
+    @apply relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl touch-manipulation;
+  }
+  .program-card-content {
+    @apply p-5 sm:p-6;
+  }
+  .accent-border {
+    @apply border-l-4 border-knox-red pl-4;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-knox-red to-knox-darkred bg-clip-text text-transparent;
+  }
+  .form-input {
+    @apply w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-knox-red focus:outline-none focus:ring-2 focus:ring-knox-red/20 min-h-[44px];
+  }
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  .section {
+    @apply py-16 md:py-24;
+  }
+  .header-nav-link {
+    @apply hover:text-knox-red transition-colors font-medium;
+  }
+  .header-nav-link-programs {
+    @apply relative px-3 py-2 sm:px-4 sm:py-2 rounded-lg 
+           border border-knox-red font-semibold text-knox-red 
+           hover:border-knox-red hover:text-knox-red 
+           hover:shadow-md transition-all duration-300 transform hover:scale-105 text-sm sm:text-base min-h-[44px] touch-manipulation;
+    background: linear-gradient(to right, rgba(230, 57, 70, 0.05), rgba(230, 57, 70, 0.1));
+  }
+  .header-nav-link-programs:hover {
+    background: linear-gradient(to right, rgba(230, 57, 70, 0.1), rgba(230, 57, 70, 0.2));
+    border-color: rgba(230, 57, 70, 0.3);
+  }
+  .header-nav-link-programs::before {
+    content: '';
+    @apply absolute bottom-0 left-1/2 w-0 h-0.5 bg-knox-red 
+           transition-all duration-300 transform -translate-x-1/2;
+  }
+  .header-nav-link-programs:hover::before {
+    @apply w-full;
+  }
+  .header-nav-link-programs-mobile {
+    @apply relative px-3 py-2 rounded-lg 
+           border-l-4 border-knox-red font-semibold text-knox-red 
+           transition-all duration-300 text-sm min-h-[44px] touch-manipulation;
+    background: linear-gradient(to right, rgba(230, 57, 70, 0.08), rgba(230, 57, 70, 0.15));
+  }
+  .header-nav-link-programs-mobile:hover {
+    background: linear-gradient(to right, rgba(230, 57, 70, 0.15), rgba(230, 57, 70, 0.25));
+  }
+  .dropdown-menu {
+    @apply absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50;
+  }
+  .dropdown-item {
+    @apply block px-6 py-3 hover:bg-gray-50 transition-colors duration-200 min-h-[44px] touch-manipulation;
+  }
+  .dropdown-item-elite {
+    @apply block px-6 py-3 transition-all duration-200 min-h-[44px] touch-manipulation;
+  }
+  .dropdown-item-elite:hover {
+    background: linear-gradient(to right, rgba(230, 57, 70, 0.1), rgba(230, 57, 70, 0.05));
+  }
+  .float-effect {
+    @apply animate-float;
+  }
+  .pulse-effect {
+    @apply animate-pulse-slow;
+  }
+  .pattern-dots {
+    background-image: radial-gradient(#e6e6e6 2px, transparent 2px);
+    background-size: 20px 20px;
+  }
+  .pattern-diagonal {
+    background: linear-gradient(135deg, #f5f5f5 25%, transparent 25%) -20px 0,
+      linear-gradient(225deg, #f5f5f5 25%, transparent 25%) -20px 0,
+      linear-gradient(315deg, #f5f5f5 25%, transparent 25%),
+      linear-gradient(45deg, #f5f5f5 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-color: white;
+  }
+  .card-3d {
+    @apply relative bg-white overflow-hidden rounded-xl shadow-lg touch-manipulation;
+  }
+  .card-3d::before {
+    content: '';
+    @apply absolute inset-0 z-10 rounded-xl transform transition-transform duration-300;
+    background: linear-gradient(to bottom right, rgba(230, 57, 70, 0.1), transparent);
+  }
+  .card-3d:hover::before {
+    @apply scale-105;
+  }
+  .blob-shape {
+    border-radius: 71% 29% 31% 69% / 57% 34% 66% 43%;
+  }
+
+  /* Mobile touch-friendly styles */
+  .touch-manipulation {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Mobile testimonial optimizations */
+  .testimonial-card-mobile {
+    @apply transform transition-all duration-300 active:scale-[0.98] touch-manipulation;
+  }
+
+  .testimonial-button-mobile {
+    @apply min-h-[44px] min-w-[44px] flex items-center justify-center touch-manipulation;
+  }
+
+  /* Smooth scrolling for mobile carousel */
+  .testimonial-carousel {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Better mobile tap targets */
+  .mobile-tap-target {
+    @apply min-h-[44px] min-w-[44px] flex items-center justify-center touch-manipulation;
+  }
+
+  /* Mobile-optimized text sizes */
+  .text-mobile-responsive {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    line-height: 1.5;
+  }
+
+  .heading-mobile-responsive {
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+    line-height: 1.3;
+  }
+
+  /* Improved mobile spacing */
+  .mobile-padding {
+    @apply px-4;
+  }
+
+  .mobile-margin {
+    @apply my-6;
+  }
+
+  /* Mobile-friendly buttons */
+  .btn-mobile {
+    @apply py-3 px-4 text-base min-h-[44px];
+  }
+
+  /* Mobile navigation improvements */
+  .mobile-nav-link {
+    @apply py-3 px-4 text-base min-h-[44px];
+  }
+
+  /* Mobile card improvements */
+  .card-mobile {
+    @apply rounded-lg shadow-md;
+  }
+
+  /* Mobile form improvements */
+  .form-input-mobile {
+    @apply py-3 px-4 text-base min-h-[44px];
+  }
+
+  /* Elite Program specific mobile improvements */
+  .elite-hero-content {
+    @apply px-4;
+  }
+
+  .elite-features-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6;
+  }
+
+  .elite-feature-card {
+    @apply h-full;
+  }
+
+  .elite-cta-button {
+    @apply w-full sm:w-auto py-3 px-6 text-base min-h-[44px];
+  }
+
+  .elite-trust-indicators {
+    @apply flex flex-col sm:flex-row justify-center items-center gap-4 text-sm;
+  }
+
+  .elite-how-it-works {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-6;
+  }
+
+  .elite-final-cta {
+    @apply px-4;
+  }
+  
+  /* Additional mobile-specific classes for Elite Program */
+  .elite-mobile-padding {
+    @apply px-4;
+  }
+  
+  .elite-mobile-margin {
+    @apply my-4 sm:my-6;
+  }
+  
+  .elite-mobile-card {
+    @apply rounded-lg shadow-md p-4 sm:p-6;
+  }
+  
+  .elite-mobile-button {
+    @apply py-3 px-5 text-base font-bold min-h-[44px] touch-manipulation;
+  }
+  
+  .elite-mobile-heading {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold;
+  }
+  
+  .elite-mobile-subheading {
+    @apply text-lg sm:text-xl md:text-2xl;
+  }
+  
+  .elite-mobile-text {
+    @apply text-sm sm:text-base;
+  }
+  
+  .elite-mobile-section {
+    @apply py-8 sm:py-12 md:py-16;
+  }
+  
+  .elite-mobile-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6;
+  }
+  
+  /* Mobile typography improvements */
+  .elite-mobile-heading-1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  .elite-mobile-heading-2 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+
+  .elite-mobile-heading-3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  .elite-mobile-heading-4 {
+    font-size: 1.25rem;
+    line-height: 1.35;
+    font-weight: 600;
+  }
+
+  .elite-mobile-body-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .elite-mobile-caption {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+  
+  /* Mobile spacing improvements */
+  .elite-mobile-section-padding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  @media (min-width: 640px) {
+    .elite-mobile-section-padding {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .elite-mobile-section-padding {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+  
+  /* Mobile card improvements */
+  .elite-mobile-card {
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .elite-mobile-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Mobile button improvements */
+  .elite-mobile-button {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .elite-mobile-button-primary {
+    background-color: #e63946;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(230, 57, 70, 0.2);
+  }
+
+  .elite-mobile-button-primary:hover {
+    background-color: #c1121f;
+    transform: scale(1.02);
+    box-shadow: 0 10px 15px -3px rgba(230, 57, 70, 0.3);
+  }
+
+  .elite-mobile-button-primary:active {
+    transform: scale(0.98);
+  }
+  
+  /* Mobile grid improvements */
+  .elite-mobile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .elite-mobile-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .elite-mobile-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Mobile list improvements */
+  .elite-mobile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .elite-mobile-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  /* Mobile icon improvements */
+  .elite-mobile-icon {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+/* Custom animations for Programs button */
+@keyframes programs-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(220, 38, 38, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.5), 0 0 30px rgba(220, 38, 38, 0.3);
+  }
+}
+
+/* Free Plan page animations */
+@keyframes fade-in {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes success-bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes check-mark {
+  0% { stroke-dasharray: 0 100; }
+  100% { stroke-dasharray: 100 0; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Even slower float animation for the free plan button */
+@keyframes float-slow {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+@layer components {
+  .header-nav-link-programs {
+    animation: programs-glow 3s ease-in-out infinite;
+  }
+  .header-nav-link-programs:hover {
+    animation: none;
+  }
+  
+  /* Free Plan animations */
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+  
+  .animate-shake {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  .animate-success-bounce {
+    animation: success-bounce 0.6s ease-out;
+  }
+  
+  .animate-check-mark {
+    stroke-dasharray: 100;
+    animation: check-mark 0.8s ease-out 0.3s forwards;
+  }
+  
+  .animate-blink {
+    animation: blink 2s infinite;
+  }
+  
+  /* Main float animation for hero elements */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Custom float animation for hero image - reverted to original speed */
+  .animate-float-slow {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Mobile menu fade in animation */
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  /* Elite Program specific animations */
+  .elite-float {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  /* Even slower float animation for free plan button - now deprecated */
+  .animate-float-button {
+    animation: float-slow 12s ease-in-out infinite;
+  }
+}
+
+/* Focus styles for accessibility */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #e63946;
+  outline-offset: 2px;
+}
+
+/* Remove focus outline from buttons to prevent red box on click */
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid #e63946;
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling for better mobile experience */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e63946;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7a0019;
+}
+
+/* Prevent text size adjustment on iOS */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Elite Program specific responsive improvements */
+@media (max-width: 640px) {
+  .elite-hero-title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+  
+  .elite-hero-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .elite-features-grid {
+    gap: 1rem;
+  }
+  
+  .elite-feature-card {
+    padding: 1rem;
+  }
+  
+  .elite-trust-indicators {
+    gap: 2rem;
+  }
+  
+  .elite-how-it-works-steps {
+    padding: 0 1rem;
+  }
+  
+  .elite-final-cta h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  /* Additional mobile-specific improvements for Elite Program */
+  .elite-mobile-hero-padding {
+    padding: 2.5rem 1rem;
+  }
+  
+  .elite-mobile-card-spacing {
+    margin-bottom: 1.5rem;
+  }
+  
+  .elite-mobile-text-center {
+    text-align: center;
+  }
+  
+  .elite-mobile-flex-column {
+    flex-direction: column;
+  }
+  
+  .elite-mobile-full-width {
+    width: 100%;
+  }
+  
+  .elite-mobile-gap-small {
+    gap: 0.5rem;
+  }
+  
+  .elite-mobile-gap-medium {
+    gap: 1rem;
+  }
+  
+  .elite-mobile-padding-small {
+    padding: 0.5rem;
+  }
+  
+  .elite-mobile-padding-medium {
+    padding: 1rem;
+  }
+  
+  .elite-mobile-margin-small {
+    margin: 0.5rem 0;
+  }
+  
+  .elite-mobile-margin-medium {
+    margin: 1rem 0;
+  }
+  
+  .elite-mobile-font-small {
+    font-size: 0.875rem;
+  }
+  
+  .elite-mobile-font-medium {
+    font-size: 1rem;
+  }
+  
+  .elite-mobile-font-large {
+    font-size: 1.125rem;
+  }
+}/ *   G r a d i e n t   B u t t o n   S t y l e s   * /  
+ @ l a y e r   b a s e   {  
+     @ p r o p e r t y   - - p o s - x   {  
+         s y n t a x :   ' < p e r c e n t a g e > ' ;  
+         i n i t i a l - v a l u e :   1 1 . 1 4 % ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - p o s - y   {  
+         s y n t a x :   ' < p e r c e n t a g e > ' ;  
+         i n i t i a l - v a l u e :   1 4 0 % ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - s p r e a d - x   {  
+         s y n t a x :   ' < p e r c e n t a g e > ' ;  
+         i n i t i a l - v a l u e :   1 5 0 % ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - s p r e a d - y   {  
+         s y n t a x :   ' < p e r c e n t a g e > ' ;  
+         i n i t i a l - v a l u e :   1 8 0 . 0 6 % ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - c o l o r - 1   {  
+         s y n t a x :   ' < c o l o r > ' ;  
+         i n i t i a l - v a l u e :   # 0 0 0 ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - c o l o r - 2   {  
+         s y n t a x :   ' < c o l o r > ' ;  
+         i n i t i a l - v a l u e :   # 0 8 0 1 2 c ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - c o l o r - 3   {  
+         s y n t a x :   ' < c o l o r > ' ;  
+         i n i t i a l - v a l u e :   # 4 e 1 e 4 0 ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - c o l o r - 4   {  
+         s y n t a x :   ' < c o l o r > ' ;  
+         i n i t i a l - v a l u e :   # 7 0 4 6 4 e ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - c o l o r - 5   {  
+         s y n t a x :   ' < c o l o r > ' ;  
+         i n i t i a l - v a l u e :   # 8 8 3 9 4 c ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - b o r d e r - a n g l e   {  
+         s y n t a x :   ' < a n g l e > ' ;  
+         i n i t i a l - v a l u e :   2 0 d e g ;  
+         i n h e r i t s :   t r u e ;  
+     }  
+  
+     @ p r o p e r t y   - - b o r d e r - c o l o r - 1   {  
+         s y n t a x :   ' < c o l o r > ' ;  
+         i n i t i a l - v a l u e :   h s l a ( 3 4 0 ,   7 5 % ,   6 0 % ,   0 . 2 ) ;  
+         i n h e r i t s :   t r u e ;  
+     }  
+  
+     @ p r o p e r t y   - - b o r d e r - c o l o r - 2   {  
+         s y n t a x :   ' < c o l o r > ' ;  
+         i n i t i a l - v a l u e :   h s l a ( 3 4 0 ,   7 5 % ,   4 0 % ,   0 . 7 5 ) ;  
+         i n h e r i t s :   t r u e ;  
+     }  
+  
+     @ p r o p e r t y   - - s t o p - 1   {  
+         s y n t a x :   ' < p e r c e n t a g e > ' ;  
+         i n i t i a l - v a l u e :   3 7 . 3 5 % ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - s t o p - 2   {  
+         s y n t a x :   ' < p e r c e n t a g e > ' ;  
+         i n i t i a l - v a l u e :   6 1 . 3 6 % ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - s t o p - 3   {  
+         s y n t a x :   ' < p e r c e n t a g e > ' ;  
+         i n i t i a l - v a l u e :   7 8 . 4 2 % ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - s t o p - 4   {  
+         s y n t a x :   ' < p e r c e n t a g e > ' ;  
+         i n i t i a l - v a l u e :   8 9 . 5 2 % ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+  
+     @ p r o p e r t y   - - s t o p - 5   {  
+         s y n t a x :   ' < p e r c e n t a g e > ' ;  
+         i n i t i a l - v a l u e :   1 0 0 % ;  
+         i n h e r i t s :   f a l s e ;  
+     }  
+ }  
+  
+ @ l a y e r   c o m p o n e n t s   {  
+     . g r a d i e n t - b u t t o n   {  
+         @ a p p l y   r e l a t i v e   a p p e a r a n c e - n o n e   c u r s o r - p o i n t e r ;  
+         b a c k g r o u n d :   r a d i a l - g r a d i e n t (  
+             v a r ( - - s p r e a d - x )   v a r ( - - s p r e a d - y )   a t   v a r ( - - p o s - x )   v a r ( - - p o s - y ) ,  
+             v a r ( - - c o l o r - 1 )   v a r ( - - s t o p - 1 ) ,  
+             v a r ( - - c o l o r - 2 )   v a r ( - - s t o p - 2 ) ,  
+             v a r ( - - c o l o r - 3 )   v a r ( - - s t o p - 3 ) ,  
+             v a r ( - - c o l o r - 4 )   v a r ( - - s t o p - 4 ) ,  
+             v a r ( - - c o l o r - 5 )   v a r ( - - s t o p - 5 )  
+         ) ;  
+         t r a n s i t i o n :  
+             - - p o s - x   0 . 5 s ,  
+             - - p o s - y   0 . 5 s ,  
+             - - s p r e a d - x   0 . 5 s ,  
+             - - s p r e a d - y   0 . 5 s ,  
+             - - c o l o r - 1   0 . 5 s ,  
+             - - c o l o r - 2   0 . 5 s ,  
+             - - c o l o r - 3   0 . 5 s ,  
+             - - c o l o r - 4   0 . 5 s ,  
+             - - c o l o r - 5   0 . 5 s ,  
+             - - b o r d e r - a n g l e   0 . 5 s ,  
+             - - b o r d e r - c o l o r - 1   0 . 5 s ,  
+             - - b o r d e r - c o l o r - 2   0 . 5 s ,  
+             - - s t o p - 1   0 . 5 s ,  
+             - - s t o p - 2   0 . 5 s ,  
+             - - s t o p - 3   0 . 5 s ,  
+             - - s t o p - 4   0 . 5 s ,  
+             - - s t o p - 5   0 . 5 s ;  
+     }  
+  
+     . g r a d i e n t - b u t t o n : : b e f o r e   {  
+         c o n t e n t :   ' ' ;  
+         p o s i t i o n :   a b s o l u t e ;  
+         i n s e t :   0 ;  
+         b o r d e r - r a d i u s :   i n h e r i t ;  
+         p a d d i n g :   1 p x ;  
+         b a c k g r o u n d :   l i n e a r - g r a d i e n t (  
+             v a r ( - - b o r d e r - a n g l e ) ,  
+             v a r ( - - b o r d e r - c o l o r - 1 ) ,  
+             v a r ( - - b o r d e r - c o l o r - 2 )  
+         ) ;  
+         m a s k :   l i n e a r - g r a d i e n t ( # f f f   0   0 )   c o n t e n t - b o x ,   l i n e a r - g r a d i e n t ( # f f f   0   0 ) ;  
+         m a s k - c o m p o s i t e :   e x c l u d e ;  
+         p o i n t e r - e v e n t s :   n o n e ;  
+     }  
+  
+     . g r a d i e n t - b u t t o n : h o v e r   {  
+         - - p o s - x :   0 % ;  
+         - - p o s - y :   9 1 . 5 1 % ;  
+         - - s p r e a d - x :   1 2 0 . 2 4 % ;  
+         - - s p r e a d - y :   1 0 3 . 1 8 % ;  
+         - - c o l o r - 1 :   # c 9 6 2 8 7 ;  
+         - - c o l o r - 2 :   # c 6 6 c 6 4 ;  
+         - - c o l o r - 3 :   # c c 7 d 2 3 ;  
+         - - c o l o r - 4 :   # 3 7 1 4 0 a ;  
+         - - c o l o r - 5 :   # 0 0 0 ;  
+         - - b o r d e r - a n g l e :   1 9 0 d e g ;  
+         - - b o r d e r - c o l o r - 1 :   h s l a ( 3 4 0 ,   7 8 % ,   9 0 % ,   0 . 1 ) ;  
+         - - b o r d e r - c o l o r - 2 :   h s l a ( 3 4 0 ,   7 5 % ,   9 0 % ,   0 . 6 ) ;  
+         - - s t o p - 1 :   0 % ;  
+         - - s t o p - 2 :   8 . 8 % ;  
+         - - s t o p - 3 :   2 1 . 4 4 % ;  
+         - - s t o p - 4 :   7 1 . 3 4 % ;  
+         - - s t o p - 5 :   8 5 . 7 6 % ;  
+     }  
+  
+     . g r a d i e n t - b u t t o n - v a r i a n t   {  
+         - - c o l o r - 1 :   # 0 0 0 0 2 2 ;  
+         - - c o l o r - 2 :   # 1 f 3 f 6 d ;  
+         - - c o l o r - 3 :   # 4 6 9 3 9 6 ;  
+         - - c o l o r - 4 :   # f 1 f f a 5 ;  
+         - - b o r d e r - a n g l e :   2 0 0 d e g ;  
+         - - b o r d e r - c o l o r - 1 :   h s l a ( 3 2 0 ,   7 5 % ,   9 0 % ,   0 . 6 ) ;  
+         - - b o r d e r - c o l o r - 2 :   h s l a ( 3 2 0 ,   5 0 % ,   9 0 % ,   0 . 1 5 ) ;  
+     }  
+  
+     . g r a d i e n t - b u t t o n - v a r i a n t : h o v e r   {  
+         - - p o s - x :   0 % ;  
+         - - p o s - y :   9 5 . 5 1 % ;  
+         - - s p r e a d - x :   1 1 0 . 2 4 % ;  
+         - - s p r e a d - y :   1 1 0 . 2 % ;  
+         - - c o l o r - 1 :   # 0 0 0 0 2 0 ;  
+         - - c o l o r - 2 :   # f 1 f f a 5 ;  
+         - - c o l o r - 3 :   # 4 6 9 3 9 6 ;  
+         - - c o l o r - 4 :   # 1 f 3 f 6 d ;  
+         - - c o l o r - 5 :   # 0 0 0 ;  
+         - - s t o p - 1 :   0 % ;  
+         - - s t o p - 2 :   1 0 % ;  
+         - - s t o p - 3 :   3 5 . 4 4 % ;  
+         - - s t o p - 4 :   7 1 . 3 4 % ;  
+         - - s t o p - 5 :   9 0 . 7 6 % ;  
+         - - b o r d e r - a n g l e :   2 1 0 d e g ;  
+         - - b o r d e r - c o l o r - 1 :   h s l a ( 3 2 0 ,   7 5 % ,   9 0 % ,   0 . 2 ) ;  
+         - - b o r d e r - c o l o r - 2 :   h s l a ( 3 2 0 ,   5 0 % ,   9 0 % ,   0 . 7 5 ) ;  
+     }  
+ }  
+ 
