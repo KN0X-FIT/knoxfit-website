@@ -58,8 +58,8 @@ export function Contact() {
   <div>
     <h4 className="text-lg font-semibold">Email</h4>
     <p className="text-gray-600">
-      <a href="mailto:info@kn0x-fit.com" className="hover:underline">
-        info@kn0x-fit.com
+      <a href="mailto:info@kn0x.fit" className="hover:underline">
+        info@kn0x.fit
       </a>
     </p>
   </div>

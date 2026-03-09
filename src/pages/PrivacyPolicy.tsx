@@ -231,8 +231,8 @@ export function PrivacyPolicy() {
                     <div className="space-y-3">
                       <p className="flex items-center">
                         <span className="font-semibold mr-2">📧 Email:</span>
-                        <a href="mailto:info@kn0x-fit.com" className="text-knox-red hover:underline">
-                          info@kn0x-fit.com
+                        <a href="mailto:info@kn0x.fit" className="text-knox-red hover:underline">
+                          info@kn0x.fit
                         </a>
                       </p>
                       <p className="flex items-center">

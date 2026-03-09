@@ -77,9 +77,9 @@ export function Contact() {
                     <div>
                       <h3 className="text-2xl font-bold text-knox-black mb-4">Email</h3>
                       <p className="text-gray-600 mb-4">Send us detailed inquiries</p>
-                      <p className="text-knox-red font-semibold mb-6">info@kn0x-fit.com</p>
+                      <p className="text-knox-red font-semibold mb-6">info@kn0x.fit</p>
                       <Button
-                        onClick={() => window.location.href = "mailto:info@kn0x-fit.com?subject=Fitness%20Program%20Inquiry&body=Hi%20KN0X-FIT,%0A%0AI'm%20interested%20in%20learning%20more%20about%20your%20fitness%20programs.%20Please%20provide%20me%20with%20more%20details.%0A%0AThank%20you!"}
+                        onClick={() => window.location.href = "mailto:info@kn0x.fit?subject=Fitness%20Program%20Inquiry&body=Hi%20KN0X-FIT,%0A%0AI'm%20interested%20in%20learning%20more%20about%20your%20fitness%20programs.%20Please%20provide%20me%20with%20more%20details.%0A%0AThank%20you!"}
                         className="bg-knox-red hover:bg-knox-darkred text-white font-bold text-lg px-8 py-3 w-full"
                       >
                         Send Email

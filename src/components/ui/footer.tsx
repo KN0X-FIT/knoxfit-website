@@ -65,7 +65,7 @@ export function Footer() {
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12H8m-6 8V4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2z" />
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M22 6l-10 7L2 6" />
                 </svg>
-                <a href="mailto:info@kn0x-fit.com" className="hover:underline">info@kn0x-fit.com</a>
+                <a href="mailto:info@kn0x.fit" className="hover:underline">info@kn0x.fit</a>
               </p>
             </div>
           </div>
