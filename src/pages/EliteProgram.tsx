@@ -39,14 +39,25 @@ export function EliteProgram() {
       </div>
       
       {/* Hero Section */}
-        <section className="bg-gradient-to-br from-knox-black via-knox-gray to-knox-black text-white py-10 sm:py-12 relative overflow-hidden">
-          {/* Background Effects */}
-          <div className="absolute inset-0 z-0">
-            <div className="absolute right-[10%] top-[20%] w-24 h-24 sm:w-40 sm:h-40 bg-knox-red rounded-full blur-3xl opacity-20 animate-pulse-slow" />
-            <div className="absolute left-[15%] bottom-[20%] w-32 h-32 sm:w-60 sm:h-60 bg-knox-red rounded-full blur-3xl opacity-15 animate-pulse-slow" style={{ animationDelay: "2s" }} />
-          </div>
-          
-          <div className="container relative z-10 px-4 sm:px-6">
+      <section 
+        className="relative text-white py-10 sm:py-12 overflow-hidden"
+        style={{
+        backgroundImage: `url('/elite program page.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-knox-black/95 via-knox-black/85 to-knox-black/75"></div>
+        
+        {/* Background Effects */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute right-[10%] top-[20%] w-24 h-24 sm:w-40 sm:h-40 bg-knox-red rounded-full blur-3xl opacity-20 animate-pulse-slow" />
+          <div className="absolute left-[15%] bottom-[20%] w-32 h-32 sm:w-60 sm:h-60 bg-knox-red rounded-full blur-3xl opacity-15 animate-pulse-slow" style={{ animationDelay: "2s" }} />
+        </div>
+        
+        <div className="container relative z-10 px-4 sm:px-6">
             <div className="max-w-5xl mx-auto text-center">
               <div className="inline-flex items-center bg-knox-red/20 border border-knox-red/30 rounded-full px-3 py-1 sm:px-4 sm:py-1.5 mb-4 sm:mb-6">
                 <svg className="w-3 h-3 sm:w-4 sm:h-4 text-knox-red mr-1.5 sm:mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -56,9 +67,9 @@ export function EliteProgram() {
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-knockout tracking-tight mb-3 sm:mb-4 animate-float elite-mobile-heading-1">
-                <span className="block">TOTAL</span>
-                <span className="block text-knox-red">TRANSFORMATION</span>
-                <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal mt-1 sm:mt-2 elite-mobile-heading-3">KN0X-ELITE Program</span>
+                <span className="block animate-text-glow">TOTAL</span>
+                <span className="block text-knox-red animate-text-glow">TRANSFORMATION</span>
+                <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal mt-1 sm:mt-2 elite-mobile-heading-3 animate-text-glow">KN0X-ELITE Program</span>
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-5 sm:mb-6 max-w-4xl mx-auto leading-relaxed px-2 elite-mobile-body-text">

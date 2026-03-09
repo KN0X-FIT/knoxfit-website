@@ -21,8 +21,20 @@ export function DietGuide() {
       </div>
       
       {/* Hero Section */}
-      <section className="bg-knox-black text-white py-12">
-        <div className="container">
+      <section 
+        className="relative text-white py-16 overflow-hidden"
+        style={{
+         backgroundImage: `url('/diet plan page.jpg')`,
+         backgroundSize: 'cover',
+         backgroundPosition: 'center',
+         backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-knox-black/95 via-knox-black/85 to-knox-black/75"></div>
+        
+        {/* Content */}
+        <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold font-knockout mb-6">
               Sustainable Diet Guide <span className="text-knox-red">Without Supplements</span>
@@ -34,7 +46,7 @@ export function DietGuide() {
             <a 
               href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20%E2%82%B9799%20sustainable%20diet%20plan.%20How%20does%20it%20work%20without%20supplements%3F"
               target="_blank"
-              rel="noopener noreferrer"
+             rel="noopener noreferrer"
               className="btn-primary text-lg py-6 px-8 block text-center"
             >
               Get Your Diet Plan - ₹799
