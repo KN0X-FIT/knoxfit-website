@@ -2,6 +2,7 @@ import { SEOHead } from '../components/SEOHead';
 import { StructuredData } from '../components/StructuredData';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import HeroShutterText from '../components/ui/hero-shutter-text';
 
 export function Contact() {
   return (
@@ -24,24 +25,9 @@ export function Contact() {
       />
 
       <div className="min-h-screen bg-gray-50">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-knox-black via-knox-darkred to-knox-red text-white py-20 md:py-32">
-          <div className="absolute inset-0 bg-black/20"></div>
-          <div className="container relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              {/* Brand Slogan */}
-              <div className="text-knox-red font-knockout text-lg tracking-widest uppercase mb-4 animate-pulse">
-                BUILT FOR CHANGE - DESIGNED FOR YOU
-              </div>
-              
-              <h1 className="text-5xl md:text-6xl font-bold font-knockout mb-6">
-                Contact <span className="text-white">Us</span>
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-100 leading-relaxed">
-                Ready to start your fitness transformation? Get in touch with our Expert Trainers and begin your journey today.
-              </p>
-            </div>
-          </div>
+        {/* Animated Hero Section with Shutter Text Effect */}
+        <section className="h-[80vh] md:h-[90vh] relative overflow-hidden bg-knox-black">
+          <HeroShutterText text="CONNECT" />
         </section>
 
         {/* Contact Information Section */}

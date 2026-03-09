@@ -111,7 +111,12 @@ export function Blog() {
               {blogPosts.map((post) => (
                 <Card key={post.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
                   <div className="relative h-48 overflow-hidden">
-                    <div className="bg-gray-200 border-2 border-dashed rounded-t-lg w-full h-full" />
+                    <img 
+                      src={post.image} 
+                      alt={post.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                     <div className="absolute top-4 left-4 bg-knox-red text-white px-3 py-1 rounded-full text-sm font-bold">
                       {post.category}
                     </div>

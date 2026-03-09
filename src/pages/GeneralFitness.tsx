@@ -2,6 +2,7 @@ import { SEOHead } from '../components/SEOHead';
 import { StructuredData } from '../components/StructuredData';
 import { Button } from '../components/ui/button';
 import { TestimonialStrip } from '../components/TestimonialStrip';
+import { AnimatedHero } from '../components/ui/animated-hero';
 
 export function GeneralFitness() {
   return (
@@ -45,36 +46,10 @@ export function GeneralFitness() {
         </div>
       </div>
       
-      {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-knox-red via-knox-darkred to-knox-black text-white py-12">
-          <div className="absolute inset-0 bg-black/20"></div>
-          <div className="container relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="h1 mb-6 text-white">
-                General Fitness – Balanced Diet & Workout Plan
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-100 leading-relaxed">
-                Kickstart your fitness journey with a sustainable approach designed for beginners and health-conscious individuals
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/20">
-                  <span className="text-3xl font-bold">₹999</span>
-                  <span className="text-lg ml-2">/ month</span>
-                </div>
-                <a 
-                  href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20General%20Fitness%20Plan%20at%20%E2%82%B9999%2Fmonth.%20What%27s%20included%20in%20the%20plan%3F"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white text-knox-red hover:bg-gray-100 font-bold text-lg px-8 py-4 rounded-lg block text-center"
-                >
-                  Join General Fitness Plan
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Program Overview */}
+      {/* Animated Hero Section */}
+      <AnimatedHero />
+      
+      {/* Program Overview */}
         <section className="py-16 bg-white">
           <div className="container">
             <div className="max-w-4xl mx-auto">
