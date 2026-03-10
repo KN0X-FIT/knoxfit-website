@@ -12,10 +12,10 @@ interface LazyImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
 export function LazyImage({
   src,
   alt,
-  className = '',
+  className= '',
   fallbackSrc,
-  placeholder = 'data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="100%25" height="100%25" fill="%23f3f4f6"/%3E%3C/svg%3E',
-  priority = false,
+  placeholder= 'data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="100%25" height="100%25"fill="%23f3f4f6"/%3E%3C/svg%3E',
+  priority= false,
   ...props
 }: LazyImageProps) {
   const [imageSrc, setImageSrc] = useState(priority ? src : placeholder);
@@ -24,7 +24,7 @@ export function LazyImage({
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    let observer: IntersectionObserver;
+   let observer: IntersectionObserver;
     
     if (imageRef && !priority && 'IntersectionObserver' in window) {
       observer = new IntersectionObserver(
@@ -38,7 +38,7 @@ export function LazyImage({
         },
         {
           threshold: 0.1,
-          rootMargin: '50px'
+          rootMargin: '100px' // Increased for earlier loading
         }
       );
       observer.observe(imageRef);
@@ -47,7 +47,7 @@ export function LazyImage({
       setImageSrc(src);
     }
 
-    return () => {
+   return () => {
       if (observer && imageRef) {
         observer.unobserve(imageRef);
       }
@@ -71,18 +71,19 @@ export function LazyImage({
     delete safeProps.fetchpriority;
   }
 
-  return (
+ return (
     <img
-      ref={setImageRef}
+     ref={setImageRef}
       src={imageSrc}
       alt={alt}
-      className={`transition-opacity duration-300 ${
-        isLoaded ? 'opacity-100' : 'opacity-70'
-      } ${className}`}
+      className={`transition-opacity duration-200 ${
+       isLoaded ? 'opacity-100' : 'opacity-50'
+     } ${className}`}
       onLoad={handleLoad}
       onError={handleError}
       loading={priority ? 'eager' : 'lazy'}
       decoding="async"
+      fetchPriority={priority ? 'high' : 'auto'}
       {...safeProps}
     />
   );
