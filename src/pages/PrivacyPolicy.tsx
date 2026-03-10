@@ -40,9 +40,6 @@ export function PrivacyPolicy() {
             {/* Effective Date */}
             <Card className="mb-8 bg-knox-red/10 border-knox-red/20">
               <CardContent className="p-6">
-                <p className="text-knox-red font-semibold">
-                  <strong>Effective Date:</strong> January 15, 2025 | <strong>Last Updated:</strong> January 15, 2025
-                </p>
               </CardContent>
             </Card>
 
