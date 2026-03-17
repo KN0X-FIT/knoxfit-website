@@ -7,21 +7,21 @@ export function PrivacyPolicy() {
   return (
     <>
       <SEOHead
-        title="KN0X-FIT Privacy Policy – Safe and Confidential Coaching"
-        description="Learn how KN0X-FIT keeps your data private and secure while delivering personalized fitness coaching."
-        canonical="https://knoxfit.com/privacy-policy"
+        title="Privacy Policy | KN0X-FIT Privacy & Data Protection"
+        description="KN0X-FIT privacy policy outlining how we collect, use, and protect your personal information during fitness coaching services."
+        canonical="https://kn0x.fit/privacy-policy"
       />
       <StructuredData
         type="website"
         data={{
           title: "Privacy Policy - KN0X-FIT",
           description: "Learn how KN0X-FIT keeps your data private and secure while delivering personalized fitness coaching.",
-          url: "https://knoxfit.com/privacy-policy",
+          url: "https://kn0x.fit/privacy-policy",
           datePublished: "2025-01-15",
           dateModified: "2025-01-15"
         }}
       />
-      
+
       <div className="min-h-screen bg-gray-50">
         {/* Header */}
         <div className="bg-knox-black text-white">

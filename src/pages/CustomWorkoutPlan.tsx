@@ -7,10 +7,10 @@ export function CustomWorkoutPlan() {
   return (
     <>
       <SEOHead
-        title="Custom Workout Plan for Everyone | Personalized Fitness Routine - KN0X-FIT"
+        title="Custom Workout Plan for Beginners | Personalized Fitness Routine - KN0X-FIT"
         description="Get a personalized workout plan designed for beginners. Science-backed exercise routines that maximize results in minimal time, tailored to your fitness level. Starting at ₹799."
-        keywords="custom workout plan, personalized fitness routine, home workout plan, exercise program, strength training, fitness for all levels"
-        canonical="https://knoxfit.com/custom-workout-plan"
+        keywords="custom workout plan for beginners, personalized fitness routine, home workout plan, beginner exercise program, strength training for beginners"
+        canonical="https://kn0x.fit/custom-workout-plan"
       />
       <div className="min-h-screen bg-white">
       {/* Slogan Section */}

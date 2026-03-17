@@ -25,7 +25,7 @@ export function BlogPost() {
       <SEOHead
         title={`${post.title} - KN0X-FIT Blog`}
         description={post.excerpt}
-        canonical={`https://knoxfit.com/blog/${slug}`}
+        canonical={`https://kn0x.fit/blog/${slug}`}
       />
       <StructuredData
         type="article"
@@ -34,11 +34,11 @@ export function BlogPost() {
           description: post.excerpt,
           author: post.author,
           datePublished: post.date,
-          url: `https://knoxfit.com/blog/${slug}`,
-          image: `https://knoxfit.com${post.image}`
+          url: `https://kn0x.fit/blog/${slug}`,
+          image: `https://kn0x.fit${post.image}`
         }}
       />
-      
+
       <div className="min-h-screen bg-gray-50">
         {/* Header */}
         <div className="bg-white border-b">

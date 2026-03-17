@@ -7,16 +7,16 @@ export function TermsOfService() {
   return (
     <>
       <SEOHead
-        title="KN0X-FIT Terms of Service – Clear Guidelines for Coaching Programs"
-        description="Read KN0X-FIT's terms of service including program details, refund policy, and client responsibilities for our personalized fitness coaching."
-        canonical="https://knoxfit.com/terms-of-service"
+        title="Terms of Service | KN0X-FIT Terms & Conditions"
+        description="Read KN0X-FIT's terms and conditions for fitness coaching services. Understand your rights and responsibilities when using our programs."
+        canonical="https://kn0x.fit/terms-of-service"
       />
       <StructuredData
         type="website"
         data={{
           title: "Terms of Service - KN0X-FIT",
-          description: "Read KN0X-FIT's terms of service including program details, refund policy, and client responsibilities for our personalized fitness coaching.",
-          url: "https://knoxfit.com/terms-of-service",
+          description: "Terms and conditions for using KN0X-FIT fitness coaching services.",
+          url: "https://kn0x.fit/terms-of-service",
           datePublished: "2025-01-15",
           dateModified: "2025-01-15"
         }}

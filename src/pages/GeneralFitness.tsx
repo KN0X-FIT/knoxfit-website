@@ -8,22 +8,19 @@ export function GeneralFitness() {
   return (
     <>
       <SEOHead
-        title="General Fitness – Balanced Diet & Workout Plan | Beginner Fitness Program | KN0X-FIT"
-        description="Start your fitness journey with our beginner fitness plan featuring balanced diet for health, one trainer consultation, and sustainable workout plan. Perfect for home or gym workouts at ₹999/month."
-        keywords="beginner fitness plan, balanced diet for health, one trainer consultation, sustainable workout plan, general fitness program, home workout plan, gym routine for beginners"
-        canonical="https://knoxfit.com/general-fitness"
-        ogImage="https://knoxfit.com/general-fitness-hero.jpg"
+        title="General Fitness Programs | Beginner-Friendly Workouts - KN0X-FIT"
+        description="Join KN0X-FIT's general fitness programs for sustainable health improvements. Perfect for beginners starting their fitness journey."
+        keywords="general fitness programs, beginner workouts, sustainable fitness, health improvement exercises"
+        canonical="https://kn0x.fit/general-fitness"
+        ogImage="https://kn0x.fit/general-fitness-hero.jpg"
       />
       <StructuredData
-        type="service"
+        type="website"
         data={{
-          name: "General Fitness Program",
-          description: "Balanced diet and workout plan with one trainer session for beginners and anyone looking to build sustainable fitness habits",
-          provider: {
-            "@type": "Organization",
-            "name": "KN0X-FIT",
-            "url": "https://knoxfit.com"
-          },
+          title: "General Fitness Programs - KN0X-FIT",
+          description: "Beginner-friendly general fitness programs for sustainable health improvements.",
+          url: "https://kn0x.fit",
+
           offers: {
             "@type": "Offer",
             "price": "999",

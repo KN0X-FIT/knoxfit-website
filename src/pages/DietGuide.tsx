@@ -10,7 +10,7 @@ export function DietGuide() {
         title="Sustainable Diet Guide Without Supplements | Weight Loss Diet Plan - KN0X-FIT"
         description="Get a sustainable diet plan for weight loss without supplements. Personalized nutrition guide with FFMI and BMI analysis. Affordable diet coaching starting at ₹799."
         keywords="sustainable diet without supplements, weight loss diet plan, personalized nutrition guide, FFMI BMI analysis, affordable diet coaching"
-        canonical="https://knoxfit.com/diet-guide"
+        canonical="https://kn0x.fit/diet-guide"
       />
       <div className="min-h-screen bg-white">
       {/* Slogan Section */}

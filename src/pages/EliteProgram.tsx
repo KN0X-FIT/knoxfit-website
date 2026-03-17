@@ -11,7 +11,7 @@ export function EliteProgram() {
         title="KN0X Elite Program – Complete Personalized Fitness Plan for Total Transformation"
         description="Join the KN0X Elite Program for a personalized diet & workout plan, weekly trainer support, daily follow-ups, and an extra month free. Transform your body today!"
         keywords="elite fitness program, personalized workout plan, body recomposition, weekly trainer consultation, daily follow-ups, fitness transformation plan, premium fitness coaching"
-        canonical="https://knoxfit.com/elite-program"
+        canonical="https://kn0x.fit/elite-program"
       />
       <StructuredData
         type="service"

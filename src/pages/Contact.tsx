@@ -8,19 +8,17 @@ export function Contact() {
   return (
     <>
       <SEOHead
-        title="Contact KN0X-FIT – Get in Touch for Your Fitness Journey"
-        description="Connect with KN0X-FIT via WhatsApp, email, or Instagram. Get started now by filling out our fitness form!"
-        keywords="contact knoxfit, fitness coaching contact, workout plan inquiry, diet plan consultation, personal trainer contact"
-        canonical="https://knoxfit.com/contact"
+        title="Contact KN0X-FIT | Get in Touch with Expert Trainers"
+        description="Have questions about our fitness programs? Contact KN0X-FIT today. We're here to help you start your fitness journey. Reach out via WhatsApp or email."
+        keywords="contact fitness trainer, personal trainer contact, fitness coaching inquiry, workout plan questions, diet plan support"
+        canonical="https://kn0x.fit/contact"
       />
       <StructuredData
         type="website"
         data={{
-          title: "Contact KN0X-FIT",
-          description: "Connect with KN0X-FIT via WhatsApp, email, or Instagram. Get started now by filling out our fitness form!",
-          url: "https://knoxfit.com/contact",
-          datePublished: "2024-01-15",
-          dateModified: "2024-01-15"
+          title: "Contact - KN0X-FIT",
+          description: "Get in touch with KN0X-FIT for inquiries about fitness programs and coaching.",
+          url: "https://kn0x.fit/contact",
         }}
       />
 

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://knoxfit.com/sitemap.xml
+Sitemap: https://kn0x.fit/sitemap.xml
 
 # Disallow admin and development files
 Disallow: /admin/

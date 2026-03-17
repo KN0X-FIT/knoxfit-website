@@ -76,11 +76,11 @@ export function Blog() {
   return (
     <>
       <SEOHead
-        title="KN0X-FIT Blog: Workout Tips, Diet Advice & Fitness Motivation"
-        description="Get expert workout tips for beginners, sustainable diet advice without supplements, and fitness motivation. Transform your body with proven strategies from KN0X-FIT Expert Trainers."
-        keywords="workout tips for beginners, sustainable diet advice, fitness motivation, body transformation, home workouts, healthy eating, fitness blog, exercise routines"
-        canonical="https://knoxfit.com/blog"
-        ogImage="https://knoxfit.com/images/blog-cover.jpg"
+        title="KN0X-FIT Blog | Fitness Tips, Workout Guides & Nutrition Advice"
+        description="Expert fitness articles, workout guides, and nutrition tips from KN0X-FIT. Learn about home workouts, diet plans, and sustainable fitness."
+        keywords="fitness blog, workout tips, nutrition advice, home workout guide, diet plan tips"
+        canonical="https://kn0x.fit/blog"
+        ogImage="https://kn0x.fit/images/blog-cover.jpg"
       />
       <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
