@@ -7,21 +7,21 @@ export function PrivacyPolicy() {
   return (
     <>
       <SEOHead
-        title="Privacy Policy | KN0X-FIT Privacy & Data Protection"
-        description="KN0X-FIT privacy policy outlining how we collect, use, and protect your personal information during fitness coaching services."
-        canonical="https://kn0x.fit/privacy-policy"
+        title="KN0X-FIT Privacy Policy – Safe and Confidential Coaching"
+        description="Learn how KN0X-FIT keeps your data private and secure while delivering personalized fitness coaching."
+        canonical="https://knoxfit.com/privacy-policy"
       />
       <StructuredData
         type="website"
         data={{
           title: "Privacy Policy - KN0X-FIT",
           description: "Learn how KN0X-FIT keeps your data private and secure while delivering personalized fitness coaching.",
-          url: "https://kn0x.fit/privacy-policy",
+          url: "https://knoxfit.com/privacy-policy",
           datePublished: "2025-01-15",
           dateModified: "2025-01-15"
         }}
       />
-
+      
       <div className="min-h-screen bg-gray-50">
         {/* Header */}
         <div className="bg-knox-black text-white">
@@ -40,6 +40,9 @@ export function PrivacyPolicy() {
             {/* Effective Date */}
             <Card className="mb-8 bg-knox-red/10 border-knox-red/20">
               <CardContent className="p-6">
+                <p className="text-knox-red font-semibold">
+                  <strong>Effective Date:</strong> January 15, 2025 | <strong>Last Updated:</strong> January 15, 2025
+                </p>
               </CardContent>
             </Card>
 
@@ -228,8 +231,8 @@ export function PrivacyPolicy() {
                     <div className="space-y-3">
                       <p className="flex items-center">
                         <span className="font-semibold mr-2">📧 Email:</span>
-                        <a href="mailto:info@kn0x.fit" className="text-knox-red hover:underline">
-                          info@kn0x.fit
+                        <a href="mailto:info@kn0x-fit.com" className="text-knox-red hover:underline">
+                          info@kn0x-fit.com
                         </a>
                       </p>
                       <p className="flex items-center">

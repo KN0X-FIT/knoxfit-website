@@ -76,7 +76,7 @@ function AnimatedHero() {
           <div className="flex flex-row gap-3 flex-wrap justify-center">
             <Button size="lg" className="gap-4 bg-knox-red hover:bg-knox-darkred text-white" asChild>
               <a href="https://wa.me/919380422603?text=Hi%21%20I'm%20interested%20in%20the%20General%20Fitness%20Plan">
-                Join Now - ₹999 <Dumbbell className="w-4 h-4" />
+                Join Now - ₹9,999 for 3 Months <Dumbbell className="w-4 h-4" />
               </a>
             </Button>
           </div>

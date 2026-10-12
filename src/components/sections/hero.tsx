@@ -24,7 +24,7 @@ export function Hero() {
                 Personalised Transformation Programs – No Supplements. Sustainable Fitness.
               </h1>
               <h2 className="text-lg sm:text-xl text-gray-300 mt-6 max-w-lg font-normal">
-                Affordable fitness coaching. Custom workouts + diet plans, starting ₹799. Get your free 5-day plan today
+                Affordable fitness coaching. Custom workouts + diet plans, ₹4,999 for a complete 3-month program. Get your free 5-day plan today
               </h2>
             </div>
 
@@ -45,8 +45,8 @@ export function Hero() {
               </div>
               <div className="h-10 w-px bg-gray-700 hidden sm:block" />
               <div className="flex flex-col">
-                <span className="text-3xl sm:text-4xl font-bold font-knockout">799₹</span>
-                <span className="text-gray-400 text-sm">Starting Price</span>
+                <span className="text-3xl sm:text-4xl font-bold font-knockout">4,999₹</span>
+                <span className="text-gray-400 text-sm">for 3 Months</span>
               </div>
             </div>
           </div>

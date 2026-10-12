@@ -8,24 +8,27 @@ export function GeneralFitness() {
   return (
     <>
       <SEOHead
-        title="General Fitness Programs | Beginner-Friendly Workouts - KN0X-FIT"
-        description="Join KN0X-FIT's general fitness programs for sustainable health improvements. Perfect for beginners starting their fitness journey."
-        keywords="general fitness programs, beginner workouts, sustainable fitness, health improvement exercises"
-        canonical="https://kn0x.fit/general-fitness"
-        ogImage="https://kn0x.fit/general-fitness-hero.jpg"
+        title="General Fitness – Balanced Diet & Workout Plan | Beginner Fitness Program | KN0X-FIT"
+        description="Start your fitness journey with our beginner fitness plan featuring balanced diet for health, one trainer consultation, and sustainable workout plan. Perfect for home or gym workouts. Complete 3-month program for ₹9,999."
+        keywords="beginner fitness plan, balanced diet for health, one trainer consultation, sustainable workout plan, general fitness program, home workout plan, gym routine for beginners"
+        canonical="https://knoxfit.com/general-fitness"
+        ogImage="https://knoxfit.com/general-fitness-hero.jpg"
       />
       <StructuredData
-        type="website"
+        type="service"
         data={{
-          title: "General Fitness Programs - KN0X-FIT",
-          description: "Beginner-friendly general fitness programs for sustainable health improvements.",
-          url: "https://kn0x.fit",
-
+          name: "General Fitness Program",
+          description: "Balanced diet and workout plan with one trainer session for beginners and anyone looking to build sustainable fitness habits",
+          provider: {
+            "@type": "Organization",
+            "name": "KN0X-FIT",
+            "url": "https://knoxfit.com"
+          },
           offers: {
             "@type": "Offer",
-            "price": "999",
+            "price": "9999",
             "priceCurrency": "INR",
-            "description": "General fitness program with balanced diet plan, basic workout routine, and one trainer consultation"
+            "description": "General fitness program with balanced diet plan, basic workout routine, and one trainer consultation. Covers a 3-month duration for a one-time payment of INR 9,999."
           },
           category: "Fitness Program",
           audience: {
@@ -87,7 +90,7 @@ export function GeneralFitness() {
                       <svg className="w-6 h-6 text-knox-red mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
-                      <span><strong>Affordable:</strong> Quality fitness guidance at just ₹999/month</span>
+                      <span><strong>Affordable:</strong> Complete 3-month guidance for ₹9,999</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <svg className="w-6 h-6 text-knox-red mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -283,12 +286,16 @@ export function GeneralFitness() {
                     </svg>
                     Most Popular for Beginners
                   </div>
-                  <div className="text-6xl font-bold text-knox-black mb-2">₹999</div>
-                  <div className="text-xl text-gray-600">per month</div>
+                  <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">3-Month Program</div>
+                  <div className="flex items-baseline justify-center gap-3">
+                    <span className="text-4xl font-bold text-knox-black leading-none">₹9,999</span>
+                    <span className="text-xl text-gray-500 line-through decoration-gray-400 leading-none">₹16,999</span>
+                  </div>
+                  <div className="text-sm text-gray-600 mt-3">41% off &middot; total for 3 months, one-time payment</div>
                 </div>
                 
                 <a 
-                  href="https://wa.me/919380422603?text=Hi%21%20Interested%20in%20the%20General%20Fitness%20Plan.%20What%27s%20included%3F"
+                  href="https://wa.me/919380422603?text=Hi%21%20Interested%20in%20the%20General%20Fitness%20Plan%20at%20%E2%82%B99%2C999%20for%203%20months.%20What%27s%20included%3F"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-knox-red hover:bg-knox-darkred text-white font-bold text-xl py-4 rounded-lg block text-center"
@@ -297,7 +304,7 @@ export function GeneralFitness() {
                 </a>
                 
                 <p className="text-sm text-gray-600 mt-4">
-                  Start your transformation today • Cancel anytime • No hidden fees
+                  One-time payment &mdash; covers the full 3 months &bull; No hidden fees
                 </p>
               </div>
             </div>
@@ -375,7 +382,7 @@ export function GeneralFitness() {
               </p>
               <div className="flex justify-center">
                 <a 
-                  href="https://wa.me/919380422603?text=Hi%21%20Interested%20in%20the%20General%20Fitness%20Plan.%20What%27s%20included%3F"
+                  href="https://wa.me/919380422603?text=Hi%21%20Interested%20in%20the%20General%20Fitness%20Plan%20at%20%E2%82%B99%2C999%20for%203%20months.%20What%27s%20included%3F"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-knox-red hover:bg-knox-darkred text-white font-bold text-lg px-6 py-3 rounded-lg block"

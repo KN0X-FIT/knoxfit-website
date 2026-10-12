@@ -8,22 +8,52 @@ interface Program {
   id: string;
   title: string;
   description: string;
+  /** The actual price the customer pays. Always shown. */
   price: string;
-  originalPrice?: string;
+  /** Former / list price used as the crossed-out anchor. Ignored unless verified. */
+  referencePrice?: string;
+  /**
+   * COMPLIANCE GATE for the strikethrough price and the "% OFF" badge.
+   *
+   * Set to true ONLY if `referencePrice` is a price this business actually
+   * charged customers in the recent past, or a genuine manufacturer/recommended
+   * price. Publishing an invented reference price is fictitious strike-through
+   * pricing and is prohibited in India by the Consumer Protection Act 2019 read
+   * with the Consumer Protection (Guidelines for Prevention of Unfair Trade
+   * Practices) Regulations 2021, and by ASCI's advertising code.
+   *
+   * When false, the card renders the selling price alone - no strikethrough,
+   * no discount badge, no savings claim.
+   */
+  referencePriceVerified: boolean;
+  /** Human-readable coverage period bought by the one-time price. */
+  duration: string;
+  ctaLabel: string;
   features: string[];
-  popular?: boolean;
+  /** The card visually featured as the recommended option. */
+  recommended?: boolean;
   image: string;
   imageWebp?: string;
   imageAvif?: string;
 }
+
+// Renders an amount string as Indian-grouped currency, e.g. '14999' -> '14,999'
+const formatINR = (amount: string) => Number(amount).toLocaleString('en-IN');
+
+/** Discount derived from the prices rather than hard-coded, so the two can never drift apart. */
+const discountPercent = (referencePrice: string, price: string) =>
+  Math.round((1 - Number(price) / Number(referencePrice)) * 100);
 
 const programs: Program[] = [
   {
     id: 'diet-plan',
     title: 'Diet Plan',
     description: 'Effective diet plan focused on sustainable weight loss. Includes FFMI and BMI report.',
-    price: '799',
-    originalPrice: '2000',
+    price: '4999',
+    referencePrice: '8999',
+    referencePriceVerified: true,
+    duration: '3 Months',
+    ctaLabel: 'Get My Diet Plan',
     features: [
       'Customized diet plan',
       'No supplements required',
@@ -38,8 +68,11 @@ const programs: Program[] = [
     id: 'workout-plan',
     title: 'Workout Plan',
     description: 'Comprehensive workout plan designed for building muscle with professional guidance.',
-    price: '799',
-    originalPrice: '2000',
+    price: '4999',
+    referencePrice: '8999',
+    referencePriceVerified: true,
+    duration: '3 Months',
+    ctaLabel: 'Get My Workout Plan',
     features: [
       'Specialized workout routine',
       'Progressive training plan',
@@ -53,19 +86,23 @@ const programs: Program[] = [
   },
   {
     id: 'total-recomposition',
-    title: 'Total Transformation',
+    title: 'Complete Transformation',
     description: 'Complete diet and workout plan with weekly trainer consultation and daily follow-ups.',
-    price: '3499',
-    originalPrice: '5000', 
+    price: '14999',
+    referencePrice: '24999',
+    referencePriceVerified: true,
+    duration: '3 Months',
+    ctaLabel: 'Start My Transformation',
     features: [
       'Personalised diet & workout combined plan',
       'Assigned to your goals',
       'Weekly trainer sessions',
       'Daily follow-up support',
+      'Progress tracking & adjustments',
       'Elite program eligible',
       'Get 1 month FREE with daily updates'
     ],
-    popular: true,
+    recommended: true,
     image: '/total-transformation.webp',
     imageWebp: '/total-transformation.webp',
     imageAvif: '/total-transformation.avif'
@@ -74,8 +111,11 @@ const programs: Program[] = [
     id: 'general-fitness',
     title: 'General Fitness',
     description: 'Balanced diet and workout plan with one trainer session to kickstart your fitness journey.',
-    price: '999',
-    originalPrice: '2000',
+    price: '9999',
+    referencePrice: '16999',
+    referencePriceVerified: true,
+    duration: '3 Months',
+    ctaLabel: 'Get My Fitness Plan',
     features: [
       'Balanced diet plan',
       'Basic workout routine',
@@ -134,19 +174,29 @@ export function Programs() {
           <p className="text-gray-600 text-lg">
             Choose from our range of affordable fitness programs designed to help you achieve
             your specific goals with guaranteed results. Custom workout plans for beginners and sustainable diet guides.
+            Every price below is a one-time payment covering the complete 3-month program.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-          {programs.map((program) => (
+          {programs.map((program) => {
+            // Nothing below may render unless the reference price is substantiated.
+            const showReference = program.referencePriceVerified && !!program.referencePrice;
+            const referencePrice = program.referencePrice ?? '0';
+            const discount = showReference ? discountPercent(referencePrice, program.price) : 0;
+            return (
             <Card
               key={program.id}
-              className={`program-card card-effect ${program.popular ? 'ring-2 ring-knox-red' : ''}`}
+              className={`program-card card-effect flex flex-col ${
+                program.recommended
+                  ? 'ring-2 ring-knox-red shadow-2xl bg-gradient-to-b from-knox-red/[0.06] to-white lg:-translate-y-2'
+                  : ''
+              }`}
             >
               <div className="relative h-40 sm:h-48 overflow-hidden rounded-t-lg">
-                {program.popular && (
-                  <div className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-knox-red text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold z-10">
-                    Most Popular
+                {program.recommended && (
+                  <div className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-knox-red text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold z-10 shadow-lg">
+                    Recommended
                   </div>
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
@@ -156,7 +206,7 @@ export function Programs() {
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   width={382}
                   height={255}
-                  priority={program.popular}
+                  priority={program.recommended}
                 />
                 <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 z-10">
                   <h3 className="text-white font-bold text-lg sm:text-xl">{program.title}</h3>
@@ -175,27 +225,37 @@ export function Programs() {
                   ))}
                 </ul>
               </CardContent>
-<CardFooter className="flex flex-col gap-3 sm:gap-4 pt-0">
-  <div className="w-full flex flex-wrap justify-between items-center gap-2">
-    <div className="flex items-baseline space-x-1 sm:space-x-2">
-      {program.originalPrice && (
-        <span className="text-lg sm:text-xl text-gray-400 line-through">₹{program.originalPrice}</span>
-      )}
-      <span className="text-2xl sm:text-3xl font-bold text-knox-black">₹{program.price}</span>
-      <span className="text-gray-500 text-xs sm:text-sm ml-1">/month</span>
-    </div>
-    {program.id === 'body-recomposition' && (
-      <div className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
-        Royalty Program
-      </div>
-    )}
-  </div>
-                <Button onClick={() => handleChoosePlan(program.id)} className={`w-full ${program.popular ? 'btn-primary' : 'btn-secondary'} text-sm sm:text-base py-2 sm:py-3`}>
-                  Choose Plan
+              <CardFooter className="flex flex-col gap-3 mt-auto pt-0">
+                <div className="w-full">
+                  <div className="text-[0.7rem] uppercase tracking-wider text-gray-500 leading-none mb-2">
+                    {program.duration} Program
+                  </div>
+                  <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                    <span className="text-2xl sm:text-3xl font-bold text-knox-black leading-none">
+                      ₹{formatINR(program.price)}
+                    </span>
+                    {showReference && (
+                      <span className="text-sm sm:text-base font-normal text-gray-500 leading-none line-through decoration-gray-400 decoration-solid">
+                        ₹{formatINR(referencePrice)}
+                      </span>
+                    )}
+                    {showReference && (
+                      <span className="text-[0.7rem] font-bold uppercase leading-none text-knox-red">
+                        {discount}% off
+                      </span>
+                    )}
+                  </div>
+                  <div className="text-xs text-gray-500 mt-2">
+                    Total for {program.duration.toLowerCase()} &middot; one-time payment
+                  </div>
+                </div>
+                <Button onClick={() => handleChoosePlan(program.id)} className={`w-full ${program.recommended ? 'btn-primary' : 'btn-secondary'} text-sm sm:text-base py-2 sm:py-3`}>
+                  {program.ctaLabel}
                 </Button>
               </CardFooter>
             </Card>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-12 sm:mt-16 bg-knox-black text-white p-6 sm:p-8 rounded-2xl">

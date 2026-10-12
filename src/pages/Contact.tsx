@@ -8,17 +8,19 @@ export function Contact() {
   return (
     <>
       <SEOHead
-        title="Contact KN0X-FIT | Get in Touch with Expert Trainers"
-        description="Have questions about our fitness programs? Contact KN0X-FIT today. We're here to help you start your fitness journey. Reach out via WhatsApp or email."
-        keywords="contact fitness trainer, personal trainer contact, fitness coaching inquiry, workout plan questions, diet plan support"
-        canonical="https://kn0x.fit/contact"
+        title="Contact KN0X-FIT – Get in Touch for Your Fitness Journey"
+        description="Connect with KN0X-FIT via WhatsApp, email, or Instagram. Get started now by filling out our fitness form!"
+        keywords="contact knoxfit, fitness coaching contact, workout plan inquiry, diet plan consultation, personal trainer contact"
+        canonical="https://knoxfit.com/contact"
       />
       <StructuredData
         type="website"
         data={{
-          title: "Contact - KN0X-FIT",
-          description: "Get in touch with KN0X-FIT for inquiries about fitness programs and coaching.",
-          url: "https://kn0x.fit/contact",
+          title: "Contact KN0X-FIT",
+          description: "Connect with KN0X-FIT via WhatsApp, email, or Instagram. Get started now by filling out our fitness form!",
+          url: "https://knoxfit.com/contact",
+          datePublished: "2024-01-15",
+          dateModified: "2024-01-15"
         }}
       />
 
@@ -75,9 +77,9 @@ export function Contact() {
                     <div>
                       <h3 className="text-2xl font-bold text-knox-black mb-4">Email</h3>
                       <p className="text-gray-600 mb-4">Send us detailed inquiries</p>
-                      <p className="text-knox-red font-semibold mb-6">info@kn0x.fit</p>
+                      <p className="text-knox-red font-semibold mb-6">info@kn0x-fit.com</p>
                       <Button
-                        onClick={() => window.location.href = "mailto:info@kn0x.fit?subject=Fitness%20Program%20Inquiry&body=Hi%20KN0X-FIT,%0A%0AI'm%20interested%20in%20learning%20more%20about%20your%20fitness%20programs.%20Please%20provide%20me%20with%20more%20details.%0A%0AThank%20you!"}
+                        onClick={() => window.location.href = "mailto:info@kn0x-fit.com?subject=Fitness%20Program%20Inquiry&body=Hi%20KN0X-FIT,%0A%0AI'm%20interested%20in%20learning%20more%20about%20your%20fitness%20programs.%20Please%20provide%20me%20with%20more%20details.%0A%0AThank%20you!"}
                         className="bg-knox-red hover:bg-knox-darkred text-white font-bold text-lg px-8 py-3 w-full"
                       >
                         Send Email
@@ -200,7 +202,7 @@ export function Contact() {
                       
                       <h4 className="text-xl font-semibold text-knox-red mb-4">💰 Affordable Programs</h4>
                       <p className="text-gray-600">
-                        Quality fitness coaching shouldn't break the bank. Our programs start from just ₹799 with proven results.
+                        Quality fitness coaching shouldn't break the bank. Our programs start at ₹4,999 for a complete 3-month plan, with proven results.
                       </p>
                     </div>
                     <div>

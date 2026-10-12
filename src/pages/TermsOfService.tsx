@@ -7,16 +7,16 @@ export function TermsOfService() {
   return (
     <>
       <SEOHead
-        title="Terms of Service | KN0X-FIT Terms & Conditions"
-        description="Read KN0X-FIT's terms and conditions for fitness coaching services. Understand your rights and responsibilities when using our programs."
-        canonical="https://kn0x.fit/terms-of-service"
+        title="KN0X-FIT Terms of Service – Clear Guidelines for Coaching Programs"
+        description="Read KN0X-FIT's terms of service including program details, refund policy, and client responsibilities for our personalized fitness coaching."
+        canonical="https://knoxfit.com/terms-of-service"
       />
       <StructuredData
         type="website"
         data={{
           title: "Terms of Service - KN0X-FIT",
-          description: "Terms and conditions for using KN0X-FIT fitness coaching services.",
-          url: "https://kn0x.fit/terms-of-service",
+          description: "Read KN0X-FIT's terms of service including program details, refund policy, and client responsibilities for our personalized fitness coaching.",
+          url: "https://knoxfit.com/terms-of-service",
           datePublished: "2025-01-15",
           dateModified: "2025-01-15"
         }}
@@ -41,6 +41,9 @@ export function TermsOfService() {
             {/* Effective Date */}
             <Card className="mb-8 bg-knox-red/10 border-knox-red/20">
               <CardContent className="p-6">
+                <p className="text-knox-red font-semibold">
+                  <strong>Effective Date:</strong> January 15, 2025 | <strong>Last Updated:</strong> January 15, 2025
+                </p>
                 <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
                   <p className="text-green-800 font-semibold">
                     ✅ By enrolling in any KN0X-FIT program, you agree to follow these terms fully, 
@@ -446,8 +449,8 @@ export function TermsOfService() {
                       </p>
                       <p className="flex items-center">
                         <span className="font-semibold mr-3">📧 Email:</span>
-                        <a href="mailto:info@kn0x.fit" className="text-knox-red hover:underline">
-                          info@kn0x.fit
+                        <a href="mailto:info@kn0x-fit.com" className="text-knox-red hover:underline">
+                          info@kn0x-fit.com
                         </a>
                       </p>
                       <p className="flex items-center">

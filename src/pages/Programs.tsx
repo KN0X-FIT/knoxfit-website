@@ -41,7 +41,8 @@ export function Programs() {
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold text-knox-black mb-4">Find Your Perfect Fit</h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Explore our range of programs designed for different fitness goals and experience levels
+                  Explore our range of programs designed for different fitness goals and experience levels.
+                  Each price is a one-time payment covering the complete 3-month program.
                 </p>
               </div>
 
@@ -58,10 +59,14 @@ export function Programs() {
                     Premium 1-on-1 coaching with weekly consultations, daily follow-ups, and personalized plans
                   </p>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-knox-red mb-2">₹2999</div>
-                    <div className="text-sm text-gray-500 mb-4">Monthly</div>
+                    <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">3-Month Program</div>
+                    <div className="flex items-baseline justify-center gap-2">
+                      <span className="text-3xl font-bold text-knox-red leading-none">₹14,999</span>
+                      <span className="text-base text-gray-500 line-through decoration-gray-400 leading-none">₹24,999</span>
+                    </div>
+                    <div className="text-xs text-gray-500 mb-4">40% off &middot; total for 3 months, one-time payment</div>
                     <a 
-                      href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20join%20the%20KN0X%20Elite%20Program%20for%20%E2%82%B93499.%20I%27m%20committed%20to%20my%20transformation%21"
+                      href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20join%20the%20KN0X%20Elite%20Program%20for%20the%203-month%20transformation%20at%20%E2%82%B914%2C999.%20I%27m%20committed%20to%20my%20transformation%21"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block bg-knox-red hover:bg-knox-darkred text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
@@ -83,10 +88,14 @@ export function Programs() {
                     Balanced diet & workout plan with one trainer consultation. Perfect for beginners.
                   </p>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-knox-red mb-2">₹999</div>
-                    <div className="text-sm text-gray-500 mb-4">Monthly</div>
+                    <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">3-Month Program</div>
+                    <div className="flex items-baseline justify-center gap-2">
+                      <span className="text-3xl font-bold text-knox-red leading-none">₹9,999</span>
+                      <span className="text-base text-gray-500 line-through decoration-gray-400 leading-none">₹16,999</span>
+                    </div>
+                    <div className="text-xs text-gray-500 mb-4">41% off &middot; total for 3 months, one-time payment</div>
                     <a 
-                      href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20General%20Fitness%20Plan%20at%20%E2%82%B9999%2Fmonth.%20What%27s%20included%20in%20the%20plan%3F"
+                      href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20General%20Fitness%20Plan%20at%20%E2%82%B99%2C999%20for%203%20months.%20What%27s%20included%20in%20the%20plan%3F"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block bg-knox-red hover:bg-knox-darkred text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
@@ -108,10 +117,14 @@ export function Programs() {
                     Personalized workout routines tailored to your goals and fitness level
                   </p>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-knox-red mb-2">₹799</div>
-                    <div className="text-sm text-gray-500 mb-4">One Time</div>
+                    <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">3-Month Program</div>
+                    <div className="flex items-baseline justify-center gap-2">
+                      <span className="text-3xl font-bold text-knox-red leading-none">₹4,999</span>
+                      <span className="text-base text-gray-500 line-through decoration-gray-400 leading-none">₹8,999</span>
+                    </div>
+                    <div className="text-xs text-gray-500 mb-4">44% off &middot; total for 3 months, one-time payment</div>
                     <a 
-                      href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20%E2%82%B9799%20custom%20workout%20plan.%20What%27s%20included%20and%20how%20does%20it%20work%3F"
+                      href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20%E2%82%B94%2C999%203-month%20custom%20workout%20plan.%20What%27s%20included%20and%20how%20does%20it%20work%3F"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block bg-knox-red hover:bg-knox-darkred text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
@@ -133,10 +146,14 @@ export function Programs() {
                     Personalized nutrition guides without supplements for sustainable results
                   </p>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-knox-red mb-2">₹499</div>
-                    <div className="text-sm text-gray-500 mb-4">One Time</div>
+                    <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">3-Month Program</div>
+                    <div className="flex items-baseline justify-center gap-2">
+                      <span className="text-3xl font-bold text-knox-red leading-none">₹4,999</span>
+                      <span className="text-base text-gray-500 line-through decoration-gray-400 leading-none">₹8,999</span>
+                    </div>
+                    <div className="text-xs text-gray-500 mb-4">44% off &middot; total for 3 months, one-time payment</div>
                     <a 
-                      href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20%E2%82%B9499%20diet%20guide.%20What%27s%20included%20and%20how%20does%20it%20work%3F"
+                      href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20%E2%82%B94%2C999%203-month%20diet%20guide.%20What%27s%20included%20and%20how%20does%20it%20work%3F"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block bg-knox-red hover:bg-knox-darkred text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"

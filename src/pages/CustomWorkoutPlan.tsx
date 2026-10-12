@@ -8,9 +8,9 @@ export function CustomWorkoutPlan() {
     <>
       <SEOHead
         title="Custom Workout Plan for Beginners | Personalized Fitness Routine - KN0X-FIT"
-        description="Get a personalized workout plan designed for beginners. Science-backed exercise routines that maximize results in minimal time, tailored to your fitness level. Starting at ₹799."
+        description="Get a personalized workout plan designed for beginners. Science-backed exercise routines that maximize results in minimal time, tailored to your fitness level. Complete 3-month program for ₹4,999."
         keywords="custom workout plan for beginners, personalized fitness routine, home workout plan, beginner exercise program, strength training for beginners"
-        canonical="https://kn0x.fit/custom-workout-plan"
+        canonical="https://knoxfit.com/custom-workout-plan"
       />
       <div className="min-h-screen bg-white">
       {/* Slogan Section */}
@@ -21,35 +21,23 @@ export function CustomWorkoutPlan() {
       </div>
       
       {/* Hero Section */}
-      <section 
-        className="relative text-white py-16 overflow-hidden"
-        style={{
-       backgroundImage: `url('/workout paln page.jpg')`,
-       backgroundSize: 'cover',
-       backgroundPosition: 'center',
-       backgroundRepeat: 'no-repeat'
-        }}
-      >
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-knox-black/95 via-knox-black/85 to-knox-black/75"></div>
-        
-        {/* Content */}
-        <div className="container relative z-10">
+      <section className="bg-knox-black text-white py-12">
+        <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold font-knockout mb-6">
-             Custom Workout Plan for <span className="text-knox-red">All Levels</span>
-           </h1>
+              Custom Workout Plan for <span className="text-knox-red">Beginners</span>
+            </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
               Get a personalized workout plan designed specifically for your fitness level, goals, and lifestyle. 
               No generic routines - just science-backed exercises that deliver real results.
             </p>
             <a 
-              href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20%E2%82%B9799%20custom%20workout%20plan.%20What%27s%20included%20and%20how%20does%20it%20work%3F"
+              href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20%E2%82%B94%2C999%203-month%20custom%20workout%20plan.%20What%27s%20included%20and%20how%20does%20it%20work%3F"
               target="_blank"
-            rel="noopener noreferrer"
+              rel="noopener noreferrer"
               className="btn-primary text-lg py-6 px-8 block text-center"
             >
-              Get Your Custom Plan - ₹799
+              Get Your Custom Plan - ₹4,999 for 3 Months
             </a>
           </div>
         </div>
@@ -168,12 +156,12 @@ export function CustomWorkoutPlan() {
                 Our Expert Trainers will create a plan that's perfect for your fitness level and goals.
               </p>
               <a 
-                href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20get%20started%20with%20the%20%E2%82%B9799%20custom%20workout%20plan.%20I%27m%20ready%20to%20begin%20my%20fitness%20journey%21"
+                href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20get%20started%20with%20the%20%E2%82%B94%2C999%203-month%20custom%20workout%20plan.%20I%27m%20ready%20to%20begin%20my%20fitness%20journey%21"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary text-lg py-4 px-6 block text-center"
               >
-                Get Started Now - ₹799
+                Get Started Now - ₹4,999 for 3 Months
               </a>
             </div>
           </div>

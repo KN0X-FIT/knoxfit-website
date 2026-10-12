@@ -66,9 +66,9 @@ export function StructuredData({ type, data }: StructuredDataProps) {
                 "itemOffered": {
                   "@type": "Service",
                   "name": "Custom Diet Plan",
-                  "description": "Personalized diet plan for sustainable weight loss without supplements"
+                  "description": "Personalized diet plan for sustainable weight loss without supplements. Covers a 3-month duration for a one-time payment of INR 4,999."
                 },
-                "price": "499",
+                "price": "4999",
                 "priceCurrency": "INR"
               },
               {
@@ -76,9 +76,9 @@ export function StructuredData({ type, data }: StructuredDataProps) {
                 "itemOffered": {
                   "@type": "Service",
                   "name": "Custom Workout Plan",
-                  "description": "Personalized workout routine for beginners and advanced fitness levels"
+                  "description": "Personalized workout routine for beginners and advanced fitness levels. Covers a 3-month duration for a one-time payment of INR 4,999."
                 },
-                "price": "499",
+                "price": "4999",
                 "priceCurrency": "INR"
               }
             ]

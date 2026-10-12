@@ -9,24 +9,24 @@ export function EliteProgram() {
     <>
       <SEOHead
         title="KN0X Elite Program – Complete Personalized Fitness Plan for Total Transformation"
-        description="Join the KN0X Elite Program for a personalized diet & workout plan, weekly trainer support, daily follow-ups, and an extra month free. Transform your body today!"
+        description="Join the KN0X Elite Program for a personalized diet & workout plan, weekly trainer support, daily follow-ups, and an extra month free. Complete 3-month transformation for ₹14,999. Transform your body today!"
         keywords="elite fitness program, personalized workout plan, body recomposition, weekly trainer consultation, daily follow-ups, fitness transformation plan, premium fitness coaching"
-        canonical="https://kn0x.fit/elite-program"
+        canonical="https://knoxfit.com/elite-program"
       />
       <StructuredData
         type="service"
         data={{
           name: "KN0X Elite Program",
-          description: "Complete personalized fitness transformation program with weekly trainer consultation and daily follow-ups",
+          description: "Complete personalized fitness transformation program with weekly trainer consultation and daily follow-ups, delivered over 3 months",
           provider: {
             "@type": "Organization",
             "name": "KN0X-FIT"
           },
           offers: {
             "@type": "Offer",
-            "price": "2999",
+            "price": "14999",
             "priceCurrency": "INR",
-            "description": "Elite fitness program with personalized diet & workout plan, weekly trainer sessions, and daily follow-up support"
+            "description": "Elite fitness program with personalized diet & workout plan, weekly trainer sessions, and daily follow-up support. Covers a 3-month duration for a one-time payment of INR 14,999."
           }
         }}
       />
@@ -39,25 +39,14 @@ export function EliteProgram() {
       </div>
       
       {/* Hero Section */}
-      <section 
-        className="relative text-white py-10 sm:py-12 overflow-hidden"
-        style={{
-        backgroundImage: `url('/elite program page.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-        }}
-      >
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-knox-black/95 via-knox-black/85 to-knox-black/75"></div>
-        
-        {/* Background Effects */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute right-[10%] top-[20%] w-24 h-24 sm:w-40 sm:h-40 bg-knox-red rounded-full blur-3xl opacity-20 animate-pulse-slow" />
-          <div className="absolute left-[15%] bottom-[20%] w-32 h-32 sm:w-60 sm:h-60 bg-knox-red rounded-full blur-3xl opacity-15 animate-pulse-slow" style={{ animationDelay: "2s" }} />
-        </div>
-        
-        <div className="container relative z-10 px-4 sm:px-6">
+        <section className="bg-gradient-to-br from-knox-black via-knox-gray to-knox-black text-white py-10 sm:py-12 relative overflow-hidden">
+          {/* Background Effects */}
+          <div className="absolute inset-0 z-0">
+            <div className="absolute right-[10%] top-[20%] w-24 h-24 sm:w-40 sm:h-40 bg-knox-red rounded-full blur-3xl opacity-20 animate-pulse-slow" />
+            <div className="absolute left-[15%] bottom-[20%] w-32 h-32 sm:w-60 sm:h-60 bg-knox-red rounded-full blur-3xl opacity-15 animate-pulse-slow" style={{ animationDelay: "2s" }} />
+          </div>
+          
+          <div className="container relative z-10 px-4 sm:px-6">
             <div className="max-w-5xl mx-auto text-center">
               <div className="inline-flex items-center bg-knox-red/20 border border-knox-red/30 rounded-full px-3 py-1 sm:px-4 sm:py-1.5 mb-4 sm:mb-6">
                 <svg className="w-3 h-3 sm:w-4 sm:h-4 text-knox-red mr-1.5 sm:mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -67,24 +56,25 @@ export function EliteProgram() {
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-knockout tracking-tight mb-3 sm:mb-4 animate-float elite-mobile-heading-1">
-                <span className="block animate-text-glow">TOTAL</span>
-                <span className="block text-knox-red animate-text-glow">TRANSFORMATION</span>
-                <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal mt-1 sm:mt-2 elite-mobile-heading-3 animate-text-glow">KN0X-ELITE Program</span>
+                <span className="block">TOTAL</span>
+                <span className="block text-knox-red">TRANSFORMATION</span>
+                <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal mt-1 sm:mt-2 elite-mobile-heading-3">KN0X-ELITE Program</span>
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-5 sm:mb-6 max-w-4xl mx-auto leading-relaxed px-2 elite-mobile-body-text">
-                Complete diet and workout plan with weekly trainer consultation and daily follow-ups. 
+                Complete diet and workout plan with weekly trainer consultation and daily follow-ups, 
+                delivered over a full 3 months. 
                 The most comprehensive fitness transformation program designed for serious results.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6 sm:mb-8">
                 <a 
-                  href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20join%20the%20KN0X%20Elite%20Program%20for%20%E2%82%B93499.%20I%27m%20committed%20to%20my%20transformation%21"
+                  href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20join%20the%20KN0X%20Elite%20Program%20for%20the%203-month%20transformation%20at%20%E2%82%B914%2C999.%20I%27m%20committed%20to%20my%20transformation%21"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="elite-mobile-button elite-mobile-button-primary text-sm sm:text-base py-3 px-5 sm:py-4 sm:px-8 text-white bg-knox-red hover:bg-knox-darkred transform hover:scale-105 transition-all duration-300 shadow-2xl block text-center w-full sm:w-auto min-h-[44px] touch-manipulation"
                 >
-                  Join Elite Program Now - ₹3499
+                  Join Elite Program Now - ₹14,999 for 3 Months
                 </a>
               </div>
               
@@ -268,7 +258,7 @@ export function EliteProgram() {
                         <div className="text-xs sm:text-sm opacity-90">Complete daily check-ins</div>
                         <div className="text-xs sm:text-sm opacity-90">for 30 days</div>
                         <div className="mt-3 sm:mt-4 text-xs bg-white/20 rounded-full px-2.5 py-1 sm:px-3 sm:py-1.5 inline-block">
-                          ₹3499 Value
+                          One extra month added free
                         </div>
                       </div>
                     </div>
@@ -349,12 +339,12 @@ export function EliteProgram() {
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-5 sm:mb-6">
                 <a 
-                  href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20join%20the%20KN0X%20Elite%20Program%20for%20%E2%82%B93499.%20I%27m%20committed%20to%20my%20transformation%21"
+                  href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20join%20the%20KN0X%20Elite%20Program%20for%20the%203-month%20transformation%20at%20%E2%82%B914%2C999.%20I%27m%20committed%20to%20my%20transformation%21"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="elite-mobile-button elite-mobile-button-primary text-sm sm:text-base py-3 px-5 sm:py-4 sm:px-8 text-white bg-knox-red hover:bg-knox-darkred transform hover:scale-105 transition-all duration-300 shadow-2xl block text-center w-full sm:w-auto min-h-[44px] touch-manipulation"
                 >
-                  Join Elite Program Now - ₹3499
+                  Join Elite Program Now - ₹14,999 for 3 Months
                 </a>
               </div>
               

@@ -8,9 +8,9 @@ export function DietGuide() {
     <>
       <SEOHead
         title="Sustainable Diet Guide Without Supplements | Weight Loss Diet Plan - KN0X-FIT"
-        description="Get a sustainable diet plan for weight loss without supplements. Personalized nutrition guide with FFMI and BMI analysis. Affordable diet coaching starting at ₹799."
+        description="Get a sustainable diet plan for weight loss without supplements. Personalized nutrition guide with FFMI and BMI analysis. Complete 3-month diet program for ₹4,999."
         keywords="sustainable diet without supplements, weight loss diet plan, personalized nutrition guide, FFMI BMI analysis, affordable diet coaching"
-        canonical="https://kn0x.fit/diet-guide"
+        canonical="https://knoxfit.com/diet-guide"
       />
       <div className="min-h-screen bg-white">
       {/* Slogan Section */}
@@ -21,20 +21,8 @@ export function DietGuide() {
       </div>
       
       {/* Hero Section */}
-      <section 
-        className="relative text-white py-16 overflow-hidden"
-        style={{
-         backgroundImage: `url('/diet plan page.jpg')`,
-         backgroundSize: 'cover',
-         backgroundPosition: 'center',
-         backgroundRepeat: 'no-repeat'
-        }}
-      >
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-knox-black/95 via-knox-black/85 to-knox-black/75"></div>
-        
-        {/* Content */}
-        <div className="container relative z-10">
+      <section className="bg-knox-black text-white py-12">
+        <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold font-knockout mb-6">
               Sustainable Diet Guide <span className="text-knox-red">Without Supplements</span>
@@ -44,12 +32,12 @@ export function DietGuide() {
               no crash diets - just sustainable nutrition that fits your lifestyle and delivers real results.
             </p>
             <a 
-              href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20%E2%82%B9799%20sustainable%20diet%20plan.%20How%20does%20it%20work%20without%20supplements%3F"
+              href="https://wa.me/919380422603?text=Hi%21%20I%27m%20interested%20in%20the%20%E2%82%B94%2C999%20sustainable%203-month%20diet%20plan.%20How%20does%20it%20work%20without%20supplements%3F"
               target="_blank"
-             rel="noopener noreferrer"
+              rel="noopener noreferrer"
               className="btn-primary text-lg py-6 px-8 block text-center"
             >
-              Get Your Diet Plan - ₹799
+              Get Your Diet Plan - ₹4,999 for 3 Months
             </a>
           </div>
         </div>
@@ -193,12 +181,12 @@ export function DietGuide() {
                 No supplements, no crash diets - just sustainable nutrition that works.
               </p>
               <a 
-                href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20get%20started%20with%20the%20%E2%82%B9799%20diet%20plan.%20I%27m%20ready%20to%20transform%20my%20eating%20habits%21"
+                href="https://wa.me/919380422603?text=Hi%21%20I%20want%20to%20get%20started%20with%20the%20%E2%82%B94%2C999%203-month%20diet%20plan.%20I%27m%20ready%20to%20transform%20my%20eating%20habits%21"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary text-lg py-4 px-6 block text-center"
               >
-                Get Your Diet Plan - ₹799
+                Get Your Diet Plan - ₹4,999 for 3 Months
               </a>
             </div>
           </div>

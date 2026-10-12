@@ -24,8 +24,8 @@ const faqData: FAQItem[] = [
     answer: "Absolutely! Our custom workout plans are specifically designed for beginners. We start with basic movements and gradually progress based on your fitness level. Each program includes detailed instructions and modifications for different fitness levels."
   },
   {
-    question: "What's included in the ₹799 program packages?",
-    answer: "Each ₹799 package includes a customized diet plan or workout routine, consultation with Expert Trainers, FFMI and BMI reports, and ongoing support. Programs are designed to be sustainable and result-oriented without hidden costs."
+    question: "What's included in the ₹4,999 3-month program packages?",
+    answer: "Each ₹4,999 package covers a full 3 months as a one-time payment and includes a customized diet plan or workout routine, consultation with Expert Trainers, FFMI and BMI reports, and ongoing support. Programs are designed to be sustainable and result-oriented without hidden costs."
   },
   {
     question: "Can I follow the programs from home without gym equipment?",
