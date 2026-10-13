@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -73,11 +74,11 @@ export function Footer() {
           <div>
             <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Quick Links</h3>
             <ul className="space-y-1.5 sm:space-y-2">
-              <li><a href="/" className="text-gray-300 hover:text-knox-red text-sm sm:text-base">Home</a></li>
-              <li><a href="/elite-program" className="text-gray-300 hover:text-knox-red text-sm sm:text-base">Elite Program</a></li>
-              <li><a href="/blog" className="text-gray-300 hover:text-knox-red text-sm sm:text-base">Blog</a></li>
-              <li><a href="/custom-workout-plan" className="text-gray-300 hover:text-knox-red text-sm sm:text-base">Workout Plans</a></li>
-              <li><a href="/diet-guide" className="text-gray-300 hover:text-knox-red text-sm sm:text-base">Diet Guide</a></li>
+              <li><Link to="/" className="text-gray-300 hover:text-knox-red text-sm sm:text-base">Home</Link></li>
+              <li><Link to="/elite-program" className="text-gray-300 hover:text-knox-red text-sm sm:text-base">Elite Program</Link></li>
+              <li><Link to="/blog" className="text-gray-300 hover:text-knox-red text-sm sm:text-base">Blog</Link></li>
+              <li><Link to="/custom-workout-plan" className="text-gray-300 hover:text-knox-red text-sm sm:text-base">Workout Plans</Link></li>
+              <li><Link to="/diet-guide" className="text-gray-300 hover:text-knox-red text-sm sm:text-base">Diet Guide</Link></li>
             </ul>
           </div>
         </div>
@@ -87,13 +88,13 @@ export function Footer() {
           <div className="text-center mb-4 sm:mb-6">
             <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Legal</h3>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6">
-              <a href="/privacy-policy" className="text-gray-300 hover:text-knox-red transition-colors duration-200 text-sm sm:text-base">
+              <Link to="/privacy-policy" className="text-gray-300 hover:text-knox-red transition-colors duration-200 text-sm sm:text-base">
                 Privacy Policy
-              </a>
+              </Link>
               <span className="text-gray-600 hidden sm:block">|</span>
-              <a href="/terms-of-service" className="text-gray-300 hover:text-knox-red transition-colors duration-200 text-sm sm:text-base">
+              <Link to="/terms-of-service" className="text-gray-300 hover:text-knox-red transition-colors duration-200 text-sm sm:text-base">
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -112,4 +113,3 @@ export function Footer() {
     </footer>
   );
 }
-

@@ -77,30 +77,6 @@
   }
 }
 
-@font-face {
-  font-family: 'Knockout';
-  src: url('/fonts/Knockout-HTF49-Liteweight.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Knockout';
-  src: url('/fonts/Knockout-HTF52-Cruiserweight.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Knockout';
-  src: url('/fonts/Knockout-HTF67-FullBantamwt.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* Responsive typography */
 html {
   font-size: 14px;
@@ -685,6 +661,21 @@ html {
   .elite-hero-title {
     font-size: 2.5rem;
     line-height: 1.1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-float,
+    .animate-float-slow,
+    .animate-float-button,
+    .animate-pulse,
+    .animate-pulse-slow,
+    .animate-blink,
+    .animate-spin,
+    .elite-float,
+    .pulse-effect,
+    .header-nav-link-programs {
+      animation: none !important;
+    }
   }
   
   .elite-hero-subtitle {

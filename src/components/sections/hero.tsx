@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '../ui/button';
 
 export function Hero() {
@@ -29,8 +30,12 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <Button onClick={()=>{window.location.href = "/free-plan"}} className="btn-primary text-base sm:text-lg py-5 px-6 sm:px-8" size="lg">Get My Free 5-Day Starter Plan</Button>
-              <Button onClick={()=>{window.location.href = "#programs"}} variant="outline" className="btn-outline text-base sm:text-lg py-5 px-6 sm:px-8" size="lg">View Our Programs</Button>
+              <Button asChild className="btn-primary text-base sm:text-lg py-5 px-6 sm:px-8" size="lg">
+                <Link to="/free-plan">Get My Free 5-Day Starter Plan</Link>
+              </Button>
+              <Button asChild variant="outline" className="btn-outline text-base sm:text-lg py-5 px-6 sm:px-8" size="lg">
+                <Link to="/#programs">View Our Programs</Link>
+              </Button>
             </div>
 
             <div className="flex flex-wrap items-center gap-8 pt-6">
@@ -67,7 +72,6 @@ export function Hero() {
                 alt="KN0X-FIT custom home workout plan for beginners with no equipment - sustainable fitness without supplements"
                 className="w-full h-auto object-cover rounded-2xl animate-float shadow-2xl"
                 loading="eager"
-                fetchPriority="high"
                 width="600"
                 height="400"
                 style={{ animationDelay: "0.5s" }}
@@ -84,13 +88,13 @@ export function Hero() {
 
             {/* Creative floating button for Free Plan - Entire element is clickable with same animation as hero image */}
             <div className="absolute -right-4 -bottom-4 animate-float transform" style={{ animationDelay: "0.5s" }}>
-              <a 
-                href="/elite-program" 
+              <Link
+                to="/elite-program"
                 className="block w-full h-full bg-white text-black font-bold py-3 px-4 rounded-lg shadow-xl hover:bg-gray-100 hover:scale-105 transition-all duration-300 text-center min-w-[160px]"
               >
                 <p className="font-bold text-knox-red text-sm">KN0X-ELITE-Pragram</p>
                 <p className="text-xs text-black mt-1">Get 1 Month free!</p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

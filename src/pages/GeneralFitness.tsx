@@ -3,6 +3,7 @@ import { StructuredData } from '../components/StructuredData';
 import { Button } from '../components/ui/button';
 import { TestimonialStrip } from '../components/TestimonialStrip';
 import { AnimatedHero } from '../components/ui/animated-hero';
+import { Link } from 'react-router-dom';
 
 export function GeneralFitness() {
   return (
@@ -333,9 +334,9 @@ export function GeneralFitness() {
                   </div>
                   <h3 className="h4 mb-4 text-knox-black">Elite Program</h3>
                   <p className="text-gray-600 mb-4">Premium 1-on-1 coaching for advanced results</p>
-                  <a href="/elite-program" className="text-knox-red hover:text-knox-darkred font-semibold">
+                  <Link to="/elite-program" className="text-knox-red hover:text-knox-darkred font-semibold">
                     Learn More →
-                  </a>
+                  </Link>
                 </div>
                 
                 <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
@@ -348,9 +349,9 @@ export function GeneralFitness() {
                   </div>
                   <h3 className="h4 mb-4 text-knox-black">Custom Workout Plans</h3>
                   <p className="text-gray-600 mb-4">Tailored exercise routines for specific goals</p>
-                  <a href="/custom-workout-plan" className="text-knox-red hover:text-knox-darkred font-semibold">
+                  <Link to="/custom-workout-plan" className="text-knox-red hover:text-knox-darkred font-semibold">
                     Learn More →
-                  </a>
+                  </Link>
                 </div>
                 
                 <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
@@ -363,9 +364,9 @@ export function GeneralFitness() {
                   </div>
                   <h3 className="h4 mb-4 text-knox-black">Personalized Diet Plans</h3>
                   <p className="text-gray-600 mb-4">Nutrition guidance for optimal health</p>
-                  <a href="/diet-guide" className="text-knox-red hover:text-knox-darkred font-semibold">
+                  <Link to="/diet-guide" className="text-knox-red hover:text-knox-darkred font-semibold">
                     Learn More →
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { SEOHead } from '../components/SEOHead';
 import { StructuredData } from '../components/StructuredData';
 import { Button } from '../components/ui/button';
@@ -7,6 +7,7 @@ import { blogPosts } from '../data/blogPosts';
 
 export function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
+  const navigate = useNavigate();
   const post = blogPosts.find(p => p.slug === slug);
 
   if (!post) {
@@ -70,6 +71,18 @@ export function BlogPost() {
           <div className="max-w-4xl mx-auto">
             <div 
               className="bg-white rounded-lg shadow-lg p-8"
+              onClick={(event) => {
+                const target = event.target;
+                if (
+                  !(target instanceof HTMLAnchorElement) ||
+                  target.origin !== window.location.origin ||
+                  !target.pathname.startsWith('/')
+                ) {
+                  return;
+                }
+                event.preventDefault();
+                navigate(`${target.pathname}${target.search}${target.hash}`);
+              }}
               dangerouslySetInnerHTML={{ __html: post.content || '<p>Content coming soon...</p>' }}
             />
             
@@ -81,17 +94,11 @@ export function BlogPost() {
                   Get personalized workout plans and diet guides designed for your specific goals.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button 
-                    onClick={() => window.location.href = "/custom-workout-plan"}
-                    className="btn-primary"
-                  >
-                    Get Custom Workout Plan
+                  <Button asChild className="btn-primary">
+                    <Link to="/custom-workout-plan">Get Custom Workout Plan</Link>
                   </Button>
-                  <Button 
-                    onClick={() => window.location.href = "/diet-guide"}
-                    className="btn-outline border-white text-white hover:bg-white hover:text-knox-black"
-                  >
-                    View Diet Guide
+                  <Button asChild className="btn-outline border-white text-white hover:bg-white hover:text-knox-black">
+                    <Link to="/diet-guide">View Diet Guide</Link>
                   </Button>
                 </div>
               </CardContent>

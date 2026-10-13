@@ -2,6 +2,7 @@ import { SEOHead } from '../components/SEOHead';
 import { StructuredData } from '../components/StructuredData';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import { Link } from 'react-router-dom';
 
 export function TermsOfService() {
   return (
@@ -475,17 +476,11 @@ export function TermsOfService() {
                   <p className="text-gray-300 mb-4">
                     <strong>Team KN0X-FIT</strong> | Built for Change | Designed for You
                   </p>
-                  <Button 
-                    onClick={() => window.location.href = '/contact'}
-                    className="btn-primary mr-4"
-                  >
-                    Contact Support
+                  <Button asChild className="btn-primary mr-4">
+                    <Link to="/contact">Contact Support</Link>
                   </Button>
-                  <Button 
-                    onClick={() => window.location.href = '/privacy-policy'}
-                    className="btn-outline border-white text-white hover:bg-white hover:text-knox-black"
-                  >
-                    View Privacy Policy
+                  <Button asChild className="btn-outline border-white text-white hover:bg-white hover:text-knox-black">
+                    <Link to="/privacy-policy">View Privacy Policy</Link>
                   </Button>
                 </div>
               </CardContent>

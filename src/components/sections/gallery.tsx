@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '../ui/card';
 import { LazyImage } from '../LazyImage';
 
@@ -91,12 +92,12 @@ export function Gallery() {
 
         {/* CTA */}
         <div className="text-center mt-12 sm:mt-16">
-          <a 
-            href="/free-plan"
+          <Link
+            to="/free-plan"
             className="inline-block bg-knox-red text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors text-base sm:text-lg"
           >
             Get Your Free 5-Day Starter Plan
-          </a>
+          </Link>
           <p className="text-gray-600 text-sm mt-3">
             See our complete programs in action with your personalized plan
           </p>

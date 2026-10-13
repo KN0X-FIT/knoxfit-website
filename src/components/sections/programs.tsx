@@ -206,7 +206,6 @@ export function Programs() {
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   width={382}
                   height={255}
-                  priority={program.recommended}
                 />
                 <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 z-10">
                   <h3 className="text-white font-bold text-lg sm:text-xl">{program.title}</h3>

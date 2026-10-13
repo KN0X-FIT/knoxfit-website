@@ -1,6 +1,7 @@
 import { SEOHead } from '../components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
+import { Link } from 'react-router-dom';
 
 interface BlogPost {
   id: string;
@@ -135,12 +136,8 @@ export function Blog() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-                    <Button 
-                      onClick={() => window.location.href = `/blog/${post.slug}`}
-                      variant="outline" 
-                      className="w-full"
-                    >
-                      Read Full Article
+                    <Button asChild variant="outline" className="w-full">
+                      <Link to={`/blog/${post.slug}`}>Read Full Article</Link>
                     </Button>
                   </CardContent>
                 </Card>
