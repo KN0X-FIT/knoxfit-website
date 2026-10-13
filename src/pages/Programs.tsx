@@ -1,5 +1,6 @@
 import { SEOHead } from '../components/SEOHead';
 import { Button } from '../components/ui/button';
+import { Link } from 'react-router-dom';
 
 export function Programs() {
   return (
@@ -177,12 +178,12 @@ export function Programs() {
                   <div className="text-center">
                     <div className="text-3xl font-bold text-green-600 mb-2">FREE</div>
                     <div className="text-sm text-gray-500 mb-4">One Time</div>
-                    <a 
-                      href="/free-plan"
+                    <Link
+                      to="/free-plan"
                       className="inline-block bg-knox-red hover:bg-knox-darkred text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
                     >
                       Get Free Plan
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -198,12 +199,12 @@ export function Programs() {
                     See real transformations from our community members
                   </p>
                   <div className="text-center">
-                    <a 
-                      href="/testimonials"
+                    <Link
+                      to="/testimonials"
                       className="inline-block bg-knox-red hover:bg-knox-darkred text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
                     >
                       View Stories
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

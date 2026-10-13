@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '../ui/card';
 
 interface Step {
@@ -94,12 +95,12 @@ export function HowItWorks() {
             <p className="text-gray-300 text-sm sm:text-base mb-5 sm:mb-6">
               Join hundreds of satisfied clients who have transformed their bodies with our proven programs.
             </p>
-            <a 
-              href="/free-plan"
+            <Link
+              to="/free-plan"
               className="inline-block bg-knox-red text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors text-base sm:text-lg"
             >
               Get My Free 5-Day Starter Plan
-            </a>
+            </Link>
           </div>
         </div>
       </div>

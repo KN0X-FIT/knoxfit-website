@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { SEOHead } from '../components/SEOHead';
 import { Button } from '../components/ui/button';
+import { Link } from 'react-router-dom';
 
 interface Testimonial {
   id: string;
@@ -324,12 +325,12 @@ const Testimonials: React.FC = () => {
                   asChild
                   className="bg-knox-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 whitespace-nowrap flex items-center gap-2 shadow-lg"
                 >
-                  <a href="/contact">
+                  <Link to="/contact">
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                     </svg>
                     <span>Get Started Today</span>
-                  </a>
+                  </Link>
                 </Button>
               </div>
               
@@ -339,13 +340,13 @@ const Testimonials: React.FC = () => {
                   asChild
                   className="bg-white text-knox-red hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg transition-colors duration-200 shadow-lg w-full sm:w-auto"
                 >
-                  <a href="/contact">Start Your Transformation</a>
+                  <Link to="/contact">Start Your Transformation</Link>
                 </Button>
                 <Button 
                   asChild
                   className="bg-knox-red text-white hover:bg-red-700 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg transition-colors duration-200 shadow-lg border-2 border-white w-full sm:w-auto"
                 >
-                  <a href="/free-plan">Get Free Plan</a>
+                  <Link to="/free-plan">Get Free Plan</Link>
                 </Button>
               </div>
               

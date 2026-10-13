@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '../ui/card';
 
 interface FAQItem {
@@ -117,12 +118,12 @@ export function FAQ() {
               >
                 WhatsApp Us
               </a>
-              <a 
-                href="/contact"
+              <Link
+                to="/contact"
                 className="bg-transparent border-2 border-white text-white px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg font-semibold hover:bg-white hover:text-knox-black transition-colors text-sm sm:text-base"
               >
                 Contact Form
-              </a>
+              </Link>
             </div>
           </div>
         </div>

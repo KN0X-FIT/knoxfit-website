@@ -2,6 +2,7 @@ import { SEOHead } from '../components/SEOHead';
 import { StructuredData } from '../components/StructuredData';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import { Link } from 'react-router-dom';
 
 export function PrivacyPolicy() {
   return (
@@ -263,11 +264,8 @@ export function PrivacyPolicy() {
                   <p className="text-gray-300 mb-4">
                     Your trust is essential to our coaching relationship. We're committed to earning and maintaining it every day.
                   </p>
-                  <Button 
-                    onClick={() => window.location.href = '/contact'}
-                    className="btn-primary"
-                  >
-                    Contact Us About Privacy
+                  <Button asChild className="btn-primary">
+                    <Link to="/contact">Contact Us About Privacy</Link>
                   </Button>
                 </div>
               </CardContent>

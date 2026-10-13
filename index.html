@@ -44,9 +44,9 @@
     <link rel="canonical" href="https://knoxfit.com/" />
     
     <!-- Critical preconnect hints to reduce network latency -->
-    <link rel="preconnect" href="https://kn0x-fit.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/hero-image.webp" as="image" fetchpriority="high">
     
     <!-- DNS prefetch for additional domains -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -58,11 +58,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" fetchpriority="low">
     
 
-    
-    <!-- Preload critical fonts -->
-    <link rel="preload" href="/fonts/Knockout-HTF49-Liteweight.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
-    <link rel="preload" href="/fonts/Knockout-HTF52-Cruiserweight.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
-    <link rel="preload" href="/fonts/Knockout-HTF67-FullBantamwt.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -157,17 +152,6 @@
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="9zVr7PAfNdpdnAMEeUdjnQPCGGkJHj9fWN7zDlg2Okw" />
-    
-    <!-- Font loading optimization -->
-    <script>
-      // Fallback for font loading
-      (function() {
-        var fontLink = document.querySelector('link[href*="fonts.googleapis.com"]');
-        if (fontLink) {
-          fontLink.media = 'all';
-        }
-      })();
-    </script>
   </head>
   <body>
     <div id="root"></div>

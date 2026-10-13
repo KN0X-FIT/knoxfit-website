@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '../ui/card';
 import { LazyImage } from '../LazyImage';
 
@@ -91,12 +92,12 @@ export function Testimonials() {
 
         {/* See More Button */}
         <div className="text-center mt-8">
-          <a 
-            href="/testimonials" 
+          <Link
+            to="/testimonials"
             className="inline-block bg-knox-red text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors text-sm"
           >
             See More Success Stories
-          </a>
+          </Link>
         </div>
 
         {/* Trust indicators */}

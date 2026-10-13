@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 
-interface LazyImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+interface LazyImageProps extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'fetchPriority'> {
   src: string;
   alt: string;
   className?: string;
@@ -18,72 +18,47 @@ export function LazyImage({
   priority = false,
   ...props
 }: LazyImageProps) {
-  const [imageSrc, setImageSrc] = useState(priority ? src : placeholder);
-  const [imageRef, setImageRef] = useState<HTMLImageElement | null>(null);
+  const [imageSrc, setImageSrc] = useState(src);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [hasError, setHasError] = useState(false);
+  const {
+    loading,
+    decoding,
+    onLoad,
+    onError,
+    style,
+    ...imageProps
+  } = props;
 
   useEffect(() => {
-    let observer: IntersectionObserver;
-    
-    if (imageRef && !priority && 'IntersectionObserver' in window) {
-      observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setImageSrc(src);
-              observer.unobserve(imageRef);
-            }
-          });
-        },
-        {
-          threshold: 0.1,
-          rootMargin: '50px'
-        }
-      );
-      observer.observe(imageRef);
-    } else if (!priority) {
-      // Fallback for browsers without IntersectionObserver
-      setImageSrc(src);
-    }
-
-    return () => {
-      if (observer && imageRef) {
-        observer.unobserve(imageRef);
-      }
-    };
-  }, [imageRef, src, priority]);
-
-  const handleLoad = () => {
-    setIsLoaded(true);
-  };
-
-  const handleError = () => {
-    setHasError(true);
-    if (fallbackSrc) {
-      setImageSrc(fallbackSrc);
-    }
-  };
-
-  // Create a new props object without fetchPriority to avoid React warnings
-  const safeProps = { ...props };
-  if ('fetchpriority' in safeProps) {
-    delete safeProps.fetchpriority;
-  }
+    setImageSrc(src);
+    setIsLoaded(false);
+  }, [src]);
 
   return (
     <img
-      ref={setImageRef}
       src={imageSrc}
       alt={alt}
       className={`transition-opacity duration-300 ${
         isLoaded ? 'opacity-100' : 'opacity-70'
       } ${className}`}
-      onLoad={handleLoad}
-      onError={handleError}
-      loading={priority ? 'eager' : 'lazy'}
-      decoding="async"
-      {...safeProps}
+      style={{
+        backgroundImage: !isLoaded && placeholder ? `url("${placeholder}")` : undefined,
+        ...style,
+      }}
+      onLoad={(event) => {
+        setIsLoaded(true);
+        onLoad?.(event);
+      }}
+      onError={(event) => {
+        if (fallbackSrc && imageSrc === src) {
+          setImageSrc(fallbackSrc);
+          return;
+        }
+        onError?.(event);
+      }}
+      loading={loading ?? (priority ? 'eager' : 'lazy')}
+      decoding={decoding ?? 'async'}
+      {...imageProps}
     />
   );
 }
